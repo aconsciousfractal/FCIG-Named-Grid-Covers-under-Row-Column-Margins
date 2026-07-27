@@ -1,0 +1,2883 @@
+{
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.6"
+  },
+  "inputs": {
+    "p21_path": "packages/package_c_comparative_hypergraphs/specimens/p21_locked.json",
+    "p21_sha256": "6a2f4ed590f50831f04f083656c3b7f0067cca898c5617773fecf38481e42b8f"
+  },
+  "preregistration": {
+    "path": "packages/package_e_obstruction_channels/xray_channel/ROBUST_P21_QUOTIENT_PREREGISTRATION.md",
+    "sha256": "71160446fbc502e0138744aaeb495e74c0f1f81d5e63ec19b52086d44d3a45c4"
+  },
+  "primary": {
+    "algebraically_separated_trapped_nodes": 16,
+    "ambient_kernel_rank": 60,
+    "component_profiles": [
+      {
+        "component": 0,
+        "nodes": [
+          0,
+          2
+        ],
+        "tiling_nodes": [
+          0
+        ],
+        "trapped": false
+      },
+      {
+        "component": 1,
+        "nodes": [
+          1,
+          3
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 2,
+        "nodes": [
+          4,
+          6
+        ],
+        "tiling_nodes": [
+          4
+        ],
+        "trapped": false
+      },
+      {
+        "component": 3,
+        "nodes": [
+          5,
+          7
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 4,
+        "nodes": [
+          8,
+          10
+        ],
+        "tiling_nodes": [
+          8
+        ],
+        "trapped": false
+      },
+      {
+        "component": 5,
+        "nodes": [
+          9,
+          11
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 6,
+        "nodes": [
+          12,
+          14
+        ],
+        "tiling_nodes": [
+          12
+        ],
+        "trapped": false
+      },
+      {
+        "component": 7,
+        "nodes": [
+          13,
+          15
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 8,
+        "nodes": [
+          16,
+          18
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 9,
+        "nodes": [
+          17,
+          19
+        ],
+        "tiling_nodes": [
+          19
+        ],
+        "trapped": false
+      },
+      {
+        "component": 10,
+        "nodes": [
+          20,
+          22
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 11,
+        "nodes": [
+          21,
+          23
+        ],
+        "tiling_nodes": [
+          23
+        ],
+        "trapped": false
+      },
+      {
+        "component": 12,
+        "nodes": [
+          24,
+          26
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 13,
+        "nodes": [
+          25,
+          27
+        ],
+        "tiling_nodes": [
+          27
+        ],
+        "trapped": false
+      },
+      {
+        "component": 14,
+        "nodes": [
+          28,
+          30
+        ],
+        "tiling_nodes": [],
+        "trapped": true
+      },
+      {
+        "component": 15,
+        "nodes": [
+          29,
+          31
+        ],
+        "tiling_nodes": [
+          31
+        ],
+        "trapped": false
+      }
+    ],
+    "components": 16,
+    "components_per_hit_class_distribution": {
+      "1": 16
+    },
+    "cone_certificates": [],
+    "constraint_rows": 14,
+    "degree_at_most_two_edges": 16,
+    "direct_repairs": [
+      {
+        "degree_to_all_tilings": {
+          "0": 3,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 3,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          0,
+          27
+        ],
+        "rho": 3,
+        "trapped_node": 1
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 3,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          0
+        ],
+        "rho": 3,
+        "trapped_node": 3
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 3,
+          "4": 3,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          4,
+          31
+        ],
+        "rho": 3,
+        "trapped_node": 5
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 3,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          4
+        ],
+        "rho": 3,
+        "trapped_node": 7
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 3,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 3
+        },
+        "minimizing_tilings": [
+          8,
+          19
+        ],
+        "rho": 3,
+        "trapped_node": 9
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 3
+        },
+        "minimizing_tilings": [
+          8
+        ],
+        "rho": 3,
+        "trapped_node": 11
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 3,
+          "19": 4,
+          "23": 3,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          12,
+          23
+        ],
+        "rho": 3,
+        "trapped_node": 13
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 3,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          12
+        ],
+        "rho": 3,
+        "trapped_node": 15
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 3,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          19
+        ],
+        "rho": 3,
+        "trapped_node": 16
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 3,
+          "23": 4,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 3
+        },
+        "minimizing_tilings": [
+          8,
+          19
+        ],
+        "rho": 3,
+        "trapped_node": 18
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 3,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          23
+        ],
+        "rho": 3,
+        "trapped_node": 20
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 3,
+          "19": 4,
+          "23": 3,
+          "27": 4,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          12,
+          23
+        ],
+        "rho": 3,
+        "trapped_node": 22
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 3,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          27
+        ],
+        "rho": 3,
+        "trapped_node": 24
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 3,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 3,
+          "31": 4,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          0,
+          27
+        ],
+        "rho": 3,
+        "trapped_node": 26
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 3,
+          "4": 4,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          31
+        ],
+        "rho": 3,
+        "trapped_node": 28
+      },
+      {
+        "degree_to_all_tilings": {
+          "0": 4,
+          "12": 4,
+          "19": 4,
+          "23": 4,
+          "27": 4,
+          "31": 3,
+          "4": 3,
+          "8": 4
+        },
+        "minimizing_tilings": [
+          4,
+          31
+        ],
+        "rho": 3,
+        "trapped_node": 30
+      }
+    ],
+    "energy_distribution": {
+      "0": 8,
+      "2": 24
+    },
+    "extra_nodes": 24,
+    "fiber_nodes": 32,
+    "hit_class_action_permutations": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        13,
+        11,
+        15,
+        4,
+        3,
+        12,
+        7,
+        6,
+        14,
+        10,
+        9,
+        1,
+        5,
+        0,
+        8,
+        2
+      ],
+      [
+        4,
+        14,
+        5,
+        13,
+        0,
+        2,
+        9,
+        10,
+        11,
+        6,
+        7,
+        8,
+        15,
+        3,
+        1,
+        12
+      ],
+      [
+        3,
+        8,
+        12,
+        0,
+        13,
+        15,
+        10,
+        9,
+        1,
+        7,
+        6,
+        14,
+        2,
+        4,
+        11,
+        5
+      ],
+      [
+        7,
+        2,
+        11,
+        10,
+        9,
+        14,
+        0,
+        13,
+        5,
+        3,
+        4,
+        15,
+        8,
+        6,
+        12,
+        1
+      ],
+      [
+        6,
+        15,
+        1,
+        9,
+        10,
+        8,
+        13,
+        0,
+        12,
+        4,
+        3,
+        2,
+        14,
+        7,
+        5,
+        11
+      ],
+      [
+        9,
+        12,
+        14,
+        6,
+        7,
+        11,
+        3,
+        4,
+        15,
+        0,
+        13,
+        5,
+        1,
+        10,
+        2,
+        8
+      ],
+      [
+        10,
+        5,
+        8,
+        7,
+        6,
+        1,
+        4,
+        3,
+        2,
+        13,
+        0,
+        12,
+        11,
+        9,
+        15,
+        14
+      ]
+    ],
+    "hit_class_profiles": [
+      {
+        "class_id": 0,
+        "components": [
+          6
+        ],
+        "extra_nodes": [
+          14
+        ],
+        "free_coordinates": [
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          4,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          12,
+          14
+        ],
+        "tiling_nodes": [
+          12
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 1,
+        "components": [
+          14
+        ],
+        "extra_nodes": [
+          28,
+          30
+        ],
+        "free_coordinates": [
+          -1,
+          0,
+          2,
+          -1,
+          -2,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          28,
+          30
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          28,
+          30
+        ]
+      },
+      {
+        "class_id": 2,
+        "components": [
+          7
+        ],
+        "extra_nodes": [
+          13,
+          15
+        ],
+        "free_coordinates": [
+          -2,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          4,
+          1,
+          -3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          13,
+          15
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          13,
+          15
+        ]
+      },
+      {
+        "class_id": 3,
+        "components": [
+          11
+        ],
+        "extra_nodes": [
+          21
+        ],
+        "free_coordinates": [
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          2,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          21,
+          23
+        ],
+        "tiling_nodes": [
+          23
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 4,
+        "components": [
+          4
+        ],
+        "extra_nodes": [
+          10
+        ],
+        "free_coordinates": [
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          4,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          8,
+          10
+        ],
+        "tiling_nodes": [
+          8
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 5,
+        "components": [
+          5
+        ],
+        "extra_nodes": [
+          9,
+          11
+        ],
+        "free_coordinates": [
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          4,
+          1,
+          -2,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          9,
+          11
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          9,
+          11
+        ]
+      },
+      {
+        "class_id": 6,
+        "components": [
+          15
+        ],
+        "extra_nodes": [
+          29
+        ],
+        "free_coordinates": [
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          4,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          29,
+          31
+        ],
+        "tiling_nodes": [
+          31
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 7,
+        "components": [
+          0
+        ],
+        "extra_nodes": [
+          2
+        ],
+        "free_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          0,
+          2
+        ],
+        "tiling_nodes": [
+          0
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 8,
+        "components": [
+          12
+        ],
+        "extra_nodes": [
+          24,
+          26
+        ],
+        "free_coordinates": [
+          0,
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          4,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          24,
+          26
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          24,
+          26
+        ]
+      },
+      {
+        "class_id": 9,
+        "components": [
+          2
+        ],
+        "extra_nodes": [
+          6
+        ],
+        "free_coordinates": [
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          4,
+          6
+        ],
+        "tiling_nodes": [
+          4
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 10,
+        "components": [
+          13
+        ],
+        "extra_nodes": [
+          25
+        ],
+        "free_coordinates": [
+          1,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          25,
+          27
+        ],
+        "tiling_nodes": [
+          27
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 11,
+        "components": [
+          1
+        ],
+        "extra_nodes": [
+          1,
+          3
+        ],
+        "free_coordinates": [
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          1,
+          3
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          1,
+          3
+        ]
+      },
+      {
+        "class_id": 12,
+        "components": [
+          10
+        ],
+        "extra_nodes": [
+          20,
+          22
+        ],
+        "free_coordinates": [
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          20,
+          22
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          20,
+          22
+        ]
+      },
+      {
+        "class_id": 13,
+        "components": [
+          9
+        ],
+        "extra_nodes": [
+          17
+        ],
+        "free_coordinates": [
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          4,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          17,
+          19
+        ],
+        "tiling_nodes": [
+          19
+        ],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": []
+      },
+      {
+        "class_id": 14,
+        "components": [
+          3
+        ],
+        "extra_nodes": [
+          5,
+          7
+        ],
+        "free_coordinates": [
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          5,
+          7
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          5,
+          7
+        ]
+      },
+      {
+        "class_id": 15,
+        "components": [
+          8
+        ],
+        "extra_nodes": [
+          16,
+          18
+        ],
+        "free_coordinates": [
+          2,
+          -1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          4,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mixes_tiling_and_trapped": false,
+        "nodes": [
+          16,
+          18
+        ],
+        "tiling_nodes": [],
+        "torsion_coordinates": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trapped_nodes": [
+          16,
+          18
+        ]
+      }
+    ],
+    "hit_quotient_classes": 16,
+    "interpretation_branch": "algebraic_separation",
+    "maximum_components_per_hit_class": 1,
+    "minimizing_repair_pair_orbits": [
+      [
+        0,
+        3,
+        6,
+        9,
+        14,
+        17,
+        20,
+        23
+      ],
+      [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      [
+        2,
+        5,
+        8,
+        11,
+        12,
+        15,
+        18,
+        21
+      ]
+    ],
+    "minimizing_repair_pairs": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        31
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        13,
+        23
+      ],
+      [
+        15,
+        12
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        18,
+        8
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        20,
+        23
+      ],
+      [
+        22,
+        12
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        24,
+        27
+      ],
+      [
+        26,
+        0
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        28,
+        31
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        30,
+        31
+      ]
+    ],
+    "mixed_tiling_trapped_classes": 0,
+    "move_lattice_rank": 34,
+    "pairing_status": [
+      {
+        "algebraically_separated": true,
+        "class_id": 11,
+        "tilings_in_same_class": [],
+        "trapped_node": 1
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 11,
+        "tilings_in_same_class": [],
+        "trapped_node": 3
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 14,
+        "tilings_in_same_class": [],
+        "trapped_node": 5
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 14,
+        "tilings_in_same_class": [],
+        "trapped_node": 7
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 5,
+        "tilings_in_same_class": [],
+        "trapped_node": 9
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 5,
+        "tilings_in_same_class": [],
+        "trapped_node": 11
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 2,
+        "tilings_in_same_class": [],
+        "trapped_node": 13
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 2,
+        "tilings_in_same_class": [],
+        "trapped_node": 15
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 15,
+        "tilings_in_same_class": [],
+        "trapped_node": 16
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 15,
+        "tilings_in_same_class": [],
+        "trapped_node": 18
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 12,
+        "tilings_in_same_class": [],
+        "trapped_node": 20
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 12,
+        "tilings_in_same_class": [],
+        "trapped_node": 22
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 8,
+        "tilings_in_same_class": [],
+        "trapped_node": 24
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 8,
+        "tilings_in_same_class": [],
+        "trapped_node": 26
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 1,
+        "tilings_in_same_class": [],
+        "trapped_node": 28
+      },
+      {
+        "algebraically_separated": true,
+        "class_id": 1,
+        "tilings_in_same_class": [],
+        "trapped_node": 30
+      }
+    ],
+    "participating_columns": 72,
+    "participating_placements_by_piece": [
+      8,
+      24,
+      16,
+      24
+    ],
+    "piece_ids": [
+      4,
+      5,
+      12,
+      13
+    ],
+    "piece_indices": [
+      4,
+      5,
+      12,
+      13
+    ],
+    "primitive_support_one_moves": 0,
+    "primitive_support_two_moves": 144,
+    "quotient_free_rank": 26,
+    "quotient_paired_trapped_nodes": 0,
+    "quotient_torsion_factors": [],
+    "representative_repairs": [
+      {
+        "changed_piece_ids": [
+          5,
+          12,
+          13
+        ],
+        "changed_piece_indices": [
+          5,
+          12,
+          13
+        ],
+        "changed_piece_positions": [
+          1,
+          2,
+          3
+        ],
+        "degree": 3,
+        "replacements": [
+          {
+            "from_cells": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "piece_id": 5,
+            "piece_index": 5,
+            "piece_position": 1,
+            "to_cells": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "from_cells": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "piece_id": 12,
+            "piece_index": 12,
+            "piece_position": 2,
+            "to_cells": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          },
+          {
+            "from_cells": [
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "piece_id": 13,
+            "piece_index": 13,
+            "piece_position": 3,
+            "to_cells": [
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          }
+        ],
+        "tiling_node": 0,
+        "trapped_node": 1
+      },
+      {
+        "changed_piece_ids": [
+          4,
+          12,
+          13
+        ],
+        "changed_piece_indices": [
+          4,
+          12,
+          13
+        ],
+        "changed_piece_positions": [
+          0,
+          2,
+          3
+        ],
+        "degree": 3,
+        "replacements": [
+          {
+            "from_cells": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "piece_id": 4,
+            "piece_index": 4,
+            "piece_position": 0,
+            "to_cells": [
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          },
+          {
+            "from_cells": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "piece_id": 12,
+            "piece_index": 12,
+            "piece_position": 2,
+            "to_cells": [
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "from_cells": [
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "piece_id": 13,
+            "piece_index": 13,
+            "piece_position": 3,
+            "to_cells": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          }
+        ],
+        "tiling_node": 27,
+        "trapped_node": 1
+      },
+      {
+        "changed_piece_ids": [
+          5,
+          12,
+          13
+        ],
+        "changed_piece_indices": [
+          5,
+          12,
+          13
+        ],
+        "changed_piece_positions": [
+          1,
+          2,
+          3
+        ],
+        "degree": 3,
+        "replacements": [
+          {
+            "from_cells": [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "piece_id": 5,
+            "piece_index": 5,
+            "piece_position": 1,
+            "to_cells": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "from_cells": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ],
+            "piece_id": 12,
+            "piece_index": 12,
+            "piece_position": 2,
+            "to_cells": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          },
+          {
+            "from_cells": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "piece_id": 13,
+            "piece_index": 13,
+            "piece_position": 3,
+            "to_cells": [
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          }
+        ],
+        "tiling_node": 0,
+        "trapped_node": 3
+      }
+    ],
+    "rho_distribution": {
+      "3": 16
+    },
+    "runtime_seconds": 0.649181,
+    "split_hit_classes": 0,
+    "target_automorphism_order": 8,
+    "target_automorphisms": [
+      "id",
+      "rot180",
+      "flip_rows",
+      "flip_cols",
+      "rot90",
+      "rot270",
+      "diag",
+      "antidiag"
+    ],
+    "tiling_node_orbits": [
+      [
+        0,
+        4,
+        8,
+        12,
+        19,
+        23,
+        27,
+        31
+      ]
+    ],
+    "tiling_nodes": 8,
+    "trapped_components": 8,
+    "trapped_node_indices": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "trapped_node_orbits": [
+      [
+        1,
+        5,
+        9,
+        13,
+        18,
+        22,
+        26,
+        30
+      ],
+      [
+        3,
+        7,
+        11,
+        15,
+        16,
+        20,
+        24,
+        28
+      ]
+    ],
+    "trapped_nodes": 16
+  },
+  "runtime_seconds": 0.906539,
+  "schema_version": "p42.robust_p21_quotient.v1",
+  "scope": {
+    "lattice": "participating placements only",
+    "library": "P21",
+    "move_support": "one or two named placements",
+    "nonclaim": "finite exact quotient, not a universal Markov basis",
+    "row": [
+      4,
+      5,
+      12,
+      13
+    ]
+  },
+  "status": "PASS"
+}

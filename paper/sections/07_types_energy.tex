@@ -1,0 +1,147 @@
+\section{Implicit libraries and a sufficient repair potential}
+\label{sec:types-energy}
+
+\subsection{Exact participation types}
+
+\Cref{thm:fpt} concerns a fixed selected named set.  To avoid conflating that
+problem with a search through a large library, fix the following separate
+parameterized problem.  The input is a finite target \(T\), a finite named
+cell-list library \(\mathcal Q\), the explicit orientation action, an integer
+\(Q\), and one of the three predicates in \cref{def:predicates}.  The question
+is whether there is an area-compatible selected set \(E\subseteq\mathcal Q\)
+whose canonical largest name \(L(E)\) satisfies
+\[
+ |T|-|L(E)|\leq Q
+\]
+and whose margin fiber has the requested predicate.  The classification
+version returns one compressed record per behavior class; it does not list
+all named selected sets.
+
+Fix a candidate largest name \(L\), order its legal poses as
+\(\mathcal A_L=(A_1,\ldots,A_s)\), and put \(q_L=|T|-|L|\).  A residual name
+\(P\) is \emph{eligible for \(L\)} when \(|P|<|L|\), or when
+\(|P|=|L|\) and the fixed tie order chooses \(L\) before \(P\).  For
+\(A_j\in\mathcal A_L\), define
+\[
+ b_j=X(T)-X(A_j),\qquad
+ \mathcal M_j(P)=\{B\in\PP_P:X(B)\leq b_j\text{ coordinatewise}\}.
+\]
+Every mask in \(\mathcal M_j(P)\) lies in the active carrier \(G_{A_j}\).
+Use the common labelled carrier
+\[
+ S_L=\bigcup_{j=1}^{s}G_{A_j},
+ \qquad |S_L|\leq h(Q+1)Q^2.
+\]
+
+\begin{definition}[Exact participation type]\label{def:participation-type}
+The exact participation type of a residual name \(P\), relative to \(L\), is
+\[
+ \tau_L(P)=
+ \bigl(|P|,\text{eligibility},
+       (\mathcal M_1(P),\ldots,\mathcal M_s(P))\bigr).
+\]
+Each placement is stored as its actual labelled cell mask in \(S_L\), not as
+an index local to one scenario.  Thus the record retains the identity of a
+placement mask that occurs for more than one largest-piece pose.  Let
+\(m_L(\tau)\) be the number of available residual names of type \(\tau\).
+\end{definition}
+
+\begin{lemma}[Type-isomorphism lemma]\label{lem:type-isomorphism}
+Fix \(L\).  Suppose two residual named multisets
+\((P_1,\ldots,P_r)\) and \((P'_1,\ldots,P'_r)\) admit a bijection \(\sigma\)
+with \(\tau_L(P_i)=\tau_L(P'_{\sigma(i)})\) for every \(i\).  Replacing each
+name by its matched name and retaining the same labelled placement mask gives
+an isomorphism of margin fibers.  This isomorphism maps exact covers to exact
+covers and is a graph isomorphism for both \(\GG^{(2)}\) and
+\(\GG^{(\leq2)}\).
+\end{lemma}
+
+\begin{proof}
+For every ordered pose \(A_j\) of \(L\), equality of types gives exactly the
+same allowed cell masks in every matched residual coordinate.  Hence the
+coordinatewise renaming is a bijection of placement tuples and preserves the
+sum of margin vectors.  Because the actual masks are retained, it also
+preserves the coverage function and therefore the exact-cover sublocus.
+Two tuples differ in a named coordinate before the renaming exactly when
+their images differ in the matched coordinate.  This remains true when the
+largest pose changes: cross-scenario mask identity records which unchanged
+residual coordinates are literally the same placement.  Hamming distance
+one or two, and therefore both replacement graphs, are preserved.
+\end{proof}
+
+\begin{proposition}[Compressed finite-library decision]\label{prop:types}
+The existential problem above and its compressed behavior classification are
+FPT in \((Q,h)\).  For a candidate \(L\), a compressed record contains \(L\),
+an exact participation-type count vector \(k=(k_\tau)_\tau\), the number
+\[
+ \prod_\tau \binom{m_L(\tau)}{k_\tau}
+\]
+of named residual selections represented by that vector, and the resulting
+fiber predicates and counts.
+\end{proposition}
+
+\begin{proof}
+For each candidate \(L\) with \(0\leq q_L\leq Q\), the ordered list of
+largest poses and the carrier \(S_L\) have size bounded by a function of
+\((Q,h)\).  Area, eligibility, and the exact mask family for every ordered
+largest pose therefore yield only \(f(Q,h)\) possible types.  The selected
+residual names are nonempty and have total area \(q_L\), so at most \(Q\) of
+them are chosen.  We may truncate the available multiplicity of every type
+at \(Q\), enumerate the type-count vectors satisfying
+\[
+ \sum_\tau k_\tau\,\operatorname{area}(\tau)=q_L
+\]
+and the eligibility rule, and run \cref{thm:fpt} on one representative of
+each vector.  The type-isomorphism lemma proves that this representative has
+exactly the same fiber, exact-cover sublocus, and move graphs as every named
+selection counted by the displayed product.  Constructing the signatures
+for all candidate largest names is polynomial in the explicit input size;
+all superpolynomial enumeration is confined to a function of \((Q,h)\).
+\end{proof}
+
+\begin{example}[Why literal listing is output-sensitive]
+Take a \(1\times2Q\) target, one named \(Q\)-bar, and \(N\) named monominoes.
+There are \(\binom NQ\) distinct valid named selections.  Consequently the
+literal list of all selections cannot, in general, be produced in total FPT
+time independent of output size.  No Delay-FPT enumerator is claimed here;
+the distinction follows the standard parameterized-enumeration vocabulary
+\cite{CreignouEtAl2017}.
+\end{example}
+\subsection{Overlap energy}
+
+For \(x\in\FFib_E\), define
+\[
+ \Phi(x)=\sum_{u\in T}\max(c_x(u)-1,0).
+\]
+
+\begin{proposition}[Energy identity and strict descent]\label{prop:energy}
+For every margin node \(x\),
+\[
+ \Phi(x)
+ =|T|-\left|\bigcup_i A_i\right|
+ =\frac12\|c_x-\one_T\|_1,
+ \qquad 0\leq\Phi(x)\leq q.
+\]
+Moreover, \(\Phi(x)=0\) exactly when \(x\in\TT_E\).  If every non-tiling node
+has an exact-two neighbor of strictly smaller energy, then the fiber is
+repair-exact and \(\rho(E)\leq q\).
+\end{proposition}
+
+\begin{proof}
+The chosen pose areas sum to \(|T|\), so
+\[
+ \sum_u c_x(u)=|T|.
+\]
+The overlap mass \(\sum_u\max(c_x(u)-1,0)\) is therefore the total area minus
+the size of the covered union.  Also
+\(\sum_u(c_x(u)-1)=0\): positive deviation equals uncovered mass, proving the
+\(\ell_1\) identity.  The largest pose covers \(|T|-q\) distinct cells, so at
+most \(q\) cells can be missing from the union, whence \(0\leq\Phi\leq q\).
+Energy zero is equivalent to unit coverage everywhere.  Finally, repeated
+strict descent in the nonnegative integer \(\Phi\) reaches zero in at most
+\(\Phi(x)\leq q\) steps.
+\end{proof}
+
+Strict descent is sufficient, not necessary.  Certified P21 and P26 rows
+contain repairable nonzero local minima that require a nondecreasing or
+uphill step.  Thus local minima do not characterize trapped components.

@@ -1,0 +1,27 @@
+{
+  "packages": [
+    {
+      "distribution": "pypdf",
+      "import_name": "pypdf",
+      "version": "6.14.2"
+    },
+    {
+      "distribution": "python-flint",
+      "import_name": "flint",
+      "version": "0.9.0"
+    },
+    {
+      "distribution": "sympy",
+      "import_name": "sympy",
+      "version": "1.14.0"
+    }
+  ],
+  "python": {
+    "implementation": "CPython",
+    "historical_t08_version": "3.14.6",
+    "maximum_exclusive": "3.15",
+    "minimum": "3.12",
+    "repository_test_version": "3.12.13"
+  },
+  "schema": "p42.output-t.public-environment.v1"
+}

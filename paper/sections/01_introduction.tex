@@ -1,0 +1,88 @@
+\section{Introduction}\label{sec:introduction}
+
+Tomographic reconstruction asks what can be recovered from projections rather
+than from direct cell data.  In grid tilings the feasible objects are usually
+required to be disjoint exact tilings, possibly with typed projections or a
+fixed tile shape.  This literature already contains reconstruction
+algorithms, hardness results, exact domino models, and heterogeneous or
+polyatomic formulations
+\cite{HermanKuba1999,ChrobakEtAl2003,ChrobakDurr2001,DurrEtAl2000,
+FrosiniSimi2004,FrosiniSimi2005,GritzmannLangfeld2020,
+ChrobakEtAl2012}.  We ask a different, deliberately narrow question.
+Suppose that one named copy of each selected piece is placed inside a target
+and only the \emph{aggregate} row and column margins are required to match.
+Overlaps and holes are allowed at this relaxed stage.  What does that margin
+condition say about exact covers, and how hard is it to recognize the
+possible failure modes?
+
+The distinction matters because a correct aggregate margin vector need not
+certify exact coverage cell by cell.  We separate three predicates:
+
+\begin{enumerate}
+  \item \emph{support}: a nonempty margin fiber contains an exact cover;
+  \item \emph{purity}: every point of the margin fiber is an exact cover;
+  \item \emph{repair}: every fiber component, under replacement of exactly
+        two named placements, contains an exact cover.
+\end{enumerate}
+
+Purity implies repair, and repair implies support, but neither implication
+reverses.  The strictness is witnessed by complete finite certificates for
+three source-locked named libraries.  These witnesses organize the problem;
+the logical implications themselves are elementary, and general
+reconfiguration from infeasible states is prior art
+\cite{FellowsEtAl2023}.
+
+Our main uniform result uses the \emph{largest-piece residual area}
+\[
+  q=|T|-|L|,
+\]
+where \(L\) is a largest selected piece.  Once a legal pose of \(L\) is
+fixed, the residual row and column margins have total mass \(q\).
+Consequently every residual placement that can occur in the margin fiber is
+confined to at most \(q\) active rows, at most \(q\) active columns, and
+hence at most \(q^2\) active cells.  A translation bound then gives at most
+\(h(q+1)\) poses for the largest piece and yields a
+\(2^{O(q\log q)}\) bound on the complete margin fiber for fixed orientation
+bound \(h\).  Enumerating that bounded fiber decides support, purity, and
+exact-two repair.
+
+\subsection{Contributions and scope}
+
+The paper makes the following precise statements.
+
+\begin{itemize}
+  \item We define the named one-copy aggregate-margin fiber and its exact-cover
+        sublocus, together with support, purity, and exact-two repair.
+  \item We prove the active-carrier lemma and fixed-parameter tractability of
+        all three predicates in \((q,h)\) for finite cell-list pieces.
+  \item We give an exact participation-type compression for existential
+        decision and compressed classification in a finite named library,
+        under an explicit residual-area threshold.  Literal listing remains
+        output-sensitive.
+  \item We record a simple overlap energy whose strict descent is sufficient
+        for repair, without claiming necessity.
+  \item We use certified C32, C46, and P49 libraries to separate the three
+        exactness levels.
+  \item In one frozen P21 configuration we distinguish connectivity of a
+        selected nonnegative fiber, integral relation-lattice generation, and
+        all-right-hand-side Markov connectivity.
+\end{itemize}
+
+The only uniform mathematical headline is the active-carrier/FPT theorem.
+We do not claim to introduce heterogeneous tiling tomography, pair
+replacement, infeasible-state repair, or algebraic tiling connectivity.
+Locked pair phenomena and binomial move connectivity for exact tilings have
+already been studied \cite{TuckerFoltz2023,GrossYamzon2021}.  The algebraic
+language in the P21 section is classical
+\cite{DiaconisSturmfels1998,AokiTakemuraYoshida2008,
+CharalambousThomaVladoiu2016}.  No priority or ``first FPT'' claim is made.
+
+\subsection{Organization}
+
+\Cref{sec:model} fixes the finite input contract and the exact-two graph.
+\Cref{sec:exactness,sec:libraries} establish the hierarchy and its finite
+witnesses.  \Cref{sec:localization,sec:fpt} prove localization and the FPT
+theorem.  \Cref{sec:types-energy} treats implicit libraries and the overlap
+potential.  \Cref{sec:p21} gives the bounded algebraic case study.
+\Cref{sec:limits} states the stop boundary.  The appendices record the
+evidence and reproduction contracts.

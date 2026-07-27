@@ -1,0 +1,158 @@
+\section{Certified foundational libraries}\label{sec:libraries}
+
+\subsection{Evidence layers and label conventions}
+
+Each finite statement below is separated into four layers.
+
+\begin{enumerate}
+  \item A source lock records the asset descriptor, signature, direct locator,
+        access date, and SHA-256 digest.  The rasters are not redistributed.
+  \item A discrete normalization records the target cells, named piece masks,
+        coordinate convention, and full \(D_4\) pose convention.
+  \item An exact-cover census gives all tilings for every positive
+        area-compatible row and exhaustive zero certificates for the rest.
+  \item An independent tomographic replay reconstructs every margin fiber,
+        exact-cover subset, and exact-two graph downstream of the frozen
+        normalized transcription.
+\end{enumerate}
+
+The finite libraries C32, C46, and P49 are normalized from \(4\times4\)
+geomagic specimens created and published by Lee Sallows
+\cite{Sallows2011,SallowsGallery}.  The piece geometry, targets, and displayed
+arrangements are Sallows' source material; Peter Cameron's finite
+group-action formulation is prior conceptual context \cite{Cameron2011}.
+The present project's contribution begins with the source-locked discrete
+normalization and consists of exhaustive pose and exact-cover censuses,
+aggregate-margin fibers, replacement graphs, and the uniform
+largest-piece-localization theorem.  We do not claim authorship of the
+underlying geomagic specimens.  The 86-row additive carrier shared by C32
+and C46 is imported and is not presented as a new additive theorem.
+
+C32 and C46 have distinct piece areas \(1,\ldots,16\), so a selected row lists
+both labels and areas.  P49 has repeated areas; its row tuples always list
+zero-based locked piece indices.  In particular,
+\((4,9,10,11)\) has areas \(\{4,13,1,14\}\), whereas
+\((0,1,3,14)\) has areas \(\{15,2,3,12\}\).
+
+\subsection{Source locks}
+
+C32 is the Sallows gallery asset \emph{4x4 Durer5}, signed LS 11-06, with locked SHA-256
+\[
+\mathtt{c6093ccd58e725d6efde1750cccf47124a56d6a335fbe3c9b70c8ef66a9bf2cb}.
+\]
+Its target is a \(6\times6\) square with zero-based holes \((1,1)\) and
+\((4,4)\).  Of twenty displayed panels, twelve already use these holes and
+eight use the horizontal reflection.  Reflecting the latter group into the
+canonical target gives sixteen distinct labelled tilings.
+
+C46 is the Sallows gallery asset \emph{4x4 most perfect (2b)}, signed LS
+4-09, with locked SHA-256
+\[
+\mathtt{86430abfcfe5793fecdedf42a84a0e4f08e16636e5691ab25cf4509e9c69ef00}.
+\]
+It uses the same target and area-labelled piece convention.  Its 36 displayed
+panels agree on the target mask and on the recovered connected color
+components.
+
+P49 is the source-locked Sallows specimen \emph{Art of Fugue}, signed LS
+7-09, with locked SHA-256
+\[
+\mathtt{77efa6d693726aa026fce49e14480b933606ce552ff51a24eca453626d175c1e}.
+\]
+Its target is a \(6\times6\) square with the four corners removed.  Its
+zero-based area sequence is
+\[
+ (15,2,12,3,4,11,7,10,4,13,1,14,9,6,12,5).
+\]
+
+\begin{proposition}[Complete finite panel]\label{prop:finite-panel}
+Under the locked models and the semantics of \cref{sec:model}, the complete
+area-compatible carriers have the following exact behavior.
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrrrlll@{}}
+\toprule
+Library & Rows & Tile/zero & Margin & Fiber \(=\) tile+extra
+& Support & Pure & Repair\\
+\midrule
+C32 & 86 & \(20/66\) & 20 & \(136=136+0\)
+& yes & yes & yes, \(\rho=0\)\\
+C46 & 86 & \(44/42\) & 44 & \(352=344+8\)
+& yes & no & yes, \(\rho=1\)\\
+P49 & 94 & \(60/34\) & 61 & \(1344=1208+136\)
+& no & no & no\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{proposition}
+
+Here \emph{Margin} is the number of nonempty margin fibers, while
+\emph{Tile/zero} and the displayed fiber decomposition report the corresponding
+tiling counts and exhaustive zero certificates.  Thus no positive exactness
+label is stated without accompanying existence data.
+
+\begin{proof}
+For each locked catalogue, the primary enumerator exhausts every
+area-compatible row and stores complete labelled exact covers or a zero
+certificate.  A separately implemented replay regenerates \(D_4\) poses,
+constructs the fibers by direct \(2+2\) meet-in-the-middle matching, and
+agrees on every row count, edge count, component, radius, and verdict.
+Positive and negative controls pass, while the registered adversarial
+mutations are rejected.  Exact commands and artifact paths appear in
+\cref{app:evidence,app:reproduction}.
+\end{proof}
+
+The replay is an independent downstream enumeration from these frozen
+normalized transcriptions.  Because the original source rasters are not
+redistributed, the reviewer package does not independently reproduce image
+acquisition, segmentation, or transcription from Sallows' raster bytes.  It
+verifies the normalized model and every mathematical deduction downstream of
+that source lock.
+
+\subsection{Witness rows}
+
+C32 has 136 margin nodes and every one is an exact cover.  It is therefore
+pure.  Seven of its positive rows are non-affine; this is useful as a warning
+against an affine-selection characterization but is not needed below.
+
+C46 has 344 tilings and eight non-tiling margin matches.  All eight extras
+occur in two rows:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Row & Fiber & Tilings & Extras & Components & Edges & Radius\\
+\midrule
+\(\{1,3,14,16\}\) & 20 & 16 & 4 & 2 & 22 & 1\\
+\(\{2,3,13,16\}\) & 8 & 4 & 4 & 4 & 4 & 1\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Every extra is adjacent to a tiling.  Hence C46 is repair-exact but not pure.
+The eight positive rows not displayed in the source are described only as
+\emph{not source-displayed}: the source never claimed that its panel list was
+exhaustive.
+
+P49 has two independent failure modes:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Indices & Fiber & Tilings & Extras & Components & Edges
+& Trapped comps./nodes\\
+\midrule
+\((4,9,10,11)\) & 24 & 8 & 16 & 16 & 8 & \(8/8\)\\
+\((0,1,3,14)\) & 8 & 0 & 8 & 8 & 0 & \(8/8\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In the first row, eight extras pair with tilings and eight extras are
+\emph{eight separate singleton components}.  In the second row, all eight
+nodes are trapped singletons and no tiling exists.  Across P49 there are
+sixteen trapped components.  This corrects the inaccurate shorthand of one
+eight-node trapped component.

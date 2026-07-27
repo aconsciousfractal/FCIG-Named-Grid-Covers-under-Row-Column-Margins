@@ -1,0 +1,98 @@
+\section{Named exact covers and tomographic fibers}\label{sec:model}
+
+\subsection{Finite placement model}
+
+Let \(T\subset\ZZ^2\) be a finite target cell set.  A library consists of
+nonempty, named, finite cell-list pieces.  Legal poses are obtained from a
+supplied finite orientation group \(H\), with \(|H|\leq h\), followed by
+integer translations; every legal pose must be contained in \(T\).
+Explicitly, each \(g\in H\) acts by a lattice automorphism
+\(g:\ZZ^2\to\ZZ^2\), the input supplies the action (or names one fixed
+action), and the pose catalogue consists of the distinct cell masks
+\(gP+t\subseteq T\).  Repeated masks produced by symmetries are identified.
+Names remain distinct even if two pieces have the same shape or area.
+
+Fix a selected named set
+\[
+  E=\{P_0,\ldots,P_r\},\qquad \sum_{i=0}^r |P_i|=|T|.
+\]
+The area equality is part of the decision domain.  Area-incompatible
+selections are rejected during preprocessing.  Write \(\PP_i\) for the
+finite catalogue of legal poses of \(P_i\).
+
+For a cell set \(A\subseteq T\), let \(X(A)\) be its joint row-and-column
+margin vector.  A one-copy placement tuple is
+\[
+  x=(A_0,\ldots,A_r)\in\prod_{i=0}^r\PP_i.
+\]
+Its cell coverage is
+\[
+  c_x(u)=|\{i:u\in A_i\}|,\qquad u\in T.
+\]
+
+\begin{definition}[Margin fiber and exact-cover sublocus]\label{def:fiber}
+For the target margin \(X(T)\), define
+\[
+  \FFib_E=\left\{x:\sum_i X(A_i)=X(T)\right\}
+\]
+and
+\[
+  \TT_E=\{x\in\FFib_E:c_x=\one_T\}.
+\]
+Thus \(\TT_E\subseteq\FFib_E\).  Points of \(\FFib_E\setminus\TT_E\)
+may have overlaps and uncovered cells, but every chosen pose still lies in
+the target.
+\end{definition}
+
+The row and column margins are aggregate: the contribution of a piece name
+is not separately observed.  This differs from typed projections that record
+one margin vector per tile type.  It also differs from exact tiling models in
+which disjointness is imposed before the projection constraints.
+
+\subsection{The replacement graph}
+
+\begin{definition}[Exact-two replacement graph]\label{def:graph}
+The graph \(\GG_E^{(2)}\) has vertex set \(\FFib_E\).  Two distinct tuples
+are adjacent precisely when they differ in exactly two named coordinates.
+\end{definition}
+
+An edge is one graph step, although its endpoints have Hamming distance two
+as named placement tuples.  We also use the explicitly labelled variant
+\(\GG_E^{(\leq2)}\), which adds edges between tuples differing in one named
+coordinate.  These graphs need not agree.  Every unqualified repair
+statement in this paper refers to \(\GG_E^{(2)}\).
+
+\begin{definition}[Three exactness predicates]\label{def:predicates}
+For every area-compatible selected set \(E\), define the following three
+Boolean predicates:
+\begin{itemize}
+  \item \emph{support-exact} if
+        \(\FFib_E\neq\varnothing\) exactly when
+        \(\TT_E\neq\varnothing\);
+  \item \emph{fiber-pure} if \(\FFib_E=\TT_E\);
+  \item \emph{repair-exact} if every connected component of
+        \(\GG_E^{(2)}\) meets \(\TT_E\).
+\end{itemize}
+If repair-exactness holds, the repair radius is
+\[
+  \rho(E)=\max_{x\in\FFib_E}\dist_{\GG_E^{(2)}}(x,\TT_E).
+\]
+\end{definition}
+
+Equivalently, a finite library has any one of these properties on a declared
+selection domain \(\mathcal D\) when the corresponding predicate holds for
+every \(E\in\mathcal D\).  Finite-library tables in this paper always state
+their domain explicitly.  Empty fibers satisfy all three predicates
+vacuously and have radius zero.
+If a component is disjoint from \(\TT_E\), its vertices are called
+\emph{trapped}; they are not assigned a finite repair distance.
+
+\subsection{Input-size contract}
+
+The target and piece masks are explicit finite cell lists.  The orientation
+group is supplied explicitly by its lattice action, or by a fixed named
+lattice action of size at most \(h\).
+Translations and margin vectors use binary-encoded integer coordinates.
+The input length \(|I|\) includes these lists and coordinates.  The theorem
+does not address arbitrary continuous bodies, oracle-described shapes,
+unlimited tile multiplicities, or anonymous tile types.

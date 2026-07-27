@@ -1,0 +1,1354 @@
+{
+  "affine_selection": {
+    "ambient_affine_rows": 52,
+    "ambient_non_affine_rows": 34,
+    "displayed_affine_rows": 10,
+    "displayed_non_affine_rows": 0,
+    "positive_affine": [
+      [
+        1,
+        4,
+        14,
+        15
+      ],
+      [
+        1,
+        5,
+        12,
+        16
+      ],
+      [
+        1,
+        7,
+        10,
+        16
+      ],
+      [
+        1,
+        8,
+        12,
+        13
+      ],
+      [
+        2,
+        3,
+        13,
+        16
+      ],
+      [
+        2,
+        5,
+        11,
+        16
+      ],
+      [
+        2,
+        6,
+        11,
+        15
+      ],
+      [
+        2,
+        7,
+        11,
+        14
+      ],
+      [
+        3,
+        6,
+        10,
+        15
+      ],
+      [
+        4,
+        5,
+        9,
+        16
+      ],
+      [
+        4,
+        6,
+        11,
+        13
+      ],
+      [
+        5,
+        8,
+        10,
+        11
+      ],
+      [
+        6,
+        7,
+        9,
+        12
+      ]
+    ],
+    "positive_affine_rows": 13,
+    "positive_non_affine": [
+      [
+        1,
+        7,
+        11,
+        15
+      ],
+      [
+        1,
+        9,
+        11,
+        13
+      ],
+      [
+        2,
+        6,
+        10,
+        16
+      ],
+      [
+        2,
+        9,
+        11,
+        12
+      ],
+      [
+        3,
+        5,
+        11,
+        15
+      ],
+      [
+        3,
+        7,
+        11,
+        13
+      ],
+      [
+        6,
+        7,
+        8,
+        13
+      ]
+    ],
+    "positive_non_affine_rows": 7,
+    "verdict": "REFUTED_ON_C32: seven exact realizations are non-affine"
+  },
+  "claim_boundary": {
+    "level": "certified finite C32 analysis",
+    "not_claimed": [
+      "a general affine-selection theorem",
+      "a general support-exactness theorem",
+      "a general repair theorem",
+      "a general coherent-geomagic theorem",
+      "source error from the ten undisplayed positive rows"
+    ]
+  },
+  "coherent": {
+    "fully_coherent_assignments": 0,
+    "line_tiling_counts": {
+      "columns": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "diagonals": [
+        4,
+        4
+      ],
+      "rows": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "row_coherent_assignments": 256,
+    "row_column_coherent_assignments": 0,
+    "successive_column_filter_counts": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "successive_diagonal_filter_counts": [
+      0,
+      0
+    ],
+    "verdict": "NOT_COHERENT_SEMIGEOMAGIC: row-coherent sections collapse under columns"
+  },
+  "input": {
+    "certificate_path": "packages/package_b_c32_durer_realization/realization/R_certificates.json",
+    "certificate_sha256": "802776741190184481d20bf01190564105b0eca840692abf9d53d4246e9ddca4"
+  },
+  "realization": {
+    "additive_rows": 86,
+    "negative_rows": 66,
+    "positive_not_source_displayed": [
+      [
+        1,
+        5,
+        12,
+        16
+      ],
+      [
+        1,
+        7,
+        11,
+        15
+      ],
+      [
+        1,
+        9,
+        11,
+        13
+      ],
+      [
+        2,
+        5,
+        11,
+        16
+      ],
+      [
+        2,
+        6,
+        10,
+        16
+      ],
+      [
+        2,
+        6,
+        11,
+        15
+      ],
+      [
+        2,
+        9,
+        11,
+        12
+      ],
+      [
+        3,
+        5,
+        11,
+        15
+      ],
+      [
+        3,
+        7,
+        11,
+        13
+      ],
+      [
+        6,
+        7,
+        8,
+        13
+      ]
+    ],
+    "positive_not_source_displayed_rows": 10,
+    "positive_quads": [
+      [
+        1,
+        4,
+        14,
+        15
+      ],
+      [
+        1,
+        5,
+        12,
+        16
+      ],
+      [
+        1,
+        7,
+        10,
+        16
+      ],
+      [
+        1,
+        7,
+        11,
+        15
+      ],
+      [
+        1,
+        8,
+        12,
+        13
+      ],
+      [
+        1,
+        9,
+        11,
+        13
+      ],
+      [
+        2,
+        3,
+        13,
+        16
+      ],
+      [
+        2,
+        5,
+        11,
+        16
+      ],
+      [
+        2,
+        6,
+        10,
+        16
+      ],
+      [
+        2,
+        6,
+        11,
+        15
+      ],
+      [
+        2,
+        7,
+        11,
+        14
+      ],
+      [
+        2,
+        9,
+        11,
+        12
+      ],
+      [
+        3,
+        5,
+        11,
+        15
+      ],
+      [
+        3,
+        6,
+        10,
+        15
+      ],
+      [
+        3,
+        7,
+        11,
+        13
+      ],
+      [
+        4,
+        5,
+        9,
+        16
+      ],
+      [
+        4,
+        6,
+        11,
+        13
+      ],
+      [
+        5,
+        8,
+        10,
+        11
+      ],
+      [
+        6,
+        7,
+        8,
+        13
+      ],
+      [
+        6,
+        7,
+        9,
+        12
+      ]
+    ],
+    "positive_rows": 20,
+    "source_displayed_rows": 10
+  },
+  "row_column_fiber": {
+    "delta_x": 0,
+    "directions": [
+      "row",
+      "column"
+    ],
+    "extra_non_tiling_nodes": 0,
+    "false_positive_rows": [],
+    "fiber_pure": true,
+    "impure_rows": [],
+    "margin_feasible_rows": 20,
+    "repair_exact": true,
+    "rows": [
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          2,
+          15,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          3,
+          14,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          4,
+          13,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          1,
+          4,
+          14,
+          15
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 20,
+        "source_piece_ids": [
+          1,
+          5,
+          12,
+          16
+        ],
+        "tiling_nodes": 20
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          5,
+          13,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          6,
+          11,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          6,
+          12,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          6,
+          13,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          1,
+          7,
+          10,
+          16
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 16,
+        "source_piece_ids": [
+          1,
+          7,
+          11,
+          15
+        ],
+        "tiling_nodes": 16
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          7,
+          12,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          8,
+          9,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          8,
+          10,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          8,
+          11,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          1,
+          8,
+          12,
+          13
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          9,
+          10,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 8,
+        "source_piece_ids": [
+          1,
+          9,
+          11,
+          13
+        ],
+        "tiling_nodes": 8
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          1,
+          10,
+          11,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          2,
+          3,
+          13,
+          16
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          3,
+          14,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          4,
+          12,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          4,
+          13,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          2,
+          5,
+          11,
+          16
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          5,
+          12,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          5,
+          13,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          2,
+          6,
+          10,
+          16
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 16,
+        "source_piece_ids": [
+          2,
+          6,
+          11,
+          15
+        ],
+        "tiling_nodes": 16
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          6,
+          12,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          7,
+          9,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          7,
+          10,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          2,
+          7,
+          11,
+          14
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          7,
+          12,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          8,
+          9,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          8,
+          10,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          8,
+          11,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          2,
+          9,
+          10,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          2,
+          9,
+          11,
+          12
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          4,
+          11,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          4,
+          12,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          4,
+          13,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          5,
+          10,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 16,
+        "source_piece_ids": [
+          3,
+          5,
+          11,
+          15
+        ],
+        "tiling_nodes": 16
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          5,
+          12,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          6,
+          9,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          3,
+          6,
+          10,
+          15
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          6,
+          11,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          6,
+          12,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          7,
+          8,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          7,
+          9,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          7,
+          10,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          3,
+          7,
+          11,
+          13
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          8,
+          9,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          8,
+          10,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          8,
+          11,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          3,
+          9,
+          10,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          4,
+          5,
+          9,
+          16
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          5,
+          10,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          5,
+          11,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          5,
+          12,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          6,
+          8,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          6,
+          9,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          6,
+          10,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          4,
+          6,
+          11,
+          13
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          7,
+          8,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          7,
+          9,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          7,
+          10,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          7,
+          11,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          8,
+          9,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          8,
+          10,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          4,
+          9,
+          10,
+          11
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          6,
+          7,
+          16
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          6,
+          8,
+          15
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          6,
+          9,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          6,
+          10,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          6,
+          11,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          7,
+          8,
+          14
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          7,
+          9,
+          13
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          7,
+          10,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          5,
+          8,
+          9,
+          12
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          5,
+          8,
+          10,
+          11
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          6,
+          7,
+          8,
+          13
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 4,
+        "source_piece_ids": [
+          6,
+          7,
+          9,
+          12
+        ],
+        "tiling_nodes": 4
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          6,
+          7,
+          10,
+          11
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          6,
+          8,
+          9,
+          11
+        ],
+        "tiling_nodes": 0
+      },
+      {
+        "extra_nodes": 0,
+        "margin_nodes": 0,
+        "source_piece_ids": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "tiling_nodes": 0
+      }
+    ],
+    "support_exact": true,
+    "target_xray": [
+      6,
+      5,
+      6,
+      6,
+      5,
+      6,
+      6,
+      5,
+      6,
+      6,
+      5,
+      6
+    ],
+    "tiling_nodes": 136,
+    "tomographic_closure_in_declared_dictionary": 2,
+    "total_fiber_nodes": 136
+  },
+  "schema_version": "p42.c32.structural_analysis.v1"
+}

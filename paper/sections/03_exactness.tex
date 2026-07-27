@@ -1,0 +1,50 @@
+\section{Three levels of tomographic exactness}\label{sec:exactness}
+
+\begin{proposition}[Exactness hierarchy]\label{prop:hierarchy}
+For every area-compatible selected set,
+\[
+  \text{fiber purity}\ \Longrightarrow\
+  \text{repair-exactness}\ \Longrightarrow\
+  \text{support-exactness}.
+\]
+\end{proposition}
+
+\begin{proof}
+If \(\FFib_E=\TT_E\), every graph vertex is already an exact cover, so every
+component meets \(\TT_E\).  If repair-exactness holds and the fiber is
+nonempty, choose any component; it contains a point of \(\TT_E\).  The reverse
+implication \(\TT_E\neq\varnothing\Rightarrow\FFib_E\neq\varnothing\)
+always holds because \(\TT_E\subseteq\FFib_E\).  The empty case follows from
+the conventions in \cref{def:predicates}.
+\end{proof}
+
+The value of \cref{prop:hierarchy} is organizational rather than logical
+difficulty.  Generic discovery of a feasible solution from an infeasible
+state under restricted modifications belongs to the wider reconfiguration
+literature \cite{FellowsEtAl2023}.  Here the predicates are tied to one
+specific aggregate tomographic relaxation and one specific named
+replacement graph.
+
+\begin{proposition}[Strictness in locked finite libraries]
+\label{prop:strictness}
+Neither implication in \cref{prop:hierarchy} reverses within the certified
+finite named-library class:
+\begin{enumerate}
+  \item C46 is repair-exact with radius one but is not fiber-pure.
+  \item The P49 row of zero-based indices \((4,9,10,11)\) is support-exact,
+        but eight non-tiling nodes are trapped singleton components.
+  \item In a separate failure, the P49 row \((0,1,3,14)\) has a nonempty
+        margin fiber and no exact cover.
+\end{enumerate}
+C32 is a positive pure anchor.
+\end{proposition}
+
+\begin{proof}
+All assertions follow from the exhaustive finite proposition in
+\cref{prop:finite-panel}; the certificate and independent replay contract is
+recorded in \cref{app:evidence}.
+\end{proof}
+
+These examples prove non-collapse of the predicates in the locked model.
+They do not classify shapes, characterize repairability, or imply that
+impure fibers normally repair.

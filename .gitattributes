@@ -1,0 +1,21 @@
+# Normalize shipped text for reproducible hashes.
+*.py    text eol=lf
+*.md    text eol=lf
+*.tex   text eol=lf
+*.cff   text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.mat   text eol=lf
+*.sign  text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+SHA256SUMS text eol=lf
+paper/*.log text eol=lf
+*.pdf   binary
+
+# Preserve byte-frozen historical/replay evidence exactly as produced.
+external_reviews/** -text
+results/p42_tomographic_manuscript_verification.json -text

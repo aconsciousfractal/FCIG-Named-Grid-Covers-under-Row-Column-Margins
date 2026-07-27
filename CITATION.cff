@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this manuscript or its verification package, please cite it as below."
+title: "Named Grid Covers under Row--Column Margins: Three Exactness Levels and Largest-Piece Localization"
+type: software
+authors:
+  - family-names: Babanskyy
+    given-names: Oleksiy
+    orcid: "https://orcid.org/0009-0001-6176-6208"
+repository-code: "https://github.com/aconsciousfractal/FCIG-Named-Grid-Covers-under-Row-Column-Margins"
+license: MIT
+keywords:
+  - discrete-tomography
+  - exact-cover
+  - fixed-parameter-tractability
+  - named-grid-pieces
+  - row-column-margins
+  - reconfiguration
+  - Markov-bases
+  - reproducibility
+abstract: >-
+  A finite named-piece exact-cover model under row-column margins with three
+  exactness levels (support, purity, and exact-two-replacement repair), exact
+  C32/C46/P49 separation witnesses, and a fixed-parameter theorem in the
+  largest-piece residual area. A bounded P21 case study separates fixed-fiber
+  connectivity, integral lattice generation, and all-right-hand-side Markov
+  connectivity. Classical surrounding results and source specimens are
+  attributed; no priority or firstness is claimed.

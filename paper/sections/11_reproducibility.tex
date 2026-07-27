@@ -1,0 +1,42 @@
+\section{Reproducibility contract}\label{app:reproduction}
+
+All commands below are run from the repository root with Python in UTF-8,
+no-bytecode mode and the exact environment in \path{requirements.txt}.
+
+\subsection{Manifest and core replay}
+
+\begin{verbatim}
+python -X utf8 -B scripts/verify.py --profile manifest
+python -X utf8 -B scripts/verify.py --profile core
+\end{verbatim}
+
+The core profile checks the complete frozen manifest, manuscript/PDF receipt,
+C32 and C46 realization certificates, the P21/P26/P49 specimen locks, both
+residual-area producers, an integrated P21 smoke replay, archive-level
+checksums, import closure, and repository policy.
+
+\subsection{Full mutation and P21 replay}
+
+\begin{verbatim}
+python -X utf8 -B scripts/verify.py --profile full
+\end{verbatim}
+
+The full profile adds all three mutation suites.  Its integrated P21 verifier
+reconstructs the 72 participating columns, 7,444
+support-four relations, 1,119 target orbits, rank-nine quotient, minimum
+triples, and Markov obstructions without importing the principal
+support-four analysis file.  It then repeats the full replay in a temporary
+tree containing only the manifest allowlist; this detects hidden dependencies
+on virtual environments, caches, build debris, or unshipped files.
+
+\subsection{Manuscript verification}
+
+The manuscript static verifier checks the frozen section order, labels,
+citations, load-bearing theorem fragments, no-firstness boundary, and
+presence of the built PDF.  The PDF is then reopened, text-extracted for
+sanity, rendered to PNG, and visually inspected page by page.  Build and
+verification commands are in \texttt{paper/BUILD.md}.
+
+The code and result filenames beginning with \texttt{coarea\_} are stable
+legacy artifact identifiers.  In the mathematical prose the parameter is
+called the largest-piece residual area.

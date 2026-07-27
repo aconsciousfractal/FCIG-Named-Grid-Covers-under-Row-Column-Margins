@@ -1,0 +1,583 @@
+{
+  "schema": "p42.single_block_markov_degree_census.v1",
+  "row": [
+    4,
+    5,
+    12,
+    13
+  ],
+  "piece_block_sizes": [
+    8,
+    24,
+    16,
+    24
+  ],
+  "degrees": {
+    "0": {
+      "2": {
+        "monomials": 36,
+        "fibers": 34,
+        "betti_fibers": 2,
+        "minimum_generators_in_degree": 2,
+        "fiber_size_profile": {
+          "2": 2
+        },
+        "component_size_profile": {
+          "(1, 1)": 2
+        },
+        "first_betti_witness": {
+          "rhs": [
+            5,
+            2,
+            0,
+            2,
+            5,
+            3,
+            2,
+            4,
+            2,
+            3
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "3": {
+        "monomials": 120,
+        "fibers": 104,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "4": {
+        "monomials": 330,
+        "fibers": 259,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "5": {
+        "monomials": 792,
+        "fibers": 560,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "6": {
+        "monomials": 1716,
+        "fibers": 1092,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "7": {
+        "monomials": 3432,
+        "fibers": 1968,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      }
+    },
+    "1": {
+      "2": {
+        "monomials": 300,
+        "fibers": 270,
+        "betti_fibers": 30,
+        "minimum_generators_in_degree": 30,
+        "fiber_size_profile": {
+          "2": 30
+        },
+        "component_size_profile": {
+          "(1, 1)": 30
+        },
+        "first_betti_witness": {
+          "rhs": [
+            6,
+            6,
+            0,
+            0,
+            0,
+            1,
+            4,
+            2,
+            4,
+            1
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "3": {
+        "monomials": 2600,
+        "fibers": 1960,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "4": {
+        "monomials": 17550,
+        "fibers": 10605,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "5": {
+        "monomials": 98280,
+        "fibers": 46032,
+        "betti_fibers": 336,
+        "minimum_generators_in_degree": 336,
+        "fiber_size_profile": {
+          "2": 168,
+          "4": 84,
+          "6": 84
+        },
+        "component_size_profile": {
+          "(1, 1)": 168,
+          "(2, 2)": 84,
+          "(3, 3)": 84
+        },
+        "first_betti_witness": {
+          "rhs": [
+            11,
+            10,
+            3,
+            6,
+            0,
+            4,
+            8,
+            6,
+            8,
+            4
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "6": {
+        "monomials": 475020,
+        "fibers": 167254,
+        "betti_fibers": 762,
+        "minimum_generators_in_degree": 762,
+        "fiber_size_profile": {
+          "2": 464,
+          "4": 284,
+          "6": 8,
+          "10": 4,
+          "12": 2
+        },
+        "component_size_profile": {
+          "(1, 1)": 464,
+          "(1, 3)": 8,
+          "(2, 2)": 276,
+          "(3, 3)": 8,
+          "(5, 5)": 4,
+          "(6, 6)": 2
+        },
+        "first_betti_witness": {
+          "rhs": [
+            18,
+            12,
+            2,
+            4,
+            0,
+            4,
+            10,
+            8,
+            10,
+            4
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "7": {
+        "monomials": 2035800,
+        "fibers": 524064,
+        "betti_fibers": 48,
+        "minimum_generators_in_degree": 48,
+        "fiber_size_profile": {
+          "6": 16,
+          "10": 16,
+          "13": 16
+        },
+        "component_size_profile": {
+          "(1, 5)": 16,
+          "(3, 10)": 16,
+          "(5, 5)": 16
+        },
+        "first_betti_witness": {
+          "rhs": [
+            7,
+            14,
+            9,
+            10,
+            2,
+            6,
+            14,
+            6,
+            12,
+            4
+          ],
+          "fiber_size": 10,
+          "component_sizes": [
+            5,
+            5
+          ]
+        }
+      }
+    },
+    "2": {
+      "2": {
+        "monomials": 136,
+        "fibers": 124,
+        "betti_fibers": 12,
+        "minimum_generators_in_degree": 12,
+        "fiber_size_profile": {
+          "2": 12
+        },
+        "component_size_profile": {
+          "(1, 1)": 12
+        },
+        "first_betti_witness": {
+          "rhs": [
+            4,
+            1,
+            2,
+            1,
+            4,
+            3,
+            4,
+            2,
+            2,
+            1
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "3": {
+        "monomials": 816,
+        "fibers": 640,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "4": {
+        "monomials": 3876,
+        "fibers": 2514,
+        "betti_fibers": 16,
+        "minimum_generators_in_degree": 16,
+        "fiber_size_profile": {
+          "2": 16
+        },
+        "component_size_profile": {
+          "(1, 1)": 16
+        },
+        "first_betti_witness": {
+          "rhs": [
+            13,
+            4,
+            4,
+            3,
+            0,
+            13,
+            4,
+            4,
+            3,
+            0
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "5": {
+        "monomials": 15504,
+        "fibers": 8080,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "6": {
+        "monomials": 54264,
+        "fibers": 22183,
+        "betti_fibers": 54,
+        "minimum_generators_in_degree": 54,
+        "fiber_size_profile": {
+          "2": 24,
+          "4": 30
+        },
+        "component_size_profile": {
+          "(1, 1)": 24,
+          "(2, 2)": 30
+        },
+        "first_betti_witness": {
+          "rhs": [
+            22,
+            6,
+            6,
+            2,
+            0,
+            9,
+            6,
+            6,
+            6,
+            9
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "7": {
+        "monomials": 170544,
+        "fibers": 53688,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      }
+    },
+    "3": {
+      "2": {
+        "monomials": 300,
+        "fibers": 270,
+        "betti_fibers": 30,
+        "minimum_generators_in_degree": 30,
+        "fiber_size_profile": {
+          "2": 30
+        },
+        "component_size_profile": {
+          "(1, 1)": 30
+        },
+        "first_betti_witness": {
+          "rhs": [
+            6,
+            6,
+            0,
+            0,
+            0,
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "3": {
+        "monomials": 2600,
+        "fibers": 1876,
+        "betti_fibers": 84,
+        "minimum_generators_in_degree": 84,
+        "fiber_size_profile": {
+          "2": 84
+        },
+        "component_size_profile": {
+          "(1, 1)": 84
+        },
+        "first_betti_witness": {
+          "rhs": [
+            10,
+            6,
+            1,
+            1,
+            0,
+            4,
+            4,
+            2,
+            4,
+            4
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "4": {
+        "monomials": 17550,
+        "fibers": 9437,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "5": {
+        "monomials": 98280,
+        "fibers": 37800,
+        "betti_fibers": 0,
+        "minimum_generators_in_degree": 0,
+        "fiber_size_profile": {},
+        "component_size_profile": {},
+        "first_betti_witness": null
+      },
+      "6": {
+        "monomials": 475020,
+        "fibers": 127798,
+        "betti_fibers": 78,
+        "minimum_generators_in_degree": 78,
+        "fiber_size_profile": {
+          "2": 8,
+          "4": 8,
+          "6": 24,
+          "8": 16,
+          "10": 20,
+          "12": 2
+        },
+        "component_size_profile": {
+          "(1, 1)": 8,
+          "(1, 3)": 8,
+          "(1, 5)": 16,
+          "(3, 3)": 8,
+          "(3, 5)": 16,
+          "(5, 5)": 20,
+          "(6, 6)": 2
+        },
+        "first_betti_witness": {
+          "rhs": [
+            10,
+            12,
+            9,
+            5,
+            0,
+            10,
+            12,
+            9,
+            5,
+            0
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      },
+      "7": {
+        "monomials": 2035800,
+        "fibers": 378408,
+        "betti_fibers": 204,
+        "minimum_generators_in_degree": 204,
+        "fiber_size_profile": {
+          "2": 60,
+          "4": 60,
+          "6": 40,
+          "8": 20,
+          "10": 20,
+          "12": 4
+        },
+        "component_size_profile": {
+          "(1, 1)": 60,
+          "(2, 2)": 60,
+          "(3, 3)": 40,
+          "(4, 4)": 20,
+          "(5, 5)": 20,
+          "(6, 6)": 4
+        },
+        "first_betti_witness": {
+          "rhs": [
+            18,
+            14,
+            5,
+            5,
+            0,
+            4,
+            10,
+            14,
+            10,
+            4
+          ],
+          "fiber_size": 2,
+          "component_sizes": [
+            1,
+            1
+          ]
+        }
+      }
+    }
+  },
+  "highest_certified_Betti_degree": 7,
+  "Markov_degree_lower_bound": 7,
+  "canonical_degree_seven_witness": {
+    "block": 3,
+    "degree": 7,
+    "rhs": [
+      18,
+      14,
+      5,
+      5,
+      0,
+      4,
+      10,
+      14,
+      10,
+      4
+    ],
+    "monomials": [
+      [
+        0,
+        0,
+        5,
+        5,
+        5,
+        8,
+        8
+      ],
+      [
+        3,
+        3,
+        4,
+        4,
+        6,
+        6,
+        6
+      ]
+    ]
+  }
+}

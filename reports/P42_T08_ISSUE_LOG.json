@@ -1,0 +1,21 @@
+{
+  "decision": "PASS_INTERNAL_REVIEW",
+  "gate": "T-08",
+  "issues": [
+    {"id":"T08-001","severity":1,"status":"CLOSED","resolution":"Sallows attribution and source-ownership boundary added"},
+    {"id":"T08-002","severity":1,"status":"CLOSED","resolution":"Exact Python and dependency lock with preflight"},
+    {"id":"T08-003","severity":1,"status":"CLOSED","resolution":"Pre/post manifest, semantic, and byte-snapshot equality"},
+    {"id":"T08-004","severity":1,"status":"CLOSED","resolution":"Qualified title and largest-piece residual-area terminology"},
+    {"id":"T08-005","severity":2,"status":"CLOSED","resolution":"Implicit problem input and Q threshold formalized"},
+    {"id":"T08-006","severity":2,"status":"CLOSED","resolution":"Type-isomorphism lemma added"},
+    {"id":"T08-007","severity":2,"status":"CLOSED","resolution":"Normalized-mask replay separated from raster reconstruction"},
+    {"id":"T08-008","severity":2,"status":"CLOSED","resolution":"P49 corrected to 94 rows over 16 names"},
+    {"id":"T08-009","severity":2,"status":"CLOSED","resolution":"Realpath, symlink, import and literal subprocess closure gates"},
+    {"id":"T08-010","severity":3,"status":"CLOSED","resolution":"Library predicates quantified over declared domains"},
+    {"id":"T08-011","severity":3,"status":"CLOSED","resolution":"Explicit lattice orientation action and mask deduplication"},
+    {"id":"T08-012","severity":3,"status":"CLOSED","resolution":"Command/environment provenance plus separate volatile run log"},
+    {"id":"T08-013","severity":3,"status":"CLOSED_INTERNAL_PUBLICATION_FOLLOWUP","resolution":"Foundational sources and direct Chin institutional record added; thesis-interior priority comparison remains publication-stage"}
+  ],
+  "public_claim_set_changed": false,
+  "schema": "p42.t08.issue-log.v1"
+}

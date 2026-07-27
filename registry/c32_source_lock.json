@@ -1,0 +1,951 @@
+{
+  "schema_version": "p42.c32.source_lock.v1",
+  "source": {
+    "id": "EXT-GALLERY-C32-ASSET",
+    "descriptor": "4x4 Durer5, signed LS 11-06",
+    "page_url": "https://www.geomagicsquares.com/gallery.php?page=32",
+    "url": "https://www.geomagicsquares.com/images/gallery/groot/4x4%20Durer5-zoom.jpg",
+    "access_date": "2026-07-26",
+    "sha256": "c6093ccd58e725d6efde1750cccf47124a56d6a335fbe3c9b70c8ef66a9bf2cb",
+    "bytes": 167595,
+    "pixel_dimensions": [
+      782,
+      768
+    ],
+    "last_modified": "Thu, 20 Nov 2014 16:24:31 GMT",
+    "etag": "\"28eab-5084cc351adc0\"",
+    "redistribution": "raw raster excluded from the tracked tree; local audit copies belong under results/tmp/"
+  },
+  "source_statement": {
+    "gallery_caption": "The gallery identifies the numerical board as Durer's order-four magic square and states constant sum 34.",
+    "irem_locator": "Gazagnes, Carres geomagiques, PDF p. 226",
+    "irem_sha256": "300de376ed397d338a4cc691cefcb1fe48a826c8afabc7c5ee78d2b2315e726c",
+    "locked_observations": [
+      "six-by-six target with one-based holes (2,2) and (5,5)",
+      "sixteen grid-polyomino pieces labelled by areas 1 through 16",
+      "twenty displayed assemblies around the numerical board; the target is shown in two D4-congruent raster orientations",
+      "full D4 placement convention is inherited from the source-locked geomagic definition"
+    ]
+  },
+  "canonical_model": {
+    "indexing": "zero-based (row,column), top-left origin",
+    "target": {
+      "rows": 6,
+      "columns": 6,
+      "holes": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "source_panel_hole_orbit": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      ],
+      "panel_canonicalization": "identity for holes (1,1),(4,4); horizontal reflection (r,c)->(r,5-c) for holes (1,4),(4,1)",
+      "area": 34
+    },
+    "durer_source_square": [
+      [
+        16,
+        3,
+        2,
+        13
+      ],
+      [
+        5,
+        10,
+        11,
+        8
+      ],
+      [
+        9,
+        6,
+        7,
+        12
+      ],
+      [
+        4,
+        15,
+        14,
+        1
+      ]
+    ],
+    "owner_durer_complement_square": [
+      [
+        1,
+        14,
+        15,
+        4
+      ],
+      [
+        12,
+        7,
+        6,
+        9
+      ],
+      [
+        8,
+        11,
+        10,
+        5
+      ],
+      [
+        13,
+        2,
+        3,
+        16
+      ]
+    ],
+    "source_to_owner_value_map": "owner_value = 17 - source_piece_label at the same board cell",
+    "isometry": "D4: four rotations and reflection allowed",
+    "pieces": {
+      "1": [
+        [
+          0,
+          0
+        ]
+      ],
+      "2": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "3": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "4": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "5": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "6": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "7": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "8": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "9": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "10": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "11": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "12": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "13": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "14": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "15": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "16": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "magic_lines": {
+      "R1": [
+        16,
+        3,
+        2,
+        13
+      ],
+      "R2": [
+        5,
+        10,
+        11,
+        8
+      ],
+      "R3": [
+        9,
+        6,
+        7,
+        12
+      ],
+      "R4": [
+        4,
+        15,
+        14,
+        1
+      ],
+      "C1": [
+        16,
+        5,
+        9,
+        4
+      ],
+      "C2": [
+        3,
+        10,
+        6,
+        15
+      ],
+      "C3": [
+        2,
+        11,
+        7,
+        14
+      ],
+      "C4": [
+        13,
+        8,
+        12,
+        1
+      ],
+      "D+": [
+        16,
+        10,
+        7,
+        1
+      ],
+      "D-": [
+        13,
+        11,
+        6,
+        4
+      ]
+    }
+  },
+  "pixel_transcription": {
+    "channel_a": "central piece drawings transcribed as canonical masks",
+    "channel_b": "twenty spatially separate target panels sampled at all 720 cell centres; each coloured region is identified by its area and compared up to D4 with channel A",
+    "palette_rgb": {
+      "R": [
+        201,
+        144,
+        115
+      ],
+      "B": [
+        159,
+        181,
+        208
+      ],
+      "Y": [
+        237,
+        198,
+        137
+      ],
+      "G": [
+        184,
+        187,
+        181
+      ],
+      ".": [
+        253,
+        253,
+        251
+      ]
+    },
+    "maximum_nearest_palette_distance": 25.0,
+    "minimum_nearest_palette_separation": 15.0,
+    "panels": [
+      {
+        "id": "T1",
+        "line": "D+",
+        "box": [30, 30, 130, 130],
+        "rows": ["YYYYYY", "Y.YBBB", "YGBBBB", "YRRRRR", "RRRR.R", "RRRRRR"]
+      },
+      {
+        "id": "T2",
+        "line": "C1",
+        "box": [163, 30, 263, 130],
+        "rows": ["GGGGGG", "YYGG.G", "YYBBBB", "RRRRRB", "R.RRRR", "RRRRRR"]
+      },
+      {
+        "id": "T3",
+        "line": "C2",
+        "box": [283, 30, 383, 130],
+        "rows": ["RRYYYY", "RRRR.Y", "BBBBYY", "BBBBGY", "B.BBGY", "BBBBGY"]
+      },
+      {
+        "id": "T4",
+        "line": "C3",
+        "box": [402, 30, 502, 130],
+        "rows": ["RRRRRR", "RRRY.R", "BBBYRR", "BBBBRR", "G.GGGG", "GGGGGG"]
+      },
+      {
+        "id": "T5",
+        "line": "C4",
+        "box": [522, 30, 622, 130],
+        "rows": ["YYYYYY", "YYYY.R", "YYRRRR", "GRRRBB", "B.BBBB", "BBBBBB"]
+      },
+      {
+        "id": "T6",
+        "line": "D-",
+        "box": [653, 30, 753, 130],
+        "rows": ["GGGGGG", "G.GGGG", "RRRRYY", "BBRRYY", "BBBB.B", "BBBBBB"]
+      },
+      {
+        "id": "L1",
+        "line": "R1",
+        "box": [30, 157, 130, 257],
+        "rows": ["RRRRRR", "RRRR.R", "YRRRRR", "YGGGBB", "B.BBBB", "BBBBBB"]
+      },
+      {
+        "id": "L2",
+        "line": "R2",
+        "box": [30, 275, 130, 375],
+        "rows": ["GGGGGG", "GGGG.G", "YRBBBB", "YRRRRB", "Y.YRRR", "YYYYYY"]
+      },
+      {
+        "id": "L3",
+        "line": "R3",
+        "box": [30, 397, 130, 497],
+        "rows": ["GGGGGG", "BBGG.G", "BBRRRR", "BBRRYY", "B.YYYY", "YYYYYY"]
+      },
+      {
+        "id": "L4",
+        "line": "R4",
+        "box": [30, 517, 130, 617],
+        "rows": ["YYBBBB", "YYBB.B", "RRBBBB", "RRBBBB", "R.GRRR", "RRRRRR"]
+      },
+      {
+        "id": "L5",
+        "line": "D-",
+        "box": [30, 643, 130, 743],
+        "rows": ["BBBBBB", "B.BBBB", "YYRRBB", "YYRRRR", "GGGG.G", "GGGGGG"]
+      },
+      {
+        "id": "R1",
+        "line": "R1",
+        "box": [653, 157, 753, 257],
+        "rows": ["RRRRRR", "R.RRRR", "RRRRRY", "BBGGGY", "BBBB.B", "BBBBBB"]
+      },
+      {
+        "id": "R2",
+        "line": "R2",
+        "box": [653, 275, 753, 375],
+        "rows": ["GGGGGG", "G.GGGG", "BBBBRY", "BRRRRY", "RRRY.Y", "YYYYYY"]
+      },
+      {
+        "id": "R3",
+        "line": "R3",
+        "box": [653, 397, 753, 497],
+        "rows": ["GGGGGG", "G.GGBB", "RRRRBB", "YYRRBB", "YYYY.B", "YYYYYY"]
+      },
+      {
+        "id": "R4",
+        "line": "R4",
+        "box": [653, 517, 753, 617],
+        "rows": ["BBBBYY", "B.BBYY", "BBBBRR", "BBBBRR", "RRRG.R", "RRRRRR"]
+      },
+      {
+        "id": "R5",
+        "line": "D+",
+        "box": [653, 643, 753, 743],
+        "rows": ["RRRRRR", "R.RRRR", "RRRRRY", "BBBBGY", "BBBY.Y", "YYYYYY"]
+      },
+      {
+        "id": "D1",
+        "line": "C1",
+        "box": [163, 643, 263, 743],
+        "rows": ["RRRRRR", "R.RRRR", "RRRRRB", "YYBBBB", "YYGG.G", "GGGGGG"]
+      },
+      {
+        "id": "D2",
+        "line": "C2",
+        "box": [283, 643, 383, 743],
+        "rows": ["BBBBGY", "B.BBGY", "BBBBGY", "BBBBYY", "RRRR.Y", "RRYYYY"]
+      },
+      {
+        "id": "D3",
+        "line": "C3",
+        "box": [402, 643, 502, 743],
+        "rows": ["GGGGGG", "G.GGGG", "BBBBRR", "BBBYRR", "RRRY.R", "RRRRRR"]
+      },
+      {
+        "id": "D4",
+        "line": "C4",
+        "box": [522, 643, 622, 743],
+        "rows": ["BBBBBB", "B.BBBB", "GRRRBB", "YYRRRR", "YYYY.R", "YYYYYY"]
+      }
+    ]
+  },
+  "owner_crosswalk": {
+    "authority": "Magic 24 value-minus-one finite Durer layer; imported read-only",
+    "artifacts": [
+      {
+        "path": "../../../Magic 24/scripts/analyze_f2_tesseract.py",
+        "sha256": "87d950d6d10508864f896c1bb2b40dd1e049935d1de60da7250b22c30d57fe8a"
+      },
+      {
+        "path": "../../../Magic 24/results/f2_tesseract_analysis.json",
+        "sha256": "e7ebe3dd1eee67f5958d301afd979024b88180009669fc7816d3389936c75d8a"
+      },
+      {
+        "path": "../../../Magic 24/scripts/magic24_certificates.py",
+        "sha256": "0db953ee47662da774e9ade028ad5bed9644f4ef72623c0401c25a2b2f6e4f49"
+      }
+    ],
+    "required_checks": {
+      "h34_count": 86,
+      "h34_affine": 52,
+      "h34_non_affine": 34,
+      "complement_preserves_sum_34": true,
+      "fourfold_xor_affineness_is_complement_invariant": true
+    }
+  },
+  "non_claims": [
+    "The twenty panels are source-displayed witnesses, not a declaration that only ten quaternes realize.",
+    "A second raster extraction channel is not an independent human transcription.",
+    "The source lock alone does not decide the remaining 76 additive quaternes.",
+    "The crosswalk imports the owner additive carrier; it does not reclassify the Magic 24 result as a P42 theorem.",
+    "No C32 result is public or paper-ready from this file alone."
+  ]
+}

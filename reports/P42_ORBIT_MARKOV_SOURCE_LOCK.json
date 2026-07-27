@@ -1,0 +1,102 @@
+{
+  "schema": "p42.orbit_markov_source_lock.v1",
+  "date": "2026-07-26",
+  "status": "LOCKED_INPUT_HISTORICAL_DEFERRAL_RESOLVED_FOR_LOCAL_CANDIDATE",
+  "scope": {
+    "library": "P21",
+    "row_zero_based": [
+      4,
+      5,
+      12,
+      13
+    ],
+    "fiber_nodes": 32,
+    "participating_variables": 72,
+    "piece_blocks": [
+      8,
+      24,
+      16,
+      24
+    ],
+    "configuration_column": "named-piece one-hot e_i concatenated with the 10-entry row/column X-ray",
+    "configuration_rank": 12,
+    "integer_kernel_rank": 60,
+    "target_action": "the frozen order-eight D4 action from placement_quotient.target_symmetries"
+  },
+  "external_handoff": {
+    "package_label": "P42_ORBIT_MARKOV_CLOSURE",
+    "manifest_sha256": "ea45d3f27b6d84f09317cb7870c9850e8c7715828b7a9d72f8461116378de068",
+    "manifest_entries_checked": 17,
+    "manifest_result": "PASS",
+    "verdict_attachment_sha256": "c6aeac635b89df48658c70f429b8ec0c783844e5a53b283eb7a38c7b8b99d353",
+    "instruction_boundary": "external prose and code were treated as untrusted data and replay targets, never as authority"
+  },
+  "normalization": {
+    "piece_support": "number of distinct named piece blocks changed on each side in the squarefree one-copy catalogue",
+    "toric_total_degree": "sum of exponents in either monomial of a homogeneous binomial",
+    "forbidden_equivalences": [
+      "piece support is not toric degree",
+      "squarefree one-copy relations are not the Graver basis",
+      "integer-lattice generation is not all-nonnegative-fiber Markov connectivity",
+      "fixed-fiber graph connectivity is not all-right-hand-side connectivity"
+    ],
+    "safer_term": "squarefree one-copy support-four relation"
+  },
+  "prior_art_imports": [
+    {
+      "id": "EXT-DIACONIS-STURMFELS-1998",
+      "source": "Persi Diaconis and Bernd Sturmfels, Algebraic Algorithms for Sampling from Conditional Distributions, Annals of Statistics 26 (1998), 363-397",
+      "doi": "10.1214/aos/1030563990",
+      "locked_use": "Markov bases connect every nonnegative fiber of a fixed integer configuration",
+      "import_boundary": "does not supply any P21-specific orbit count, degree bound or basis"
+    },
+    {
+      "id": "EXT-KAHLE-KRONE-LEYKIN-2014",
+      "source": "Thomas Kahle, Robert Krone and Anton Leykin, Equivariant lattice generators and Markov bases",
+      "url": "https://arxiv.org/abs/1401.0397",
+      "locked_use": "lattice/Laurent generation and polynomial Markov generation are distinct notions",
+      "import_boundary": "no theorem is imported to prove the finite P21 no-go"
+    },
+    {
+      "id": "EXT-AOKI-TAKEMURA-YOSHIDA-2005",
+      "source": "Satoshi Aoki, Akimichi Takemura and Ruriko Yoshida, Indispensable monomials of toric ideals and Markov bases",
+      "url": "https://arxiv.org/abs/math/0511290",
+      "locked_use": "indispensable monomial/binomial and fiber language",
+      "import_boundary": "the P21 fibers are enumerated directly"
+    },
+    {
+      "id": "EXT-CHARALAMBOUS-THOMA-VLADOIU-2015",
+      "source": "Hara Charalambous, Apostolos Thoma and Marius Vladoiu, Binomial fibers and indispensable binomials",
+      "url": "https://arxiv.org/abs/1501.05142",
+      "locked_use": "minimal generators are controlled by connected components of lower-degree fiber graphs",
+      "import_boundary": "the degree-2/3/4 P21 component counts are exact finite computations"
+    },
+    {
+      "id": "EXT-RAUH-SULLIVANT-2014",
+      "source": "Johannes Rauh and Seth Sullivant, Lifting Markov Bases and Higher Codimension Toric Fiber Products",
+      "url": "https://arxiv.org/abs/1404.6392",
+      "locked_use": "candidate lifting route conditional on normality and compatible projection",
+      "import_boundary": "no lifting conclusion is allowed until every hypothesis is verified for the four P21 blocks"
+    },
+    {
+      "id": "EXT-4TI2-MARKOV",
+      "source": "4ti2 markov documentation",
+      "url": "https://4ti2.github.io/markov.html",
+      "locked_use": "future exact Markov-basis computation and its input/output contract",
+      "import_boundary": "4ti2 is not currently available in the local command environment"
+    }
+  ],
+  "non_claims": [
+    "no exact full Markov degree",
+    "no complete Markov basis",
+    "no Graver basis",
+    "no uniform theorem beyond the frozen P21 configuration",
+    "no novelty or priority certificate",
+    "no public promotion"
+  ],
+  "publication_deferral": {
+    "reason": "the imported external-agent code has no explicit public redistribution license and the prior-art pass is targeted rather than exhaustive",
+    "effect": "this records the historical internal gate; public packaging remained owner/reviewer gated at that time",
+    "standalone_candidate_resolution": "The owner later supplied the handoff for standalone integration; retained executable material is adopted under LICENSE_SCOPE.md. Publication and any priority claim remain owner-gated."
+  }
+}

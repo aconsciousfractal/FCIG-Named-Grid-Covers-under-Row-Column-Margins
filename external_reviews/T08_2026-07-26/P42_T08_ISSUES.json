@@ -1,0 +1,97 @@
+{
+  "gate": "T-08",
+  "decision": "FIX_FIRST",
+  "issues": [
+    {
+      "id": "T08-001",
+      "severity": 1,
+      "status": "OPEN",
+      "area": "attribution",
+      "summary": "Missing Lee Sallows/geomagic attribution"
+    },
+    {
+      "id": "T08-002",
+      "severity": 1,
+      "status": "OPEN",
+      "area": "reproducibility",
+      "summary": "False standard-library-only claim"
+    },
+    {
+      "id": "T08-003",
+      "severity": 1,
+      "status": "OPEN",
+      "area": "integrity",
+      "summary": "No post-replay hash revalidation"
+    },
+    {
+      "id": "T08-004",
+      "severity": 1,
+      "status": "OPEN",
+      "area": "claim wording",
+      "summary": "Title conflicts with exactness wording lock"
+    },
+    {
+      "id": "T08-005",
+      "severity": 2,
+      "status": "OPEN",
+      "area": "parameterized theorem",
+      "summary": "Implicit-library problem under-specified"
+    },
+    {
+      "id": "T08-006",
+      "severity": 2,
+      "status": "OPEN",
+      "area": "proof",
+      "summary": "Missing type-isomorphism lemma"
+    },
+    {
+      "id": "T08-007",
+      "severity": 2,
+      "status": "OPEN",
+      "area": "source reproducibility",
+      "summary": "Normalized-model replay versus source-raster reconstruction not explicit"
+    },
+    {
+      "id": "T08-008",
+      "severity": 2,
+      "status": "OPEN",
+      "area": "checklist",
+      "summary": "P49 94-piece/94-row error"
+    },
+    {
+      "id": "T08-009",
+      "severity": 2,
+      "status": "OPEN",
+      "area": "filesystem",
+      "summary": "Symlink and import closure not gated"
+    },
+    {
+      "id": "T08-010",
+      "severity": 3,
+      "status": "OPEN",
+      "area": "definitions",
+      "summary": "Library-level predicates not quantified"
+    },
+    {
+      "id": "T08-011",
+      "severity": 3,
+      "status": "OPEN",
+      "area": "input contract",
+      "summary": "Orientation action on lattice not explicit"
+    },
+    {
+      "id": "T08-012",
+      "severity": 3,
+      "status": "OPEN",
+      "area": "receipt",
+      "summary": "Insufficient command provenance"
+    },
+    {
+      "id": "T08-013",
+      "severity": 3,
+      "status": "OPEN",
+      "area": "prior art",
+      "summary": "Foundational sources/Chin thesis gap"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!45!black,
+  pdftitle={Named Grid Covers under Row--Column Margins: Three Exactness Levels and Largest-Piece Localization},
+  pdfauthor={Oleksiy Babanskyy}
+}
+\setlist{nosep}
+\setlength{\emergencystretch}{2em}
+
+\ifdefined\pdfinfoomitdate
+  \pdfinfoomitdate=1
+  \pdfsuppressptexinfo=-1
+  \pdftrailerid{}
+\fi
+
+\input{macros}
+
+\title{Named Grid Covers under Row--Column Margins:\\
+Three Exactness Levels and Largest-Piece Localization}
+\author{Oleksiy Babanskyy}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We study finite named grid-piece placements whose aggregate row and column
+margins agree with a target, while overlaps and uncovered cells are allowed
+inside the relaxed fiber.  Exact covers form a distinguished sublocus.  This
+gives three different questions: whether a margin fiber supports an exact
+cover, whether every margin realization is exact, and whether every
+realization can reach an exact cover by replacing exactly two named pieces
+at a time.  After fixing a pose of a largest selected piece, complement area
+\(q\) confines every participating residual placement to at most \(q\)
+active rows, \(q\) active columns, and \(q^2\) cells.  We derive fixed-
+parameter algorithms for all three questions in \((q,h)\), where \(h\) bounds
+the orientation group, and the explicit fiber bound
+\[
+  h(q+1)(h q^2)^q=2^{O(q\log q)}
+\]
+for fixed \(h\).  Source-locked finite libraries show that the three
+predicates are genuinely distinct.  A bounded 72-variable example further
+separates connectivity of one nonnegative fiber, generation of the integer
+relation lattice, and Markov connectivity over all right-hand sides.
+\end{abstract}
+
+\begin{center}
+\small\emph{Author manuscript. See the repository claim boundary and reproducibility package.}
+\end{center}
+
+\tableofcontents
+
+\input{sections/01_introduction}
+\input{sections/02_model}
+\input{sections/03_exactness}
+\input{sections/04_finite_libraries}
+\input{sections/05_localization}
+\input{sections/06_fpt}
+\input{sections/07_types_energy}
+\input{sections/08_p21}
+\input{sections/09_limits}
+\appendix
+\input{sections/10_evidence}
+\input{sections/11_reproducibility}
+\input{references}
+
+\end{document}

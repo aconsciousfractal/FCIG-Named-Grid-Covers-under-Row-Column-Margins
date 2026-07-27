@@ -1,0 +1,71 @@
+{
+  "checks": 91335,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.6"
+  },
+  "implementation_separation": {
+    "graph": "direct all-pairs Hamming-degree reconstruction",
+    "imports_any_earlier_producer": false,
+    "imports_support_four_producer": false,
+    "lattice": "independent Smith kernel coordinates and FLINT rank/SNF",
+    "minimality": "independent exhaustive fiber-active orbit search through cardinality three",
+    "model": "direct fiber and participating-catalogue reconstruction",
+    "moves": "independent assignment-bucket enumeration for supports 1 through 4",
+    "symmetry": "locally defined order-eight target isometries"
+  },
+  "mutations": [
+    {
+      "mutation": "support_four_count",
+      "reason": "support-four count mismatch",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "move_orbit_member",
+      "reason": "support-four move-orbit manifest mismatch",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "full_rank_and_smith",
+      "reason": "full support-four lattice mismatch",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "minimum_orbit_subset_count",
+      "reason": "minimum connecting subset count mismatch",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "canonical_component_partition",
+      "reason": "minimum subset component partition mismatch",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "interpretation_branch",
+      "reason": "interpretation branch mismatch",
+      "status": "REJECTED"
+    }
+  ],
+  "mutations_rejected": 6,
+  "producer_output": {
+    "path": "reports/P42_SUPPORT4_CEILING_ANALYSIS.json",
+    "sha256": "5db8be83bd0a148708cd721c7bfbed0c197c637e03c5b146717ca9cc43cc69cf"
+  },
+  "runtime_seconds": 28.878756,
+  "schema_version": "p42.support4_ceiling.verification.v1",
+  "status": "PASS",
+  "summary": {
+    "canonical_connecting_subset": [
+      714
+    ],
+    "fiber_active_move_orbits": 64,
+    "full_move_lattice_rank": 60,
+    "full_quotient_free_rank": 0,
+    "full_quotient_torsion": [],
+    "interpretation_branch": "SUPPORT4_GENERATES_KERNEL_ONE_ORBIT_CONNECTS",
+    "minimum_connecting_orbit_count": 1,
+    "minimum_connecting_subset_count": 36,
+    "support_four_move_orbits": 1119,
+    "support_four_moves": 7444
+  }
+}

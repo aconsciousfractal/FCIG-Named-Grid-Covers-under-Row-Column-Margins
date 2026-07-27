@@ -1,0 +1,151 @@
+\section{P21: three non-equivalent connectivity questions}\label{sec:p21}
+
+The uniform theorem concerns one selected one-copy margin fiber.  The P21
+example is included to show what that fiber cannot certify.  It distinguishes:
+\begin{enumerate}
+  \item connectivity of one fixed nonnegative fiber;
+  \item generation of the complete integer relation lattice;
+  \item connectivity of every nonnegative fiber, equivalently the Markov
+        basis requirement.
+\end{enumerate}
+The first fixes one right-hand side.  The second allows signed intermediate
+combinations.  The third varies the right-hand side and must preserve
+nonnegativity throughout \cite{DiaconisSturmfels1998}.  Algebraic
+formulations of grid-tiling flip ideals also precede this example
+\cite{Chin2019,GrossYamzon2021}; the claims below are only for the frozen
+72-variable configuration.
+
+\subsection{Frozen configuration}
+
+The source-locked specimen is \emph{4x4 square target}, signed LS 11-02, with
+SHA-256
+\[
+\mathtt{2248f6e9d0d4cb793ef2ff8069a37ae62ed67629cee6263a0f7071ae4a274120}.
+\]
+Its target is the \(5\times5\) square.  We freeze the zero-based piece-index
+row
+\[
+ E=(4,5,12,13),
+\]
+whose areas are \((7,6,6,6)\).  Only placements participating in the selected
+margin fiber are retained.  Their block counts are \(8,24,16,24\), for 72
+variables.
+
+For each participating placement \(P\) in named block \(i\), the
+configuration matrix \(A\) has column
+\[
+ e_i\mid X_{\rm row}(P)\mid X_{\rm col}(P).
+\]
+Thus \(A\) is a \(14\times72\) integer matrix of rank 12 and
+\[
+ K=\ker_{\ZZ}(A)
+\]
+has rank 60.
+
+For \(s=1,2,3,4\), let \(M_{\leq s}\) be the integer span of all squarefree
+one-copy relations whose two placement tuples differ in at most \(s\) named
+piece positions.  This \emph{piece support} is not toric degree, Graver
+support, or a claim of Graver primitiveness.
+
+\subsection{The fixed 32-node fiber}
+
+The chosen fiber contains 32 nodes: 8 exact tilings and 24 non-tiling margin
+matches.  Its complete support filtration is:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrrrrl@{}}
+\toprule
+Family & New rels. & Lattice rank & \(\rank K/M\) & Components & Verdict\\
+\midrule
+\(M_{\leq2}\) & 144 & 34 & 26 & 16 & 16 trapped nodes\\
+\(M_{\leq3}\) & 932 & 51 & 9 & 4 & all reach tilings\\
+\(M_{\leq3}+\langle O_{714}\rangle\) & one orbit & 54 & 6 & 1 & connected\\
+\(M_{\leq4}\) & 7,444 & 60 & 0 & 1 & complete graph\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The relation counts are new at the indicated exact support.  The complete
+\(M_{\leq3}\) and \(M_{\leq4}\) catalogues contain 1,076 and 8,520 relations,
+respectively.  At support at most two there are sixteen two-node components:
+eight pair a tiling with an extra, while eight contain the sixteen trapped
+nodes.  At support three there are four eight-node components, but every node
+reaches a tiling.  At support four the graph is complete.
+
+\begin{proposition}[One connected fiber does not generate the lattice]
+\label{prop:p21-one}
+The family \(M_{\leq3}+\langle O_{714}\rangle\) connects the fixed 32-node
+fiber, but has lattice rank \(54<60=\rank K\).
+\end{proposition}
+
+\begin{proof}
+The order-eight target action partitions the 7,444 support-four relations
+into 1,119 complete orbits.  Exactly 36 single orbit modules connect the four
+components of the support-three graph.  Direct Hermite/Smith reduction gives
+rank 54, with torsion-free quotient rank six, for every one of these choices;
+\(O_{714}\) is the canonical stored witness.
+\end{proof}
+
+\subsection{The missing integral channels}
+
+The quotient \(Q=K/M_{\leq3}\) is torsion-free of rank nine.  Among the 1,119
+support-four orbits, 87 cyclic orbit modules have quotient rank three.  They
+fall into three exact integral families of sizes
+\[
+ 6,\quad3,\quad78.
+\]
+Exactly three complete target-action orbits are necessary and sufficient to
+generate \(Q\) integrally.  Every minimum triple chooses one orbit from each
+family, giving \(6\cdot3\cdot78=1,404\) minimum triples.  The stored canonical
+triple is \((283,603,714)\), with determinant \(-1\) in the quotient basis.
+
+The fixed 32-node fiber activates \(0,0,36\) orbits in these three families.
+It is blind to the first two necessary integral channels.  These numbers are
+configuration-specific finite facts, not a general equivariant-basis
+theorem; compare the general lifting context in
+\cite{RauhSullivant2019}.
+
+\subsection{Lattice generation is not Markov connectivity}
+
+All 60 Smith factors for \(M_{\leq4}\subseteq K\) are one, hence
+\[
+ M_{\leq4}=K
+\]
+integrally.  This permits signed decompositions of every relation.  It does
+not imply that a decomposition can be ordered while staying nonnegative.
+
+\begin{proposition}[All-right-hand-side no-go]\label{prop:p21-markov}
+Although \(M_{\leq4}=K\), the squarefree one-copy support-at-most-four family
+is not a Markov basis for the frozen 72-variable matrix.
+\end{proposition}
+
+\begin{proof}
+The complete quadratic census has 218 indispensable binomials: 144
+cross-block quadrics occur in the one-copy family, while 74 within-block
+quadrics do not.  A canonical missing quadratic lies in a two-monomial fiber
+with block count \((2,0,0,0)\).  No one-copy cross-block move applies in that
+fiber, so it is disconnected.  Indispensability is certified using the
+standard binomial-fiber criterion
+\cite{AokiTakemuraYoshida2008,CharalambousThomaVladoiu2016}.
+\end{proof}
+
+A separate two-monomial fiber with block count \((0,0,0,7)\) forces an
+indispensable binomial of toric degree seven.  Therefore every Markov basis
+has degree \emph{at least} seven.  The bounded minimum-generator census is:
+
+\begin{center}
+\begin{tabular}{@{}rrr@{}}
+\toprule
+Toric degree & Betti fibers & Minimum generators forced\\
+\midrule
+2 & 218 & 218\\
+3 & 996 & 996\\
+4 & 5,705 & 5,727\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+At least 6,941 minimal generators are forced through degree four.  No upper
+bound of seven, exact Markov degree, complete basis, Graver basis, universal
+Markov basis, or blockwise lifting theorem follows.

@@ -1,0 +1,214 @@
+{
+  "schema": "p42.all_rhs_markov_no_go.v1",
+  "row": [
+    4,
+    5,
+    12,
+    13
+  ],
+  "configuration": {
+    "variables": 72,
+    "piece_blocks": [
+      8,
+      24,
+      16,
+      24
+    ],
+    "matrix_columns": "piece-identity one-hot + joint row/column X-ray",
+    "kernel_rank": 60
+  },
+  "terminology_correction": {
+    "current_support_filtration": "squarefree one-copy piece-support filtration",
+    "not_equivalent_to": [
+      "toric degree filtration",
+      "Graver support filtration",
+      "all-right-hand-side Markov filtration"
+    ]
+  },
+  "degree_two": {
+    "monomials": 2628,
+    "fibers": 2410,
+    "indispensable_binomials": 218,
+    "cross_colour_existing": 144,
+    "same_colour_missing": 74,
+    "all_D4_orbits": 47,
+    "same_colour_D4_orbits": 23,
+    "cross_colour_D4_orbits": 24,
+    "same_colour_orbit_sizes": {
+      "2": 9,
+      "4": 14
+    },
+    "cross_colour_orbit_sizes": {
+      "4": 12,
+      "8": 12
+    },
+    "canonical_witness": {
+      "piece_block": 0,
+      "local_monomials": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "aggregate_xray": [
+        5,
+        2,
+        0,
+        2,
+        5,
+        3,
+        2,
+        4,
+        2,
+        3
+      ],
+      "binomial": "x_(0,0)*x_(0,7) - x_(0,1)*x_(0,6)",
+      "fiber_size": 2,
+      "components": 2,
+      "saturation_witness": {
+        "support_two_moves": [
+          {
+            "move_index": 0,
+            "negative": [
+              0,
+              31
+            ],
+            "positive": [
+              1,
+              30
+            ]
+          },
+          {
+            "move_index": 18,
+            "negative": [
+              6,
+              31
+            ],
+            "positive": [
+              7,
+              30
+            ]
+          }
+        ],
+        "lattice_identity": "q = -move[0] + move[18]",
+        "polynomial_identity": "x_(0,7)*b_0 - x_(0,1)*b_18 = -x_(1,23)*q",
+        "interpretation": "the missing binomial is available only after cancellation through an auxiliary named-piece block"
+      }
+    }
+  },
+  "degree_seven_indispensable_witness": {
+    "piece_block": 3,
+    "count_vector": [
+      0,
+      0,
+      0,
+      7
+    ],
+    "aggregate_xray": [
+      18,
+      14,
+      5,
+      5,
+      0,
+      4,
+      10,
+      14,
+      10,
+      4
+    ],
+    "local_monomials": [
+      [
+        0,
+        0,
+        5,
+        5,
+        5,
+        8,
+        8
+      ],
+      [
+        3,
+        3,
+        4,
+        4,
+        6,
+        6,
+        6
+      ]
+    ],
+    "fiber_size": 2,
+    "common_factor": 0,
+    "D4_orbit_size": 4,
+    "consequence": "every Markov basis has degree at least seven"
+  },
+  "low_degree_betti_census": {
+    "2": {
+      "monomials": 2628,
+      "fibers": 2410,
+      "betti_fibers": 218,
+      "minimum_generators_in_degree": 218,
+      "component_size_profile": {
+        "(1, 1)": 218
+      },
+      "betti_degree_orbits": 47,
+      "betti_degree_orbit_sizes": {
+        "2": 9,
+        "4": 26,
+        "8": 12
+      }
+    },
+    "3": {
+      "monomials": 64824,
+      "fibers": 49772,
+      "betti_fibers": 996,
+      "minimum_generators_in_degree": 996,
+      "component_size_profile": {
+        "(1, 1)": 924,
+        "(2, 2)": 72
+      },
+      "betti_degree_orbits": 179,
+      "betti_degree_orbit_sizes": {
+        "4": 109,
+        "8": 70
+      }
+    },
+    "4": {
+      "monomials": 1215450,
+      "fibers": 712526,
+      "betti_fibers": 5705,
+      "minimum_generators_in_degree": 5727,
+      "component_size_profile": {
+        "(1, 1)": 3652,
+        "(1, 1, 1, 1)": 4,
+        "(1, 2)": 216,
+        "(2, 2)": 1480,
+        "(2, 2, 2, 2)": 4,
+        "(2, 2, 16)": 4,
+        "(2, 6)": 8,
+        "(3, 3)": 232,
+        "(4, 4)": 76,
+        "(5, 5)": 16,
+        "(6, 6)": 12,
+        "(8, 8, 8, 8)": 1
+      },
+      "betti_degree_orbits": 1165,
+      "betti_degree_orbit_sizes": {
+        "1": 1,
+        "2": 6,
+        "4": 893,
+        "8": 265
+      }
+    }
+  },
+  "minimal_generator_lower_bound_through_audited_degrees": 6941,
+  "verdict": {
+    "squarefree_support_le_4_is_lattice_generating": true,
+    "squarefree_support_le_4_is_all_rhs_Markov": false,
+    "Markov_degree_lower_bound": 7,
+    "full_Markov_degree": "open"
+  }
+}

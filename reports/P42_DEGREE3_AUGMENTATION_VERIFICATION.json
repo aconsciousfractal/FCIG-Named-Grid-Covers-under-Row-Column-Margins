@@ -1,0 +1,60 @@
+{
+  "checks": 11608,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.6"
+  },
+  "independence": {
+    "graph": "direct all-pairs Hamming-degree construction",
+    "imports_degree3_producer": false,
+    "imports_robust_quotient_producer": false,
+    "imports_short_separator_producer": false,
+    "lattice": "independent Smith kernel coordinates plus FLINT rank/SNF",
+    "model": "direct fiber and participating catalogue reconstruction",
+    "moves": "independent assignment-bucket enumeration for support 1, 2 and 3",
+    "symmetry": "locally defined eight target isometries"
+  },
+  "mutations": [
+    {
+      "name": "lower_support_three_count",
+      "rejected": true
+    },
+    {
+      "name": "change_move_orbit_member",
+      "rejected": true
+    },
+    {
+      "name": "lower_canonical_subset_rank",
+      "rejected": true
+    },
+    {
+      "name": "lower_complete_component_count",
+      "rejected": true
+    },
+    {
+      "name": "change_separator_killed_field",
+      "rejected": true
+    },
+    {
+      "name": "change_interpretation_branch",
+      "rejected": true
+    }
+  ],
+  "mutations_rejected": 6,
+  "producer_output": {
+    "path": "reports/P42_DEGREE3_AUGMENTATION_ANALYSIS.json",
+    "sha256": "016013b26b9f171d7d6d413fdfbbfe1bbbf0aff28f0f1890cbe712079d02ac11"
+  },
+  "runtime_seconds": 2.587153,
+  "schema_version": "p42.degree3_augmentation.verification.v1",
+  "status": "PASS",
+  "summary": {
+    "full_graph_components": 4,
+    "full_move_lattice_rank": 51,
+    "full_quotient_free_rank": 9,
+    "full_trapped_reaching_tiling": 16,
+    "interpretation_branch": "TWO_PROTOTYPES_REPAIR_THIRD_ADDS_STRUCTURE",
+    "support_three_move_orbits": 136,
+    "support_three_moves": 932
+  }
+}

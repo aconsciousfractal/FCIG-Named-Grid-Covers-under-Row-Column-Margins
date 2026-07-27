@@ -1,0 +1,952 @@
+{
+  "artifacts": [
+    {
+      "bytes": 539,
+      "category": "governance",
+      "path": ".gitattributes",
+      "role": "standalone Output T package artifact",
+      "sha256": "095a857194c705184825143fad49f0b3ae2cabb9bad9564f61c36b77caa4376c"
+    },
+    {
+      "bytes": 389,
+      "category": "governance",
+      "path": ".gitignore",
+      "role": "standalone Output T package artifact",
+      "sha256": "89d52059f6517efa108fb56d103fbc8c7c8b14617444b1b8bea2e56bf1dcc5e3"
+    },
+    {
+      "bytes": 1166,
+      "category": "governance",
+      "path": "CITATION.cff",
+      "role": "standalone Output T package artifact",
+      "sha256": "737852f0d4f1c3d51230761dae14d5d75aa3b86a511544d5f67da2d0fd095003"
+    },
+    {
+      "bytes": 1074,
+      "category": "governance",
+      "path": "LICENSE",
+      "role": "standalone Output T package artifact",
+      "sha256": "7c2e33041c2736468f9f13fe88eff5faa656bb632e1a9e2f95d77929924bcd61"
+    },
+    {
+      "bytes": 2108,
+      "category": "governance",
+      "path": "LICENSE_SCOPE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "c27a4bf6cdbad518ce9f7b072b9d59a291f96a3568e839431f512c4bbd22620a"
+    },
+    {
+      "bytes": 4325,
+      "category": "governance",
+      "path": "README.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "9811cd8402264e17ff4745701cd5ca9a483013688f5a6eb6c2d069411a66ed22"
+    },
+    {
+      "bytes": 1959,
+      "category": "reviewer",
+      "path": "README_REVIEWER.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "05d94244298894dfc4227e190ff7ec57c9432306838aca1d8d2f5eeb333ba832"
+    },
+    {
+      "bytes": 3648,
+      "category": "reviewer",
+      "path": "REPRODUCE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "95b8dfca07decb2547f097b266d2a576ae80f9adbe836f0d36b00a076380509a"
+    },
+    {
+      "bytes": 1368,
+      "category": "governance",
+      "path": "THIRD_PARTY_NOTICES.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "87774721a51ce25eaaee906c8fc9975e637629ec05548fe43969b47457a51af3"
+    },
+    {
+      "bytes": 609,
+      "category": "environment",
+      "path": "certificates/build_environment.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "32e10964102eee568910404db7562bf99f59e24623ca0b702a79b58bdb25adeb"
+    },
+    {
+      "bytes": 568,
+      "category": "environment",
+      "path": "certificates/environment.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "98c15f825834d13e97aeafd65e897d6fa44abee09d7fa9950f33596abdf5bd34"
+    },
+    {
+      "bytes": 1260,
+      "category": "governance",
+      "path": "docs/AGENT_PACKAGE_INVOCATIONS.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "6d2af9bebdf0b253664ac999f850660f274a6cfc0e28e8e637fc96991ec2892d"
+    },
+    {
+      "bytes": 2572,
+      "category": "governance",
+      "path": "docs/ARTIFACT_MAP.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "b730775ff8d31874fe29ef8e9766ad366f8220a8e63c8ba286e7b6d24b80c54c"
+    },
+    {
+      "bytes": 4428,
+      "category": "governance",
+      "path": "docs/CLAIM_LEDGER.md",
+      "role": "authoritative release-candidate claim ledger",
+      "sha256": "34b1fddbec9ebef48b0a05795c1cb7764ee9c44f74769be0053c659f7cbb7d25"
+    },
+    {
+      "bytes": 5340,
+      "category": "governance",
+      "path": "docs/CURRENT_RESULTS.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "03d3ef367c70d89e716240a1cddc0065cd8a89c915a5cc566153cab9fde6f120"
+    },
+    {
+      "bytes": 2758,
+      "category": "governance",
+      "path": "docs/EXPERIMENT_LEDGER.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "d1539ee7415f421b92a9922d07d1ba9998c57f2c860ac75c0165ae8b65b4571a"
+    },
+    {
+      "bytes": 14901,
+      "category": "theorem",
+      "path": "docs/FOUNDATIONAL_SECTION.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "8f3a1be99b4bda7225b429fed9c8e89616655fae85c0a251145fe6be9ffdea44"
+    },
+    {
+      "bytes": 1564,
+      "category": "governance",
+      "path": "docs/GATE_HISTORY.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "4d14478ca46a0691ed3a59f3685d46eaa62460853c49c22b9b48c0ab8959df9f"
+    },
+    {
+      "bytes": 12690,
+      "category": "theorem",
+      "path": "docs/P21_CASE_STUDY.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "5e7a3f2aabc305cedd3a33c5711eaf64c77a586cff1cdf6a541f94a06778ee58"
+    },
+    {
+      "bytes": 32569,
+      "category": "sources",
+      "path": "docs/PRIOR_ART_TOMOGRAPHY.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "8a4054b69a168f14d2ca406977cf95cd83174c86f835269f1c78df9a445e210b"
+    },
+    {
+      "bytes": 17723,
+      "category": "theorem",
+      "path": "docs/PROOF_RECONSTRUCTION.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "5a3d1e421858f9e432ccf5a7cd95647c8ed014afec21aefbe4f354ef0a655b14"
+    },
+    {
+      "bytes": 2298,
+      "category": "governance",
+      "path": "docs/PUBLIC_CLAIM_BOUNDARY.md",
+      "role": "public wording and owner-action boundary",
+      "sha256": "de1adebce7c56aaab868006e37fe8deac0585ed19ccccc7452940df0e67730cb"
+    },
+    {
+      "bytes": 12334,
+      "category": "governance",
+      "path": "docs/RED_TEAM_REPORT.md",
+      "role": "final repository red-team report",
+      "sha256": "c65850bd7646f929e8dd080b5c09e9904992d03064574a34d32d76e14a80c030"
+    },
+    {
+      "bytes": 1869,
+      "category": "reviewer",
+      "path": "docs/REVIEW_CHECKLIST.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "9ab0d8c689fe5d24a08b1777ea8a87e89f826d0d68e99f5d01eda0db2b85afc0"
+    },
+    {
+      "bytes": 2849,
+      "category": "sources",
+      "path": "docs/SOURCE_LOCK.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "1b8d6160e1567e256cc15e3e45f4ad5d71e7595088756bf69f7c8fe8fcc05c15"
+    },
+    {
+      "bytes": 15467,
+      "category": "sources",
+      "path": "docs/THEOREM_LEVEL_PRIOR_ART_AUDIT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "85c7c52d19467a92f0b5ab8bd9bf06048b003fc68d9a9cc31a4a7681726bcdd6"
+    },
+    {
+      "bytes": 3166,
+      "category": "theorem",
+      "path": "docs/THEOREM_ROLE_MATRIX.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "f5e3fe6f97bc2c812896e140850ddb5bfe04921783e2a3244f0536f00ce53e31"
+    },
+    {
+      "bytes": 7856,
+      "category": "theorem",
+      "path": "docs/THEOREM_SPINE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "fb2e80becf8da0f2e19aacca233c9b27d927a4c95e49cf4b2b9d77ff1e7a9a0d"
+    },
+    {
+      "bytes": 2268,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/P42_T08_ISSUES.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "72910e502d618ee15831fbe2f293766015d1c41bac99c0eddcc4f4336ed78458"
+    },
+    {
+      "bytes": 3778,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/P42_T08_ISSUE_LOG.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "27bfea022d91814a818f0569c05bac8a58503253215a2c60e88d0d615b570c31"
+    },
+    {
+      "bytes": 6053,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/P42_T08_PATCH_PLAN.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "4930cc341463b3cfd3f8757954dc99bef5879eea659afd5e6321e94733e763f8"
+    },
+    {
+      "bytes": 2674,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/P42_T08_PRIOR_ART_PATCH.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "056d8600591b5debbeaa1ec530238b3a9997fe4726fb4458d129eda6c8157353"
+    },
+    {
+      "bytes": 20380,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/P42_T08_RED_TEAM_REPORT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "5fca632c2777195c510d8a6d7684f01089320846a82119fc126642ce0b03d0d0"
+    },
+    {
+      "bytes": 3007,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/P42_T08_VERIFY_HARDENING.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "592d521ce6359048507e8a8dba759fd47125471878cb2b8ab28d993c0c59fd05"
+    },
+    {
+      "bytes": 541,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/SHA256SUMS",
+      "role": "standalone Output T package artifact",
+      "sha256": "26dffd89b74b3b47e2f7b63f73b8df7100e11b311a73fe38644fe7d0eb0dc4d3"
+    },
+    {
+      "bytes": 1973,
+      "category": "sources",
+      "path": "external_reviews/T08_2026-07-26/SOURCE_LOCK.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "ea9cde28ca105642b8759a9cf02360e07fb74177cdb9ddfaadd38da15bdd0da0"
+    },
+    {
+      "bytes": 4655,
+      "category": "certificate",
+      "path": "packages/package_a_c46_reproduction/realization/REPORT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "8ca5629eb59e6cf3ece94762854c53e4541e7dabfef7f5c39f7c87bde771fd11"
+    },
+    {
+      "bytes": 23627,
+      "category": "certificate",
+      "path": "packages/package_a_c46_reproduction/realization/R_certificates.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "37250629b284ae76ae5db3b606958239679b9253d1848cdfdce26fed2172d115"
+    },
+    {
+      "bytes": 2632,
+      "category": "replay_code",
+      "path": "packages/package_a_c46_reproduction/realization/c46_locked.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "ab087082a1214d197bc92fb660d0bd309613fd2dc796a9e1650c0fdf892e3702"
+    },
+    {
+      "bytes": 7109,
+      "category": "replay_code",
+      "path": "packages/package_a_c46_reproduction/realization/engine.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "2fbeea5bfc65892a2f1f861562a4d6ac0d0f7bfac70d9be81d0e09b9d6761e87"
+    },
+    {
+      "bytes": 2823,
+      "category": "replay_code",
+      "path": "packages/package_a_c46_reproduction/realization/mutation_test.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "0a048c8d4621ab1feb17fb459e006e538b8456dfd063bf82537a5d94629ab21a"
+    },
+    {
+      "bytes": 3826,
+      "category": "replay_code",
+      "path": "packages/package_a_c46_reproduction/realization/verify.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "d6627e10376c836029e85df36162a6dd0036db0e7482af3012193d116451056c"
+    },
+    {
+      "bytes": 75553,
+      "category": "certificate",
+      "path": "packages/package_b_c32_durer_realization/realization/R_certificates.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "802776741190184481d20bf01190564105b0eca840692abf9d53d4246e9ddca4"
+    },
+    {
+      "bytes": 1787,
+      "category": "replay_code",
+      "path": "packages/package_b_c32_durer_realization/realization/c32_locked.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "45ea87ba661851ddad6ca45b22952d27b60578e8f585da2f215ada30df0eb64a"
+    },
+    {
+      "bytes": 3050,
+      "category": "replay_code",
+      "path": "packages/package_b_c32_durer_realization/realization/engine.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "9fab15748ab5250992dc41904bcf153dc1213da1be3d76517c78577c3a9c153e"
+    },
+    {
+      "bytes": 2648,
+      "category": "replay_code",
+      "path": "packages/package_b_c32_durer_realization/realization/mutation_test.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "eee28465049158b26653194cc3290bd50606825b26e0027e05d354ed096c87f6"
+    },
+    {
+      "bytes": 12895,
+      "category": "replay_code",
+      "path": "packages/package_b_c32_durer_realization/realization/verify.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "16cd6d7fafb20135ea93715ded747a402e2b7999ca5ac8d0530d9f9d3496c108"
+    },
+    {
+      "bytes": 9128,
+      "category": "replay_code",
+      "path": "packages/package_b_c32_durer_realization/realization/verify_analysis.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "e046d1470e4b79be3eb797b608f4f5020db2a95d4e4c0292173b4342fcc03774"
+    },
+    {
+      "bytes": 5257,
+      "category": "certificate",
+      "path": "packages/package_c_comparative_hypergraphs/specimens/SPECIMENS.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "386706c178136e04068412905e29c9ffe52e3b5f7e7e313b97367e86aef558ae"
+    },
+    {
+      "bytes": 3642,
+      "category": "certificate",
+      "path": "packages/package_c_comparative_hypergraphs/specimens/p21_locked.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "6a2f4ed590f50831f04f083656c3b7f0067cca898c5617773fecf38481e42b8f"
+    },
+    {
+      "bytes": 3407,
+      "category": "certificate",
+      "path": "packages/package_c_comparative_hypergraphs/specimens/p26_locked.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "2732d9400d3a02eb889799306f51985fa765c3106214e01e36ddfadc8c06a35e"
+    },
+    {
+      "bytes": 4857,
+      "category": "certificate",
+      "path": "packages/package_c_comparative_hypergraphs/specimens/p49_locked.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "10c556cf3ec605547776e9e61ebf6f381195b42c843029c1e4497368c3d390fb"
+    },
+    {
+      "bytes": 3502,
+      "category": "replay_code",
+      "path": "packages/package_c_comparative_hypergraphs/specimens/validate_specimens.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "a6643b2b0ffb5044fb86095acb9b0a78ded299204d2d26980c0395cf0114b04a"
+    },
+    {
+      "bytes": 5680,
+      "category": "certificate",
+      "path": "packages/package_e_obstruction_channels/xray_channel/COAREA_FPT_PREREGISTRATION.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "31cc10989e3f0f3e3a5c0953c0788c62efbe339365c65f6adbb1869839a8a6d0"
+    },
+    {
+      "bytes": 5277,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/audit_single_block_markov_degrees.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "c3d0d8305768081052b1de05d391d888a1d638fa9eec64357d21f9df70eb7eac"
+    },
+    {
+      "bytes": 28821,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/coarea_fpt.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "a8646b788700ea214ae03c759377c707313c291966bc1ac09c791f440c4c5adb"
+    },
+    {
+      "bytes": 28969,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/degree3_augmentation.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "b39fda143d4ae33d016ab4763a9bc4eb3dc60992879ad3a140ae6e6ddd7be801"
+    },
+    {
+      "bytes": 4460,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/export_4ti2_configuration.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "7acd2cb984381b4c1bf3a230f87f6b6e802e7fa0ed6dd1c04e917305d3098eb1"
+    },
+    {
+      "bytes": 4418,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/mutation_coarea_fpt.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "11ee8b34b8e8e4c28ded0a2ed10bb13fbbbed481c3b1be793c21863e8062c150"
+    },
+    {
+      "bytes": 149,
+      "category": "certificate",
+      "path": "packages/package_e_obstruction_channels/xray_channel/p21_participating_markov.sign",
+      "role": "standalone Output T package artifact",
+      "sha256": "d26bb5dc685b1adb7ec47fc41fb6697777ef659dcf325f1945c32118cb230f29"
+    },
+    {
+      "bytes": 2022,
+      "category": "certificate",
+      "path": "packages/package_e_obstruction_channels/xray_channel/p21_participating_markov_14x72.mat",
+      "role": "standalone Output T package artifact",
+      "sha256": "a131d349bab6424aaf91ec1808918794f106aa0cb90b5c6dbdc9f1fadc1e2225"
+    },
+    {
+      "bytes": 49147,
+      "category": "certificate",
+      "path": "packages/package_e_obstruction_channels/xray_channel/p21_participating_markov_metadata.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "81fc3533a76f01444fed0f9c7b808faae4d478ce629a79d83ac8a0ad015f4e9b"
+    },
+    {
+      "bytes": 1734,
+      "category": "certificate",
+      "path": "packages/package_e_obstruction_channels/xray_channel/p21_participating_markov_rank12.mat",
+      "role": "standalone Output T package artifact",
+      "sha256": "98445829332112a18d851a7a76cd5588e0fe50a045871eab6a7eb2f7bac75803"
+    },
+    {
+      "bytes": 35570,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/placement_quotient.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "13bebb59f8aa794bc6527084a1f84f6afbfd21466b640a73bfd2f54ab005870f"
+    },
+    {
+      "bytes": 29785,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/robust_p21_quotient.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "71538dc008e0bf0172119e3093c8023d8c7b6e57b329a24e1d2c06c4ac98ffb3"
+    },
+    {
+      "bytes": 24788,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/short_dual_separators.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "bccd51adae8c7600225ecd2f0fa718afb95f56e71a09dda3555839e1d8feb54e"
+    },
+    {
+      "bytes": 26818,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/support4_ceiling.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "4f4e0bd4a788a90705a57f5807938b058eb287650b4c1d53dab944e9cae7165a"
+    },
+    {
+      "bytes": 16011,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/verify_coarea_fpt.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "9aed9de1470078a8137056e0df8d7411806b34c424ed2adb93c9b94293d757e4"
+    },
+    {
+      "bytes": 17134,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/verify_coarea_next.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "9d003d3c6ab0bc50edb3c825f335a68811e634efc4fab52ac3534ff9d571cfe6"
+    },
+    {
+      "bytes": 19320,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/verify_markov_no_go.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "28478d05127a5f563fb12dab3bd09d23cba98fc2daf84ab27142284640b18674"
+    },
+    {
+      "bytes": 18783,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/verify_minimum_orbit_generators.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "602172d1c41edb1c18f3bb20aa08da34993bb93f5b99fcdef7c370f06fbc882e"
+    },
+    {
+      "bytes": 4541,
+      "category": "replay_code",
+      "path": "packages/package_e_obstruction_channels/xray_channel/verify_orbit_markov_closure.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "a5eb98b16dd518fdf27c81a2af0eab2d01c62ed64c8f293f82ed42f5ff0aa798"
+    },
+    {
+      "bytes": 1330,
+      "category": "manuscript",
+      "path": "paper/BUILD.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "e1ca4b745089e5bd1d2eff83593f7bf953e8cadd419abc68b6bb52982979a5ef"
+    },
+    {
+      "bytes": 17363,
+      "category": "manuscript",
+      "path": "paper/Named_Grid_Covers_under_Row-Column_Margins.log",
+      "role": "standalone Output T package artifact",
+      "sha256": "6a2873c660fae90acfcdc948cf74f743ef0958210510628e7d457f938ff6ad5f"
+    },
+    {
+      "bytes": 142310,
+      "category": "manuscript",
+      "path": "paper/Named_Grid_Covers_under_Row-Column_Margins.pdf",
+      "role": "accepted title-named release-candidate PDF",
+      "sha256": "2e5798245e7bf12538887dc2c18ed61f66a05e1552c055caa8be5cf7a8398a45"
+    },
+    {
+      "bytes": 1147,
+      "category": "manuscript",
+      "path": "paper/macros.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "db969d9e620dd3118cbee589950bb696702ad83f7a3bbc8d34a796da156dea0c"
+    },
+    {
+      "bytes": 2610,
+      "category": "manuscript",
+      "path": "paper/main.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "b9d379da18b4ff56de1236d68dbc98ee2f835fe30b44ae14714f148eb10fc6fc"
+    },
+    {
+      "bytes": 3945,
+      "category": "manuscript",
+      "path": "paper/references.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "8d00d03be44a25ff7ced6e779fcd40781575880a29a92fba16a9b8e674e99053"
+    },
+    {
+      "bytes": 4584,
+      "category": "manuscript",
+      "path": "paper/sections/01_introduction.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "f564605d2547f35462f33f665e0752e85360e0704fa384aef143a4ece47f1464"
+    },
+    {
+      "bytes": 4083,
+      "category": "manuscript",
+      "path": "paper/sections/02_model.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "fa33a8c636716efc8755c5e9d7797bf826dadd80cb059aeb712a91ea85dcf41c"
+    },
+    {
+      "bytes": 2102,
+      "category": "manuscript",
+      "path": "paper/sections/03_exactness.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "f46878ea15ab3e8d0334cb281735f01146723347228c1209b291b3ea38ccd2a8"
+    },
+    {
+      "bytes": 6414,
+      "category": "manuscript",
+      "path": "paper/sections/04_finite_libraries.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "618d1d2283b6344e8801d9240d48c01c6e98ab71fac633470656c55fd29876c3"
+    },
+    {
+      "bytes": 3233,
+      "category": "manuscript",
+      "path": "paper/sections/05_localization.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "3549ae1df82592179ad0b55c8b43fadcf4a63fe869ab28c7cd6caa5ac430dfa0"
+    },
+    {
+      "bytes": 3402,
+      "category": "manuscript",
+      "path": "paper/sections/06_fpt.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "5d6ab73e0336fb60e8cfd6b18b8d2a6c016e1ef6a036ee39b479b55193ee3fa7"
+    },
+    {
+      "bytes": 6571,
+      "category": "manuscript",
+      "path": "paper/sections/07_types_energy.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "415f2754682a2d0a7f4845a86a7c4361d8580d8c97a5f650ac14105a0c272616"
+    },
+    {
+      "bytes": 6012,
+      "category": "manuscript",
+      "path": "paper/sections/08_p21.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "ffe524a024dcdcec4207d0020f4e4a83964dfdddc3a5a959bfe13c5368bf7913"
+    },
+    {
+      "bytes": 2334,
+      "category": "manuscript",
+      "path": "paper/sections/09_limits.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "110742b740d5d75c8ca207821f390e2eb8c460280c336a4f739d146c1d5c3bb1"
+    },
+    {
+      "bytes": 2601,
+      "category": "manuscript",
+      "path": "paper/sections/10_evidence.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "86efd9076067cb152aea48369517d742a59e09270081a122710ebc481a187266"
+    },
+    {
+      "bytes": 1841,
+      "category": "manuscript",
+      "path": "paper/sections/11_reproducibility.tex",
+      "role": "standalone Output T package artifact",
+      "sha256": "66d95984ba33ed137759681d05676d67531ab0b423753ca12063f69534a1f914"
+    },
+    {
+      "bytes": 15690,
+      "category": "source_lock",
+      "path": "registry/c32_source_lock.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "c546b2cbb115d3a1581a12e75a21e68127af52ffca31106d8075b817f1911868"
+    },
+    {
+      "bytes": 4160,
+      "category": "source_lock",
+      "path": "registry/c46_source_lock.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "2f1904e0427455560f993559c17349310e2f0bfcb88cc2940261b7b6546834c2"
+    },
+    {
+      "bytes": 5048,
+      "category": "certificate",
+      "path": "reports/P42_C32_EXACT_CENSUS.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "f8c254867bf15afa759d653280f45e9da745554a99f958f14954f87eae030f0a"
+    },
+    {
+      "bytes": 3113,
+      "category": "certificate",
+      "path": "reports/P42_C32_SOURCE_AUDIT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "6ea0c05ec7e801b11a13c4c7d56229c2ca9a3ecc619e6804e85d13d4f4c957d9"
+    },
+    {
+      "bytes": 2479,
+      "category": "certificate",
+      "path": "reports/P42_C46_SOURCE_AUDIT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "d99a546446024d69f177f29399b4eb79174f87830648d26026ca91b92821bbd9"
+    },
+    {
+      "bytes": 11582,
+      "category": "certificate",
+      "path": "reports/P42_COAREA_FPT_CLOSURE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "3ec9b831c3692b3c445ca6273814b6c2ae32465cd78699fefe037b49e72da04b"
+    },
+    {
+      "bytes": 6403,
+      "category": "certificate",
+      "path": "reports/P42_COAREA_FPT_PRIOR_ART_LOCK.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "41169eb79870b673fe354186bf4a289f0e5f033bc0c313cfecac5bbfd62be09c"
+    },
+    {
+      "bytes": 12530,
+      "category": "certificate",
+      "path": "reports/P42_COAREA_NEXT_CLOSURE_AUDIT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "de4307261bb976a2f25bd1cec1461ee2377dea94a886f735a6aa3c1a707c1f20"
+    },
+    {
+      "bytes": 3291,
+      "category": "certificate",
+      "path": "reports/P42_COAREA_NEXT_VERIFICATION.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "5f7828c6dd268eaa89193613d0a7be9d1e8129ca8ee2c7c38ecf2876ac0341ed"
+    },
+    {
+      "bytes": 446104,
+      "category": "certificate",
+      "path": "reports/P42_DEGREE3_AUGMENTATION_ANALYSIS.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "016013b26b9f171d7d6d413fdfbbfe1bbbf0aff28f0f1890cbe712079d02ac11"
+    },
+    {
+      "bytes": 7875,
+      "category": "certificate",
+      "path": "reports/P42_DEGREE3_AUGMENTATION_CLOSURE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "0a0d30468535180023659b8df323c662d40f9d3726abfd9a023bf22b0ab41af7"
+    },
+    {
+      "bytes": 1744,
+      "category": "certificate",
+      "path": "reports/P42_DEGREE3_AUGMENTATION_VERIFICATION.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "009a66e61adb28026ef25fad0d0c8535a8d829608444ecf12a91876918f0e6e3"
+    },
+    {
+      "bytes": 4324,
+      "category": "certificate",
+      "path": "reports/P42_MARKOV_NO_GO_CERTIFICATE.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "96e0efb0f8a04ca1659ead6493bfb1b9cc8a9ba1ae2e63e4feed64c860c9ede8"
+    },
+    {
+      "bytes": 5192,
+      "category": "certificate",
+      "path": "reports/P42_MINIMUM_ORBIT_GENERATORS_CERTIFICATE.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "c1387b9037ed117f1c6c965ada5eee1de32562765864d25e73d2d4248b9b3998"
+    },
+    {
+      "bytes": 11806,
+      "category": "certificate",
+      "path": "reports/P42_ORBIT_MARKOV_CLOSURE_AUDIT.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "7f651c68dd89e95df531cccf27e571a46d43cd8adbf66764055f083e6709116b"
+    },
+    {
+      "bytes": 4944,
+      "category": "certificate",
+      "path": "reports/P42_ORBIT_MARKOV_SOURCE_LOCK.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "e045407a942ab1055101ef8aa0c0dcbd588c2fd7fced39120d28ec6c3233975d"
+    },
+    {
+      "bytes": 45729,
+      "category": "certificate",
+      "path": "reports/P42_ROBUST_P21_QUOTIENT_ANALYSIS.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "d43d464058b8840170ed8aaa9557a7cdb98556715e01bc68191257660db19a0f"
+    },
+    {
+      "bytes": 7935,
+      "category": "certificate",
+      "path": "reports/P42_ROBUST_P21_QUOTIENT_CLOSURE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "3566f5ffb7d453d0b0919e414d96eb27e16dcdbf60bbf663e88786ace165f59e"
+    },
+    {
+      "bytes": 1220,
+      "category": "certificate",
+      "path": "reports/P42_ROBUST_P21_QUOTIENT_VERIFICATION.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "a39b98b0d53398dd6233b2b3041724f2977022fd510d92ad007d120e002ddfa2"
+    },
+    {
+      "bytes": 11827,
+      "category": "certificate",
+      "path": "reports/P42_SINGLE_BLOCK_MARKOV_DEGREES.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "2b4824a457be079f949c5aa2e91c42a69d91eadebb03f12c5636322c77bba4a6"
+    },
+    {
+      "bytes": 1044908,
+      "category": "certificate",
+      "path": "reports/P42_SUPPORT4_CEILING_ANALYSIS.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "5db8be83bd0a148708cd721c7bfbed0c197c637e03c5b146717ca9cc43cc69cf"
+    },
+    {
+      "bytes": 8935,
+      "category": "certificate",
+      "path": "reports/P42_SUPPORT4_CEILING_CLOSURE.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "ba2ea8d5cf57cbdb34e84745c408defbbaf1778b8515ddd6cc76c859b010ca96"
+    },
+    {
+      "bytes": 2296,
+      "category": "certificate",
+      "path": "reports/P42_SUPPORT4_CEILING_VERIFICATION.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "a90aa904ba667cf1ea3c9b0c6bdfe6da5a11305fe2568e8936f5f632de50b96d"
+    },
+    {
+      "bytes": 5607,
+      "category": "certificate",
+      "path": "reports/P42_T08_EXTERNAL_RED_TEAM_ADJUDICATION.md",
+      "role": "standalone Output T package artifact",
+      "sha256": "5b2655fb184420ddf6c795cb027dca6b38a13d0cf02a85d0a33e26703ba676f4"
+    },
+    {
+      "bytes": 1824,
+      "category": "certificate",
+      "path": "reports/P42_T08_ISSUE_LOG.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "71b493b80367bfd2b7df71d7c638d4d7c357be8de6c10abc56396f7a9cc97057"
+    },
+    {
+      "bytes": 2305,
+      "category": "certificate",
+      "path": "reports/P42_T11_RED_TEAM.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "85cb0285acbdbc9b016e06ac598be7b14c7f17bbe5f51702827ee0c96114a307"
+    },
+    {
+      "bytes": 109,
+      "category": "environment",
+      "path": "requirements.txt",
+      "role": "standalone Output T package artifact",
+      "sha256": "af08901c8b2b07a392fb7856cfcf921e3ebbb58b46bf78b44bd6a63057403a9e"
+    },
+    {
+      "bytes": 21797,
+      "category": "certificate",
+      "path": "results/c32_structural_analysis.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "704b58e5c75b8bded021d47496f4c82051ad1331ae7f39288dc8282cf284899c"
+    },
+    {
+      "bytes": 437472,
+      "category": "certificate",
+      "path": "results/coarea_fpt_analysis.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "9218626536780b31e4e1479a13f8ec330037658ec0c4fa689bc90472e13f7809"
+    },
+    {
+      "bytes": 7681,
+      "category": "certificate",
+      "path": "results/p42_tomographic_manuscript_verification.json",
+      "role": "standalone Output T package artifact",
+      "sha256": "bfc20091f1d35e02a9d964e9d311111058abe82cb60367b87b77add6f3089a46"
+    },
+    {
+      "bytes": 5590,
+      "category": "verification",
+      "path": "scripts/audit_import_closure.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "446871222eda3d4a42833aa6102331e9366babd4c4625b5221317246b377521a"
+    },
+    {
+      "bytes": 6325,
+      "category": "verification",
+      "path": "scripts/build_manifest.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "dda487358bb972c5200fdd53068833af3dd5d022387e3e4abb8b9d129754f508"
+    },
+    {
+      "bytes": 1617,
+      "category": "verification",
+      "path": "scripts/build_release_checksums.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "b4cb2dc133316421cf75ba1879f8edc3a48ba1f65a60df944ccec3ecf2996a00"
+    },
+    {
+      "bytes": 2364,
+      "category": "verification",
+      "path": "scripts/check_release_checksums.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "601821fdfb8dca7f3e279ca959a90968e71cdd17e692c1372402a12a5f4a8839"
+    },
+    {
+      "bytes": 1750,
+      "category": "verification",
+      "path": "scripts/check_sha256_manifest.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "01f0a46bd72968ef5d578869d66ecf4576a52af42c6440a26dc952f8b7dda3a8"
+    },
+    {
+      "bytes": 7134,
+      "category": "verification",
+      "path": "scripts/validate_repository.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "7ee1101454e702c2bf4e2e8459c710b570ea0a5201d6442245a958165429bf2c"
+    },
+    {
+      "bytes": 19359,
+      "category": "verification",
+      "path": "scripts/verify.py",
+      "role": "single manifest/core/full verification entry point",
+      "sha256": "0df9d42c6b1c7a6db7e5b6912be72afccb4ffa6bbc9ec9c9f0beaa47fafa8d28"
+    },
+    {
+      "bytes": 7262,
+      "category": "verification",
+      "path": "scripts/verify_final_red_team.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "cec916f33a1a03445671e4b38ce897f261022c5331436f4b19c8c5347bfb94ae"
+    },
+    {
+      "bytes": 2604,
+      "category": "verification",
+      "path": "scripts/verify_manifest_only_tree.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "91110045d3e5cfeb9d25e3b571379581e14ba8d68bcfc956901a151cd50838ff"
+    },
+    {
+      "bytes": 9770,
+      "category": "verification",
+      "path": "scripts/verify_tomographic_manuscript.py",
+      "role": "standalone Output T package artifact",
+      "sha256": "0556a0262458dda2067442c825b537a49ee16d4c131c12805e7e5fb4b31d75e9"
+    }
+  ],
+  "boundary": {
+    "external_reproduction": false,
+    "p21_exact_markov_basis": "open_owner_parked",
+    "priority_or_firstness_clearance": false,
+    "public_authority": false,
+    "remote_or_release_authority": false,
+    "source_raster_bytes_redistributed": false
+  },
+  "parameter_name": "largest-piece residual area",
+  "profiles": {
+    "core": [
+      "manuscript",
+      "c32_certificate",
+      "c32_analysis",
+      "c46_certificate",
+      "coarea",
+      "specimens",
+      "coarea_next",
+      "p21_smoke",
+      "repository",
+      "release_checksums"
+    ],
+    "full": [
+      "manuscript",
+      "c32_certificate",
+      "c32_analysis",
+      "c46_certificate",
+      "coarea",
+      "specimens",
+      "coarea_next",
+      "c32_mutation",
+      "c46_mutation",
+      "coarea_mutation",
+      "p21_full",
+      "repository",
+      "release_checksums",
+      "manifest_only_tree"
+    ],
+    "manifest": []
+  },
+  "project_id": "P42-T",
+  "project_root_contract": ".",
+  "schema": "p42.output-t.public-candidate-manifest.v1",
+  "status": "LOCAL_PUBLIC_RELEASE_CANDIDATE",
+  "title": "Named Grid Covers under Row--Column Margins: Three Exactness Levels and Largest-Piece Localization"
+}

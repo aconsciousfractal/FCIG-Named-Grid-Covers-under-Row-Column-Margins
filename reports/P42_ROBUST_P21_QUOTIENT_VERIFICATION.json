@@ -1,0 +1,46 @@
+{
+  "checks": 1134,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.6"
+  },
+  "input_sha256": "d43d464058b8840170ed8aaa9557a7cdb98556715e01bc68191257660db19a0f",
+  "method": {
+    "graph": "direct all-pairs degree comparison",
+    "lattice_membership": "Hermite column basis in participating coordinates",
+    "producer_imported": false,
+    "quotient_implementation_imported": false,
+    "quotient_invariants": "independent Smith diagonal on saturated ambient-kernel coordinates",
+    "repair_degree": "exhaustive comparison with all eight tilings",
+    "target_action": "independently rebuilt bounding-box isometries"
+  },
+  "mutations": [
+    {
+      "name": "move_rank_34_to_33",
+      "rejected": true
+    },
+    {
+      "name": "edge_count_16_to_15",
+      "rejected": true
+    },
+    {
+      "name": "rho_3_to_2",
+      "rejected": true
+    },
+    {
+      "name": "mixed_class_0_to_1",
+      "rejected": true
+    },
+    {
+      "name": "drop_hit_class",
+      "rejected": true
+    },
+    {
+      "name": "merge_trapped_orbits",
+      "rejected": true
+    }
+  ],
+  "runtime_seconds": 3.372772,
+  "schema_version": "p42.robust_p21_quotient_verification.v1",
+  "status": "PASS"
+}

@@ -1,0 +1,45 @@
+{
+    "schema":  "p42.external-review-source-lock.v1",
+    "gate":  "T-08",
+    "review_date":  "2026-07-26",
+    "intake_date":  "2026-07-27",
+    "source_kind":  "owner-supplied external red-team bundle",
+    "declared_checksums_verified":  true,
+    "files":  [
+                  {
+                      "path":  "P42_T08_ISSUE_LOG.md",
+                      "bytes":  3778,
+                      "sha256":  "27bfea022d91814a818f0569c05bac8a58503253215a2c60e88d0d615b570c31"
+                  },
+                  {
+                      "path":  "P42_T08_ISSUES.json",
+                      "bytes":  2268,
+                      "sha256":  "72910e502d618ee15831fbe2f293766015d1c41bac99c0eddcc4f4336ed78458"
+                  },
+                  {
+                      "path":  "P42_T08_PATCH_PLAN.md",
+                      "bytes":  6053,
+                      "sha256":  "4930cc341463b3cfd3f8757954dc99bef5879eea659afd5e6321e94733e763f8"
+                  },
+                  {
+                      "path":  "P42_T08_PRIOR_ART_PATCH.md",
+                      "bytes":  2674,
+                      "sha256":  "056d8600591b5debbeaa1ec530238b3a9997fe4726fb4458d129eda6c8157353"
+                  },
+                  {
+                      "path":  "P42_T08_RED_TEAM_REPORT.md",
+                      "bytes":  20380,
+                      "sha256":  "5fca632c2777195c510d8a6d7684f01089320846a82119fc126642ce0b03d0d0"
+                  },
+                  {
+                      "path":  "P42_T08_VERIFY_HARDENING.md",
+                      "bytes":  3007,
+                      "sha256":  "592d521ce6359048507e8a8dba759fd47125471878cb2b8ab28d993c0c59fd05"
+                  },
+                  {
+                      "path":  "SHA256SUMS",
+                      "bytes":  541,
+                      "sha256":  "26dffd89b74b3b47e2f7b63f73b8df7100e11b311a73fe38644fe7d0eb0dc4d3"
+                  }
+              ]
+}

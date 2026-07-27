@@ -1,0 +1,95 @@
+\section{Largest-piece residual localization}\label{sec:localization}
+
+Choose a largest selected name \(L\), breaking area ties by a fixed name
+order, and put
+\[
+  q=|T|-|L|.
+\]
+The residual pieces are nonempty and their total area is \(q\), so there are
+at most \(q\) of them.
+
+\subsection{A translation cap}
+
+For finite nonempty \(A,B\subset\ZZ^2\), define
+\[
+  D(A,B)=\{t\in\ZZ^2:A+t\subseteq B\}.
+\]
+
+\begin{lemma}[Translation cap]\label{lem:translation}
+For finite nonempty \(A,B\subset\ZZ^2\),
+\[
+ |D(A,B)|\leq \max(0,|B|-|A|+1).
+\]
+Equivalently, if \(D(A,B)\) is nonempty, then
+\[
+ |D(A,B)|\leq |B|-|A|+1.
+\]
+\end{lemma}
+
+\begin{proof}
+The empty case is immediate.  Suppose \(D=D(A,B)\) is nonempty.  Then
+\(A+D\subseteq B\).  Choose an integer linear functional \(\ell\) injective
+on the finite set \(A+D\); avoiding the finitely many forbidden integer
+slopes suffices.  It is then injective on each factor as well.  If
+\(\ell(A)=\{a_1<\cdots<a_m\}\) and
+\(\ell(D)=\{d_1<\cdots<d_n\}\), the chain
+\[
+ a_1+d_1<\cdots<a_m+d_1<a_m+d_2<\cdots<a_m+d_n
+\]
+contains \(m+n-1\) distinct sums.  Therefore
+\[
+ |B|\geq|A+D|=|\ell(A)+\ell(D)|
+ \geq |A|+|D|-1,
+\]
+and rearrangement proves the claim.
+\end{proof}
+
+The sumset mechanism is classical; the lemma is included to make the
+algorithmic constants explicit.  The maximum in the unconditional statement
+is essential when no translation exists.
+
+\subsection{The active carrier}
+
+Freeze one legal pose \(A\) of \(L\) and let
+\[
+  b=X(T)-X(A).
+\]
+Since \(A\subseteq T\), the vector \(b\) is nonnegative.  Its row coordinates
+sum to \(q\), and its column coordinates also sum to \(q\).
+
+\begin{lemma}[Active carrier]\label{lem:active}
+After a pose \(A\) of \(L\) is fixed, every residual placement participating
+in a target-margin solution is confined to at most \(q\) active rows, at
+most \(q\) active columns, and therefore at most \(q^2\) target cells.
+\end{lemma}
+
+\begin{proof}
+At most \(q\) row coordinates and at most \(q\) column coordinates of \(b\)
+are positive.  If a residual pose \(Q\) occurs in a tuple whose residual
+margins sum to \(b\), nonnegativity gives \(X(Q)\leq b\) coordinatewise.
+Thus \(Q\) uses only rows and columns where \(b\) is positive.  It is
+contained in
+\[
+  G_A=T\cap(\text{active rows}\times\text{active columns}),
+  \qquad |G_A|\leq q^2.
+\]
+\end{proof}
+
+The proof uses both containment of every pose in \(T\) and the declared
+row/column finite-grid margins.  It is not a statement about continuous
+tomography.
+
+\begin{corollary}[Pose bounds]\label{cor:pose-bounds}
+The largest piece has at most \(h(q+1)\) legal poses.  After one is fixed,
+each residual piece has at most \(hq^2\) margin-compatible candidate poses.
+\end{corollary}
+
+\begin{proof}
+Apply \cref{lem:translation} to each oriented copy of \(L\) in \(T\):
+every nonempty translation set has size at most
+\(|T|-|L|+1=q+1\).  Sum over at most \(h\) orientations.  Any residual pose
+compatible with the residual margin vector after \(A\) is fixed is a nonempty
+subset of the carrier \(G_A\).  The same lemma gives at most \(q^2\)
+translations per orientation, and hence at most \(hq^2\) candidate poses.
+This catalogue may overcount poses that do not extend to a full fiber tuple.
+\end{proof}

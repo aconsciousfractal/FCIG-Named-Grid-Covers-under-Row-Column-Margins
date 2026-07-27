@@ -1,0 +1,118 @@
+{
+  "energy_panel": {
+    "C46": {
+      "all_rows_exact": true,
+      "area_compatible_rows": 86,
+      "extras": 8,
+      "fiber_nodes": 352,
+      "margin_feasible_rows": 44,
+      "maximum_finite_repair_distance": 1,
+      "nonzero_local_minima": 0,
+      "tilings": 344,
+      "trapped_nodes": 0
+    },
+    "P21": {
+      "all_rows_exact": false,
+      "area_compatible_rows": 880,
+      "extras": 1008,
+      "fiber_nodes": 1680,
+      "margin_feasible_rows": 104,
+      "maximum_finite_repair_distance": 2,
+      "nonzero_local_minima": 792,
+      "tilings": 672,
+      "trapped_nodes": 736
+    },
+    "P26": {
+      "all_rows_exact": false,
+      "area_compatible_rows": 360,
+      "extras": 503,
+      "fiber_nodes": 1554,
+      "margin_feasible_rows": 283,
+      "maximum_finite_repair_distance": 3,
+      "nonzero_local_minima": 343,
+      "tilings": 1051,
+      "trapped_nodes": 329
+    },
+    "P49-base": {
+      "all_rows_exact": true,
+      "area_compatible_rows": 94,
+      "extras": 136,
+      "fiber_nodes": 1344,
+      "margin_feasible_rows": 61,
+      "maximum_finite_repair_distance": 1,
+      "nonzero_local_minima": 16,
+      "tilings": 1208,
+      "trapped_nodes": 16
+    }
+  },
+  "input_hashes": {
+    "C46": "37250629b284ae76ae5db3b606958239679b9253d1848cdfdce26fed2172d115",
+    "P21": "6a2f4ed590f50831f04f083656c3b7f0067cca898c5617773fecf38481e42b8f",
+    "P26": "2732d9400d3a02eb889799306f51985fa765c3106214e01e36ddfadc8c06a35e",
+    "P49-base": "10c556cf3ec605547776e9e61ebf6f381195b42c843029c1e4497368c3d390fb"
+  },
+  "locked_translation_audit": {
+    "C46": {
+      "active_grid_piece_checks": 9030,
+      "global_piece_checks": 16,
+      "maximum_active_ratio": 1.0,
+      "violations": 0
+    },
+    "P21": {
+      "active_grid_piece_checks": 11040,
+      "global_piece_checks": 16,
+      "maximum_active_ratio": 0.6,
+      "violations": 0
+    },
+    "P26": {
+      "active_grid_piece_checks": 9960,
+      "global_piece_checks": 16,
+      "maximum_active_ratio": 0.6923076923076923,
+      "violations": 0
+    },
+    "P49-base": {
+      "active_grid_piece_checks": 14880,
+      "global_piece_checks": 16,
+      "maximum_active_ratio": 1.0,
+      "violations": 0
+    }
+  },
+  "locked_translation_checks": 44910,
+  "scope": {
+    "nonclaim": "finite checks support but do not prove the general theorems",
+    "theorems": [
+      "translation cap finite audits",
+      "Phi-energy finite panel",
+      "exact participation-type invariance"
+    ]
+  },
+  "small_translation_exhaustion": {
+    "equality_cases": 479,
+    "ordered_nonempty_subset_pairs": 3969,
+    "universe": "2x3",
+    "violations": 0
+  },
+  "status": "PASS",
+  "synthetic_type_collision": {
+    "common_fiber_summary": {
+      "extras": 0,
+      "fiber_nodes": 12,
+      "maximum_finite_repair_distance": 0,
+      "nonzero_local_minima": 0,
+      "tilings": 12,
+      "trapped_equals_nonzero_local_minima": true,
+      "trapped_nodes": 0
+    },
+    "duplicate_domino_type_equal": true,
+    "duplicate_monomino_type_equal": true,
+    "exact_type_vectors": 1,
+    "named_sublibraries": 4,
+    "output_size_control": {
+      "compressed_vectors": 1,
+      "literal_outputs": 142506,
+      "named_monominoes": 30,
+      "q": 5
+    },
+    "placement_sensitive_negative_control_separated": true
+  }
+}

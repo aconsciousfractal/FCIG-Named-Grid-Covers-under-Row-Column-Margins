@@ -1,0 +1,89 @@
+\section{Fixed-parameter decision and radius}\label{sec:fpt}
+
+\subsection{Bounded dynamic programs}
+
+Fix a pose \(A\) of the canonical largest piece \(L\), and retain the
+notation \(b=X(T)-X(A)\).  For margin feasibility, a partial-placement
+dynamic program needs only residual margin states bounded coordinatewise by
+\(b\).  Its exact state box has size
+\[
+  B(b)=\prod_j(b_j+1).
+\]
+For nonnegative integers \(n\), \(n+1\leq2^n\).  The row coordinates of
+\(b\) sum to \(q\), as do the column coordinates, so
+\[
+  B(b)\leq 2^q2^q=4^q.
+\]
+For exact coverage, the residual target \(T\setminus A\) has \(q\) cells.
+A subset-mask dynamic program therefore has at most \(2^q\) states.
+Disjoining over the poses of \(L\) decides whether the margin fiber and the
+exact-cover sublocus are empty.
+
+To decide purity and repair, we reconstruct all accepting margin paths.  This
+is safe because the entire fiber is itself parameter-bounded.
+
+\begin{theorem}[Largest-piece residual-area FPT theorem]\label{thm:fpt}
+For an area-compatible fixed selected set of named finite grid pieces and a
+finite orientation group of size at most \(h\), support-exactness, fiber
+purity, and repair-exactness in the exact-two graph are fixed-parameter
+tractable in \((q,h)\).  The full margin fiber satisfies
+\[
+ |\FFib_E|\leq h(q+1)(h q^2)^q
+              =2^{O(q\log(qh))}.
+\]
+For fixed \(h\), this simplifies to \(2^{O(q\log q)}\).  The replacement
+graph can be constructed in
+\[
+ 2^{O(q\log(qh))}\operatorname{poly}(|I|)
+\]
+time, and hence in \(2^{O(q\log q)}\operatorname{poly}(|I|)\) time when
+\(h\) is fixed.
+\end{theorem}
+
+\begin{proof}
+By \cref{cor:pose-bounds}, \(L\) has at most \(h(q+1)\) legal poses.  For a
+fixed largest pose, there are at most \(q\) residual pieces and each has at
+most \(hq^2\) margin-compatible candidate poses.  Hence
+\[
+ |\FFib_E|
+ \leq h(q+1)(hq^2)^q.
+\]
+This includes nonaccepting combinations in its upper estimate and is
+therefore valid for the fiber.  The case \(q=0\) is handled directly.
+
+Enumerating the parameter-bounded fiber and testing the cell coverage of
+each tuple decides purity.  Support is decided by comparing nonemptiness of
+\(\FFib_E\) and \(\TT_E\).
+
+Hash all fiber tuples.  For each tuple, choose two named coordinates,
+enumerate alternatives from their candidate-pose catalogues, and retain
+the resulting tuple precisely when it occurs in the hash table.  There are
+at most polynomially many choices outside the parameter-bounded pose
+factors, so this constructs \(\GG_E^{(2)}\) in
+\(2^{O(q\log(qh))}\operatorname{poly}(|I|)\) time.  Mark its connected
+components and test whether each intersects \(\TT_E\).  This decides
+repair-exactness.
+\end{proof}
+
+\begin{remark}
+Adding the one-name cases constructs \(\GG_E^{(\leq2)}\) in the same FPT
+class.  This does not identify the two graphs or transfer finite component
+counts between them.
+\end{remark}
+
+\begin{corollary}[Existence bound for repair radius]\label{cor:radius}
+Every repair-exact fiber satisfies
+\[
+ \rho(E)\leq|\FFib_E|-1
+ \leq h(q+1)(h q^2)^q-1.
+\]
+\end{corollary}
+
+\begin{proof}
+In a component meeting \(\TT_E\), choose a shortest path from a vertex to a
+tiling.  A shortest path is simple and hence has at most the component size
+minus one edges.
+\end{proof}
+
+The bound in \cref{cor:radius} is an existence bound.  It is not asserted to
+be polynomial, linear, sharp, or representative of observed runtime.
