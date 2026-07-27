@@ -52,5 +52,6 @@ single-block P21 audits. It is materially slower.
 - The exact P21 Markov degree and complete basis remain open.
 - Literal enumeration of all named outputs is output-sensitive.
 - This package records author replay, not independent external reproduction.
-- Repository publication, tagging, DOI, arXiv, and journal submission are
+- Repository publication was exercised by the owner on 2026-07-27. Tagging, a
+  GitHub Release, DOI, arXiv, journal submission, and priority language remain
   separate owner actions and are not inferred from a successful replay.

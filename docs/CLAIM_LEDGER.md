@@ -1,6 +1,8 @@
 # Claim ledger
 
-Status: public-release candidate; final owner publish action required.  
+Status: public repository, owner-published 2026-07-27; the replay gate retains
+the technical label `public-release candidate`. No tag, GitHub Release, DOI,
+arXiv deposit, journal submission, priority, or firstness is claimed.
 Last reviewed: 2026-07-27.
 
 | Claim | Level | Statement and exact scope | Evidence | Public wording |
@@ -23,7 +25,7 @@ Last reviewed: 2026-07-27.
 
 ## Promotion decision
 
-The owner has authorized final local preparation and an initial candidate
-commit for eventual public distribution. This ledger records the claims that
-the candidate can support; it does not itself approve a remote push, a release,
-or priority language.
+The owner published the repository on 2026-07-27. This ledger records the
+claims supported by that public repository; publication does not by itself
+authorize a tag, GitHub Release, DOI, arXiv deposit, journal submission, or
+priority language.

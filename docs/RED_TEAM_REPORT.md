@@ -8,6 +8,12 @@ Known package defects block publication: **no**
 Priority or firstness cleared: **no**  
 Recommended next package: **Maintainer**
 
+**Post-publication record (2026-07-27).** The owner subsequently published the
+canonical GitHub repository. This report retains its pre-publication scope and
+verdict as provenance; the publication action does not imply a tag, GitHub
+Release, DOI, arXiv deposit, journal submission, priority clearance, or
+independent external reproduction.
+
 This is a red-team verdict on a local release-candidate repository, not an
 authorization to publish, push, tag, mint a DOI, or submit the manuscript. The
 owner retains every external-action decision.

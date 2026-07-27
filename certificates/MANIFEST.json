@@ -15,11 +15,11 @@
       "sha256": "89d52059f6517efa108fb56d103fbc8c7c8b14617444b1b8bea2e56bf1dcc5e3"
     },
     {
-      "bytes": 1166,
+      "bytes": 1194,
       "category": "governance",
       "path": "CITATION.cff",
       "role": "standalone Output T package artifact",
-      "sha256": "737852f0d4f1c3d51230761dae14d5d75aa3b86a511544d5f67da2d0fd095003"
+      "sha256": "e7f8811de7fedb514c01c486f10de63abe97fe5e0f23fb78c8d0408f9005f23b"
     },
     {
       "bytes": 1074,
@@ -43,11 +43,11 @@
       "sha256": "9811cd8402264e17ff4745701cd5ca9a483013688f5a6eb6c2d069411a66ed22"
     },
     {
-      "bytes": 1959,
+      "bytes": 2042,
       "category": "reviewer",
       "path": "README_REVIEWER.md",
       "role": "standalone Output T package artifact",
-      "sha256": "05d94244298894dfc4227e190ff7ec57c9432306838aca1d8d2f5eeb333ba832"
+      "sha256": "64bb9ed298c61d4f5c7858cdf653820dde161174f3d5e0ce3612e76dde50ee09"
     },
     {
       "bytes": 3648,
@@ -92,11 +92,11 @@
       "sha256": "b730775ff8d31874fe29ef8e9766ad366f8220a8e63c8ba286e7b6d24b80c54c"
     },
     {
-      "bytes": 4428,
+      "bytes": 4572,
       "category": "governance",
       "path": "docs/CLAIM_LEDGER.md",
       "role": "authoritative release-candidate claim ledger",
-      "sha256": "34b1fddbec9ebef48b0a05795c1cb7764ee9c44f74769be0053c659f7cbb7d25"
+      "sha256": "f8462283cc8ae96301d5e447b9cc8aae9b7f046a9b1d05cacf096b3bb6187485"
     },
     {
       "bytes": 5340,
@@ -148,18 +148,18 @@
       "sha256": "5a3d1e421858f9e432ccf5a7cd95647c8ed014afec21aefbe4f354ef0a655b14"
     },
     {
-      "bytes": 2298,
+      "bytes": 2641,
       "category": "governance",
       "path": "docs/PUBLIC_CLAIM_BOUNDARY.md",
       "role": "public wording and owner-action boundary",
-      "sha256": "de1adebce7c56aaab868006e37fe8deac0585ed19ccccc7452940df0e67730cb"
+      "sha256": "a5ccc53ddbad998d3c1a81d1cf1c57f97c932d3f40ba7cffc2a4fd61a66783c7"
     },
     {
-      "bytes": 12334,
+      "bytes": 12675,
       "category": "governance",
       "path": "docs/RED_TEAM_REPORT.md",
       "role": "final repository red-team report",
-      "sha256": "c65850bd7646f929e8dd080b5c09e9904992d03064574a34d32d76e14a80c030"
+      "sha256": "a51c334331cd7833b0da97d50b0c5299fd8e1ab0fab5cb57ce956031dceb1936"
     },
     {
       "bytes": 1869,

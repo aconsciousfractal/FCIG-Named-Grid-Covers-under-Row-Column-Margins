@@ -1,6 +1,9 @@
 # Public claim boundary
 
-Status: **public-release-candidate boundary; publication remains an owner action**.
+Status: **public repository, owner-published 2026-07-27**. The machine replay
+retains `public-release candidate` as its stable gate label. The repository is
+untagged and has no GitHub Release, DOI, arXiv deposit, journal submission,
+priority clearance, or independent external reproduction.
 
 ## Can say
 
@@ -39,12 +42,14 @@ Status: **public-release-candidate boundary; publication remains an owner action
 - the P21 Markov degree equals seven, the complete Markov basis is known, or
   support-four lattice generation implies all-fiber Markov connectivity;
 - the source raster acquisition/transcription is independently reproduced;
-- the repository is published, released, externally reproduced, submitted, or
-  DOI-backed before the corresponding owner action exists.
+- the repository is tagged, has a GitHub Release, is externally reproduced,
+  submitted, or DOI-backed before the corresponding owner action exists.
 
 ## Process boundary
 
 A clean final red team means that publication is not blocked by known package
-defects. The owner's 2026-07-27 instruction authorizes final local preparation
-and an initial candidate commit. Remote creation, push, tag, release, DOI,
-arXiv, journal submission, and priority language remain separate owner actions.
+defects. The owner first authorized final local preparation and an initial
+candidate commit, then published the canonical GitHub repository on 2026-07-27.
+Remote creation and the initial push are therefore exercised. Tag, GitHub
+Release, DOI, arXiv, journal submission, independent external reproduction,
+and priority language remain separate owner actions.
