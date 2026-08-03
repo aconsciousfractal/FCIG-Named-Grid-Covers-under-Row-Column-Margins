@@ -13,7 +13,7 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "certificates" / "MANIFEST.json"
-CHILD_FLAG = "P42_MANIFEST_ONLY_CHILD"
+CHILD_FLAG = "FCIG_NAMED_GRID_MANIFEST_ONLY_CHILD"
 
 
 def main() -> int:
@@ -25,7 +25,7 @@ def main() -> int:
     payload = {row["path"] for row in manifest["artifacts"]}
     payload.update({"certificates/MANIFEST.json", "MANIFEST_SHA256.txt", "SHA256SUMS"})
 
-    with tempfile.TemporaryDirectory(prefix="p42-manifest-only-") as raw_stage:
+    with tempfile.TemporaryDirectory(prefix="fcig-named-grid-manifest-only-") as raw_stage:
         stage = Path(raw_stage)
         for relative in sorted(payload):
             posix = PurePosixPath(relative)

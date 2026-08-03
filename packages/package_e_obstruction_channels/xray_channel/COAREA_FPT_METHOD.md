@@ -1,9 +1,6 @@
-# Co-area residual-state analysis — preregistration
+# Co-area residual-state analysis method
 
-**Frozen:** 2026-07-26, before running the new co-area implementation.
-**Route:** P42-E / bounded mechanism.
-**Experiment package:** `experiment_ledger_agent`.
-**Provisional claim handle:** `P42-C086` (not a ledger row and not promoted).
+**Method frozen:** 2026-07-26, before running the co-area implementation.
 
 ## Objective
 
@@ -157,5 +154,4 @@ or verifier does not.
 - the complexity contains an exponent depending on `q` applied to the input
   size rather than only to an `f(q)` factor.
 
-Failed formulations remain recorded.  No public claim, paper preparation or
-claim-level promotion is authorised by this experiment.
+Failed formulations remain recorded rather than being silently discarded.

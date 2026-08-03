@@ -2,7 +2,7 @@
 
 Run commands from the repository root.
 
-## Accepted environment
+## Exact environment
 
 - CPython 3.12, 3.13, or 3.14
 - `pypdf==6.14.2`
@@ -17,9 +17,8 @@ python -m pip install -r requirements.txt
 ```
 
 No network or external dataset is required after dependency installation.
-The historical T-08 audit ran on CPython 3.14.6. This repository candidate was
-also replayed on CPython 3.12.13; the supported interpreter interval and both
-records are explicit in `certificates/environment.json`.
+The supported interpreter interval and the recorded release environment are
+explicit in `certificates/environment.json`.
 
 ## Verification profiles
 
@@ -42,55 +41,35 @@ python -X utf8 -B scripts/verify.py --profile full
 Every profile snapshots all frozen artifacts before execution and requires
 byte identity afterward. The stable receipt is `results/verification.json`;
 timestamps, durations, raw commands, stdout, and stderr are separated into
-`results/verification_run.json`.
+the ignored file `results/verification_run.json`.
 
 ## Build the paper
 
 The manuscript uses an inline bibliography, so no BibTeX/Biber pass is needed.
-The accepted candidate PDF was built with Tectonic 0.16.9. From `paper/` run:
+The canonical PDF was built with Tectonic 0.16.9. From `paper/`, run:
 
 ```bash
-tectonic main.tex --outdir . --keep-logs --reruns 2
+tectonic main.tex --outdir . --reruns 2
 ```
 
-Then rename `main.pdf` and `main.log` to the title-named PDF and log shown
-below. The archive digest and accepted page count are recorded in
-`certificates/build_environment.json`.
-
-A conventional pdfLaTeX build is also supported. From `paper/` run two
-passes:
-
-```bash
-pdflatex -interaction=nonstopmode -halt-on-error -file-line-error \
-  -jobname=Named_Grid_Covers_under_Row-Column_Margins main.tex
-pdflatex -interaction=nonstopmode -halt-on-error -file-line-error \
-  -jobname=Named_Grid_Covers_under_Row-Column_Margins main.tex
-```
-
+Rename `main.pdf` to `Named_Grid_Covers_under_Row-Column_Margins.pdf`.
 The canonical output is
-`paper/Named_Grid_Covers_under_Row-Column_Margins.pdf`. PDF bytes are checked
-by the repository manifest but are not used as a cross-TeX-distribution
-identity. The LaTeX source is the portable object.
+`paper/Named_Grid_Covers_under_Row-Column_Margins.pdf`. Its digest, page count,
+and build environment are recorded in `certificates/build_environment.json`.
+PDF bytes are manifest-bound; the LaTeX source remains the portable object.
 
-## Check the source manifest
+## Check the manifests
 
 ```bash
 python -X utf8 -B scripts/check_sha256_manifest.py
-```
-
-`MANIFEST_SHA256.txt` excludes `.git/`, TeX auxiliaries, the compiled PDF, and
-generated top-level verification receipts. It pins the source, documentation,
-locked inputs, certificates, and verifier code.
-
-For the complete allowlisted release payload, including the PDF and frozen
-results, run:
-
-```bash
 python -X utf8 -B scripts/check_release_checksums.py
 ```
 
-`SHA256SUMS` also covers `certificates/MANIFEST.json` and
-`MANIFEST_SHA256.txt`; it excludes only itself and volatile replay receipts.
+`MANIFEST_SHA256.txt` excludes `.git/`, TeX auxiliaries, the compiled PDF, and
+generated top-level verification receipts. `SHA256SUMS` covers the complete
+allowlisted release payload, including the PDF, frozen results,
+`certificates/MANIFEST.json`, and `MANIFEST_SHA256.txt`; it excludes only
+itself and volatile replay receipts.
 
 ## What is imported
 

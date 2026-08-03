@@ -3,7 +3,7 @@ Loads the locked derived coordinates (p21_locked.json / p26_locked.json), rebuil
 the target, and confirms that all 10 lines (4 rows + 4 cols + 2 diagonals) of each
 4x4 geomagic square exact-cover tile the stated target under the full-D4 isometry.
 A wrong piece would make some line fail, so 10/10 validates the digitisation against
-the live-verified source hash. Self-contained; P42-native; no bootstrap import.
+the recorded source hash. Self-contained and independent of bootstrap code.
 
 Run:  PYTHONIOENCODING=utf-8 python validate_specimens.py
 """

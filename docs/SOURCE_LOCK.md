@@ -17,8 +17,8 @@ retrieval metadata, and local normalization checks are preserved in:
 - `packages/package_c_comparative_hypergraphs/specimens/p49_locked.json`;
 - `packages/package_c_comparative_hypergraphs/specimens/p26_locked.json`;
 - `packages/package_c_comparative_hypergraphs/specimens/p21_locked.json`;
-- `reports/P42_C32_SOURCE_AUDIT.md`;
-- `reports/P42_C46_SOURCE_AUDIT.md`.
+- `reports/C32_SOURCE_AUDIT.md`;
+- `reports/C46_SOURCE_AUDIT.md`.
 
 No source raster bytes are redistributed. A repository replay is an
 independent downstream enumeration from a frozen normalized transcription: it
@@ -30,7 +30,7 @@ segment, or retranscribe the source images.
 The P26 lock has SHA-256
 `2732d9400d3a02eb889799306f51985fa765c3106214e01e36ddfadc8c06a35e`.
 That digest is also the P26 input anchor in
-`reports/P42_COAREA_NEXT_VERIFICATION.json`; the executable producer and the
+the residual-area verification certificate; the executable producer and the
 specimen validator are mandatory replay steps.
 
 ## Normalization lock

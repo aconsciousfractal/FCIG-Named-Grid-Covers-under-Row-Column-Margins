@@ -4,7 +4,6 @@ __pycache__/
 *.pyo
 paper/*.aux
 paper/*.log
-!paper/Named_Grid_Covers_under_Row-Column_Margins.log
 paper/*.out
 paper/*.toc
 paper/*.bbl
@@ -19,4 +18,3 @@ tmp/
 results/verification.json
 results/verification_run.json
 results/repository_validation.json
-results/final_red_team_verification.json

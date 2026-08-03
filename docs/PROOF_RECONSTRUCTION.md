@@ -1,13 +1,9 @@
-# Output T - proof reconstruction and dependency audit
+# Proof reconstruction and dependency audit
 
 Date: 2026-07-26
 
-Gate: `T-02`
-
-Decision: **CLOSED WITH TWO SCOPE REPAIRS**
-
 This dossier reconstructs the mathematical spine in manuscript order. It is
-the proof authority for the release-candidate manuscript, but it does not
+the proof authority for the public preprint, but it does not
 settle novelty, priority, or replace the finite certificates.
 
 ## 1. Exact input contract
@@ -421,7 +417,7 @@ total through degree 4: 6941.
 
 None of these facts gives an upper bound of seven or a complete Markov basis.
 The exact degree, complete basis, blockwise bases and structured lift are
-owner-parked and absent from the paper dependency graph.
+open and absent from the paper dependency graph.
 
 ## 10. Dependency audit
 
@@ -451,29 +447,3 @@ No theorem above depends on:
 - a Delay-FPT literal enumerator;
 - the exact P21 Markov degree or complete basis;
 - a novelty or priority conclusion.
-
-## 11. Red-team disposition
-
-| Finding | Severity before repair | Disposition | Mathematical impact |
-| --- | --- | --- | --- |
-| Translation cap omitted `D=empty` branch | theorem-statement defect | corrected to `max(0,...)`, with conditional form used in proof | none on counted placements or FPT bound |
-| Spine said "at most two" while code/certificates use exactly two | object-definition defect | froze `G^(2)`; labelled `G^(<=2)` separately | none on C32/C46/P49 or frozen P21 row; prevents false transfer to other P21/P26 rows |
-| `fiber_graph.py` called a two-name edge graph-distance two | documentary defect | corrected to Hamming distance two, graph distance one | none on stored radii |
-| Empty-fiber predicates were deferred rather than fixed | proof-completeness defect | vacuous conventions and radius-zero convention frozen | closes hierarchy edge cases |
-| Fixed-set FPT and implicit-library output could be conflated | scope risk | exact type/output contract stated | prevents a false Total-FPT listing claim |
-| P49 live witness was called one trapped component of eight nodes | finite-certificate wording defect | corrected to eight trapped singleton components in the canonical exact-two graph | no numerical or graph change; aligns prose with the stored row |
-| P21 “degree” terminology could conflate piece support with toric degree | object-definition risk | froze squarefree one-copy piece support and reserved toric degree for Markov fibers | prevents a false degree-four ceiling claim |
-| P21 fixed-fiber visibility `0,0,36` could sound exhaustive over all 1,119 orbits | interpretation risk | restricted it to the three rank-three integral families | preserves the exact certificate meaning |
-
-## 12. T-02 closeout
-
-Every item in the `T-02` checklist now has a proof or an explicit finite
-certificate dependency. The original two `T-02` defects and the later
-`T-04/T-05` documentary ambiguities are repaired above. No stored numerical
-result, verifier logic, claim level or public boundary changes.
-
-`T-03` is closed for no-firstness drafting in
-`THEOREM_LEVEL_PRIOR_ART_AUDIT.md`. `T-04` is closed in
-`FOUNDATIONAL_SECTION.md`, including the P49 graph-wording repair. `T-05` is
-closed in `P21_CASE_STUDY.md`. `T-06` through `T-08` are closed; the next
-gate is `T-11`, the final standalone-repository red team.

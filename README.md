@@ -1,6 +1,6 @@
 # Named Grid Covers under Row--Column Margins
 
-Companion repository for the manuscript
+Companion repository for the public preprint
 
 > **Named Grid Covers under Row--Column Margins: Three Exactness Levels and
 > Largest-Piece Localization**  
@@ -15,8 +15,8 @@ and column margins. Its uniform result is a fixed-parameter algorithm in the
 largest-piece residual area `q` and orientation bound `h`:
 
 - a largest pose has at most `h(q+1)` possibilities;
-- after it is fixed, every margin-compatible candidate residual placement is supported on
-  an active carrier of at most `q^2` cells;
+- after it is fixed, every margin-compatible residual placement is supported
+  on an active carrier of at most `q^2` cells;
 - the relevant margin fiber has size at most
   `h(q+1)(h q^2)^q = 2^(O(q log(qh)))`, and therefore
   `2^(O(q log q))` for fixed `h`;
@@ -37,15 +37,14 @@ all-right-hand-side Markov connectivity.
 
 ## Certified finite layer
 
-The repository independently enumerates downstream from the source-locked,
-normalized discrete models and checks the
-following exact aggregates:
+The repository independently enumerates downstream from source-locked,
+normalized discrete models and checks these exact aggregates:
 
 | Library | Margin fiber | Tiling nodes | Role |
 | --- | ---: | ---: | --- |
 | C32 | 136 | 136 | pure anchor |
 | C46 | 352 | 344 | repair-exact but impure |
-| P49 | 1,344 | 1,208 | support/repair negative controls |
+| P49 | 1,344 | 1,208 | support/repair negative control |
 
 For the frozen P21 row, the package certifies a `14x72` rank-12 configuration,
 kernel rank 60, 7,444 support-four relations in 1,119 target orbits, an exact
@@ -54,8 +53,8 @@ Markov degree at least seven.
 
 ## Claim boundary
 
-The theorem and finite statements above are asserted only at the scopes stated
-in the manuscript and [`docs/CLAIM_LEDGER.md`](docs/CLAIM_LEDGER.md). This
+The theorem and finite statements are asserted only at the scopes stated in
+the manuscript and [`docs/CLAIM_LEDGER.md`](docs/CLAIM_LEDGER.md). This
 repository makes **no priority or firstness claim**. In particular, it does not
 claim a complete P21 Markov basis, an exact P21 Markov degree, arbitrary-tile
 tomography, a sharp repair radius, or literal Total-FPT enumeration.
@@ -74,7 +73,7 @@ The primary entry point is:
 python -X utf8 -B scripts/verify.py --profile core
 ```
 
-The accepted exact environment and the slower `full` profile are documented in
+The exact environment and slower `full` profile are documented in
 [`REPRODUCE.md`](REPRODUCE.md). A successful run checks manifest integrity,
 import closure, manuscript/PDF consistency, C32/C46 certificates, P21/P26/P49
 specimen validation, the regenerated residual-area panel, P21 replay,
@@ -90,10 +89,9 @@ scripts/        repository verifier, manifest builder, policy validators
 certificates/   environment lock and frozen manifest
 registry/       C32/C46 source locks
 packages/       self-contained C32/C46/residual-area/P21 replay code
-reports/        finite certificates, source audits, and closure records
+reports/        finite certificates and source audits
 results/        frozen mathematical outputs plus generated verification receipts
 docs/           claim, source, proof, prior-art, artifact, and review maps
-external_reviews/ preserved T-08 external-review packet
 ```
 
 `LICENSE_SCOPE.md` records the licensing boundary. `MANIFEST_SHA256.txt` pins

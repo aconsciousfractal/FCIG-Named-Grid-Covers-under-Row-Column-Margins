@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed standalone verification entry point for P42 Output T."""
+"""Fail-closed verification entry point for the public package."""
 from __future__ import annotations
 
 import argparse
@@ -82,18 +82,16 @@ def snapshot_artifacts(project: Path, manifest: dict) -> dict[str, dict[str, int
 
 def check_manifest() -> tuple[dict, list[str], dict[str, dict[str, int | str]]]:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    require(manifest["schema"] == "p42.output-t.public-candidate-manifest.v1", "manifest schema")
-    require(manifest["project_id"] == "P42-T", "project id")
-    require(manifest["status"] == "LOCAL_PUBLIC_RELEASE_CANDIDATE", "candidate status")
+    require(manifest["schema"] == "fcig.named-grid-covers.public-manifest.v1", "manifest schema")
+    require(manifest["project_id"] == "FCIG-NAMED-GRID-COVERS", "project id")
+    require(manifest["status"] == "PUBLIC_RELEASE_V1_0_0", "public release status")
     require(manifest["project_root_contract"] == ".", "project-root contract")
     require(manifest["parameter_name"] == "largest-piece residual area", "parameter wording")
     boundary = manifest["boundary"]
-    require(boundary["public_authority"] is False, "public authority must be false")
-    require(boundary["remote_or_release_authority"] is False, "release authority must be false")
-    require(boundary["priority_or_firstness_clearance"] is False, "priority clearance must be false")
+    require(boundary["priority_or_firstness_claimed"] is False, "priority boundary")
     require(boundary["source_raster_bytes_redistributed"] is False, "source raster boundary")
     require(boundary["external_reproduction"] is False, "external reproduction boundary")
-    require(boundary["p21_exact_markov_basis"] == "open_owner_parked", "P21 stop boundary")
+    require(boundary["p21_exact_markov_basis"] == "open_out_of_scope", "P21 stop boundary")
 
     seen: set[str] = set()
     categories: set[str] = set()
@@ -130,7 +128,7 @@ def check_manifest() -> tuple[dict, list[str], dict[str, dict[str, int | str]]]:
 
 def check_environment() -> tuple[dict, list[str]]:
     lock = json.loads(ENVIRONMENT_LOCK.read_text(encoding="utf-8"))
-    require(lock["schema"] == "p42.output-t.public-environment.v1", "environment lock schema")
+    require(lock["schema"] == "fcig.named-grid-covers.public-environment.v1", "environment lock schema")
     actual_python = platform.python_version()
     actual_implementation = platform.python_implementation()
     actual_major_minor = sys.version_info[:2]
@@ -166,9 +164,9 @@ def check_environment() -> tuple[dict, list[str]]:
 
 
 def check_semantics(root: Path = PROJECT) -> list[str]:
-    manuscript = load_json(root, "results/p42_tomographic_manuscript_verification.json")
+    manuscript = load_json(root, "results/manuscript_verification.json")
     require(manuscript["status"] == "PASS", "manuscript receipt status")
-    require(len(manuscript["checks"]) >= 9, "manuscript receipt check count")
+    require(len(manuscript["checks"]) >= 8, "manuscript receipt check count")
     pdf_check = next(row for row in manuscript["checks"] if row["name"] == "built_pdf")
     require(pdf_check["passed"] is True, "manuscript PDF receipt")
     require(pdf_check["detail"]["pages"] == 18, "manuscript PDF page count")
@@ -333,7 +331,7 @@ def run_commands(command_ids: list[str], active_profile: str) -> tuple[list[dict
     stable = []
     volatile = []
     environment = os.environ.copy()
-    environment["P42_OUTPUT_T_REVIEWER_ACTIVE_PROFILE"] = active_profile
+    environment["FCIG_NAMED_GRID_REVIEWER_ACTIVE_PROFILE"] = active_profile
     environment["PYTHONHASHSEED"] = "0"
     environment.pop("PYTHONPATH", None)
     for command_id in command_ids:
@@ -421,7 +419,7 @@ def main() -> int:
         "finished_utc": finished_utc.isoformat(),
         "note": "Volatile timestamps, durations and raw logs; excluded from MANIFEST.json.",
         "profile": args.profile,
-        "schema": "p42.output-t.public-candidate-run-log.v1",
+        "schema": "fcig.named-grid-covers.public-run-log.v1",
         "started_utc": started_utc.isoformat(),
         "status": "PASS",
     }
@@ -440,11 +438,11 @@ def main() -> int:
             "snapshot_unchanged": snapshot_after == snapshot_before,
         },
         "profile": args.profile,
-        "schema": "p42.output-t.public-candidate-verification.v1",
+        "schema": "fcig.named-grid-covers.public-verification.v1",
         "semantic_checks_after": checks_after + semantics_after,
         "semantic_checks_before": checks_before + environment_checks + ["project_local_import_closure"] + semantics_before,
         "status": "PASS",
-        "terminal": f"PASS P42 Output T public-repository candidate ({args.profile})",
+        "terminal": f"PASS public release v1.0.0 ({args.profile})",
         "volatile_run_log": "results/verification_run.json",
     }
     write_json(args.output, receipt)

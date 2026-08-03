@@ -4625,7 +4625,7 @@
           "two_replacement_edges": 0
         }
       ],
-      "runtime_seconds": 2.495921,
+      "runtime_seconds": 2.482728,
       "support_exact": true,
       "target_area": 34,
       "target_columns": 6,
@@ -9216,7 +9216,7 @@
           "two_replacement_edges": 0
         }
       ],
-      "runtime_seconds": 2.099914,
+      "runtime_seconds": 2.172443,
       "support_exact": true,
       "target_area": 34,
       "target_columns": 6,
@@ -14230,7 +14230,7 @@
           "two_replacement_edges": 64
         }
       ],
-      "runtime_seconds": 23.638034,
+      "runtime_seconds": 23.420449,
       "support_exact": false,
       "target_area": 32,
       "target_columns": 6,
@@ -14241,7 +14241,7 @@
       "trapped_rows": 1
     }
   ],
-  "preregistration": "packages/package_e_obstruction_channels/xray_channel/COAREA_FPT_PREREGISTRATION.md",
-  "runtime_seconds": 28.421788,
+  "preregistration": "packages/package_e_obstruction_channels/xray_channel/COAREA_FPT_METHOD.md",
+  "runtime_seconds": 28.226871,
   "schema_version": "p42.coarea_fpt.v1"
 }

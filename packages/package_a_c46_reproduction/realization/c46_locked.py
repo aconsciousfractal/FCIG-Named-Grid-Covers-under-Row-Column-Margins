@@ -31,7 +31,7 @@ for area, cells in PIECE.items():
     assert len(cells) == area, f"area mismatch {area}: {len(cells)}"
 assert sum(PIECE)==136
 
-# ----- the numerical magic square (P42), row-major areas ------------------
+# ----- the numerical magic square, row-major areas ------------------------
 SQ = [4,5,10,15, 14,11,8,1, 7,2,13,12, 9,16,3,6]
 def line(idx): return [PIECE[SQ[i]] for i in idx]
 LINES = {

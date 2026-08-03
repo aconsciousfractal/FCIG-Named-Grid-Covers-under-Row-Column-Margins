@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""P42-native verification of the external co-area sharpening package.
+"""Independent verification of the co-area sharpening package.
 
 This verifier is deliberately separate from the supplied external bundle.  It
-uses the already independent P42 bounding-box placement engine from
+uses the independent bounding-box placement engine from
 ``verify_coarea_fpt.py`` and adds three checks that matter for the sharpening:
 
 1. an exhaustive small-set audit and a locked-specimen audit of the
@@ -471,7 +471,7 @@ def main() -> int:
         encoding="utf-8",
         newline="\n",
     )
-    print("P42 co-area next-closure verification: PASS")
+    print("co-area sharpening verification: PASS")
     print("  exhaustive small translation pairs:", report["small_translation_exhaustion"]["ordered_nonempty_subset_pairs"])
     print("  locked active-grid checks:", report["locked_translation_checks"])
     for name, values in panel.items():

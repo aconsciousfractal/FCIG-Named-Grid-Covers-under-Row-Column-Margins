@@ -1,14 +1,8 @@
-# Output T — bounded P21 connectivity case study
+# Bounded P21 connectivity case study
 
-Status: **T-05 EVIDENCE CLOSED; EXPORTED TO THE RELEASE CANDIDATE**  
-Scope: one source-locked P21 row, its participating placement configuration
-and three non-equivalent connectivity questions.  
-Public wording: bounded case study at the frozen row; no priority.
-
-This document is publication-readable source material for the P21 section of
-the release-candidate manuscript. It compresses the certified calculation to the
-smallest proposition chain that explains the mathematical boundary. It does
-not reopen the exact Markov-basis programme.
+Scope: one source-locked P21 row, its participating placement configuration,
+and three non-equivalent connectivity questions. This is a bounded case study
+at the frozen row and makes no priority claim.
 
 ## 1. Why P21 is in the paper
 
@@ -252,38 +246,30 @@ These statements do **not** prove:
 - any conclusion for inactive placements, another P21 row or another
   library.
 
-The exact Markov degree, complete basis, four blockwise bases and structured
-lift remain mathematically open but are owner-parked. They are not manuscript
-dependencies and are not the next research task.
+The exact Markov degree, complete basis, four blockwise bases, and structured
+lift remain mathematically open and are not manuscript dependencies.
 
 ## 8. Evidence and responsibility map
 
 | Statement | Canonical evidence |
 | --- | --- |
 | P21 source identity and locked geometry | `../packages/package_c_comparative_hypergraphs/specimens/p21_locked.json`, `../packages/package_c_comparative_hypergraphs/specimens/SPECIMENS.md` |
-| 72-variable robust quotient and direct support-three repairs | `../reports/P42_ROBUST_P21_QUOTIENT_CLOSURE.md`, `../reports/P42_ROBUST_P21_QUOTIENT_ANALYSIS.json` |
-| complete piece-support-three filtration | `../reports/P42_DEGREE3_AUGMENTATION_CLOSURE.md`, `../reports/P42_DEGREE3_AUGMENTATION_ANALYSIS.json` |
-| complete support-four lattice and fixed-fiber merger | `../reports/P42_SUPPORT4_CEILING_CLOSURE.md`, `../reports/P42_SUPPORT4_CEILING_ANALYSIS.json` |
-| exact three-orbit minimum | `../reports/P42_MINIMUM_ORBIT_GENERATORS_CERTIFICATE.json` |
-| all-RHS no-go and degree-seven lower bound | `../reports/P42_MARKOV_NO_GO_CERTIFICATE.json`, `../reports/P42_SINGLE_BLOCK_MARKOV_DEGREES.json` |
-| external-package red team and source boundary | `../reports/P42_ORBIT_MARKOV_CLOSURE_AUDIT.md`, `../reports/P42_ORBIT_MARKOV_SOURCE_LOCK.json` |
+| robust quotient and support filtration | `../packages/package_e_obstruction_channels/xray_channel/robust_p21_quotient.py`, `degree3_augmentation.py`, `support4_ceiling.py` |
+| exact orbit minimum | `../packages/package_e_obstruction_channels/xray_channel/verify_minimum_orbit_generators.py` |
+| all-RHS no-go and degree-seven lower bound | `../packages/package_e_obstruction_channels/xray_channel/verify_markov_no_go.py` |
+| integrated reconstruction | `../packages/package_e_obstruction_channels/xray_channel/verify_orbit_markov_closure.py` |
 
-The source owns the specimen geometry. P42 owns the selected-row restriction,
-the participating configuration and all finite graph, lattice, orbit and
-Betti calculations. Markov bases, indispensable fibers, equivariant bases and
-lifting theory remain prior-art-owned as recorded in
+The source supplies the specimen geometry. The repository supplies the
+selected-row restriction, participating configuration, and finite graph,
+lattice, orbit, and Betti calculations. Markov bases, indispensable fibers,
+equivariant bases, and lifting theory remain prior art as recorded in
 `THEOREM_LEVEL_PRIOR_ART_AUDIT.md`.
 
 ## 9. Reproduction contract
 
-From the P42 root:
+From the repository root:
 
 ```text
-python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/verify_robust_p21_quotient.py
-python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/verify_degree3_augmentation.py
-python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/verify_support4_ceiling.py
-python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/verify_minimum_orbit_generators.py --xray-dir packages/package_e_obstruction_channels/xray_channel --output reports/P42_MINIMUM_ORBIT_GENERATORS_CERTIFICATE.json
-python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/verify_markov_no_go.py --xray-dir packages/package_e_obstruction_channels/xray_channel --output reports/P42_MARKOV_NO_GO_CERTIFICATE.json
 python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/verify_orbit_markov_closure.py --xray-dir packages/package_e_obstruction_channels/xray_channel --full --single-block
 ```
 
@@ -291,24 +277,3 @@ The integrated final verifier reconstructs the 72 columns, all 7,444
 support-four relations, the 1,119 target orbits, the rank-nine quotient, the
 minimum triples and the Markov obstructions without reading the principal
 support-four analysis file.
-
-## 10. Manuscript compression
-
-The main text should retain only:
-
-1. the frozen `14×72` model and the three questions;
-2. the four-row filtration table;
-3. Proposition T-P21-A, using one connecting orbit with rank 54;
-4. the exact three-orbit explanation in one paragraph;
-5. Proposition T-P21-C, using the missing quadratic;
-6. the degree-seven lower bound and explicit stop boundary.
-
-The 1,404 triples, canonical orbit IDs, complete orbit distributions, Betti
-tables and mutation schemas may be placed in an appendix or reviewer package.
-The `6,3,78` split may remain in the main text only if it is used to explain
-the fixed fiber's `0,0,36` visibility.
-
-The section must not call piece support “toric degree,” claim that one
-connected fiber is a Markov certificate, infer Markov connectivity from
-`M_<=4=K`, write “Markov degree seven,” or suggest that the parked exact-basis
-programme is required to complete the paper.

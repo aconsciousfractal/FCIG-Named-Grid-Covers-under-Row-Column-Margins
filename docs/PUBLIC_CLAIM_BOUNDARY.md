@@ -1,11 +1,8 @@
 # Public claim boundary
 
-Status: **public repository, owner-published 2026-07-27**. The machine replay
-retains `public-release candidate` as its stable gate label. The repository is
-untagged and has no GitHub Release, DOI, arXiv deposit, journal submission,
-priority clearance, or independent external reproduction.
+Status: public release `v1.0.0`.
 
-## Can say
+## Supported statements
 
 - The paper proves the largest-piece active-carrier and FPT theorems under the
   finite named cell-list, orientation, selected-set, and exact-two graph
@@ -17,39 +14,29 @@ priority clearance, or independent external reproduction.
 - The repository supplies an author-replay package with locked dependencies,
   hashes, mutation tests, and a title-named PDF.
 
-## Must qualify
+## Required qualifications
 
-- Sallows owns the source geomagic specimens and displayed arrangements; P42
-  owns the documented discrete normalization and downstream computation.
+- Sallows owns the source geomagic specimens and displayed arrangements; the
+  repository documents the discrete normalization and downstream computation.
 - `G_E^(2)` changes exactly two named placements and differs from
   `G_E^(<=2)` in general.
 - FPT literal output enumeration is not claimed.
-- The repair-radius and energy results are upper/sufficient bounds, not sharp
+- Repair-radius and energy results are upper or sufficient bounds, not sharp
   characterizations.
-- The P21 statements concern one frozen configuration and explicit bounded
-  degree ranges.
-- Reproduction by this package is author replay, not independent external
-  reproduction.
+- P21 statements concern one frozen configuration and explicit bounded degree
+  ranges.
+- The package records author replay, not independent external reproduction.
 
-## Must not say
+## Excluded statements
 
-- “the first FPT algorithm for tomography”, “a new tomography model”, or any
-  priority/firstness equivalent;
-- row-column margins determine an exact tiling without naming the exactness
-  predicate and hypotheses;
-- arbitrary heterogeneous tiles, continuous geometry, or practical runtime are
-  classified by the residual-area theorem;
-- the P21 Markov degree equals seven, the complete Markov basis is known, or
-  support-four lattice generation implies all-fiber Markov connectivity;
-- the source raster acquisition/transcription is independently reproduced;
-- the repository is tagged, has a GitHub Release, is externally reproduced,
-  submitted, or DOI-backed before the corresponding owner action exists.
-
-## Process boundary
-
-A clean final red team means that publication is not blocked by known package
-defects. The owner first authorized final local preparation and an initial
-candidate commit, then published the canonical GitHub repository on 2026-07-27.
-Remote creation and the initial push are therefore exercised. Tag, GitHub
-Release, DOI, arXiv, journal submission, independent external reproduction,
-and priority language remain separate owner actions.
+- Any firstness, novelty, or priority assertion for the algorithm or model.
+- That row-column margins determine an exact tiling without the stated
+  exactness predicate and hypotheses.
+- That the theorem classifies arbitrary heterogeneous tiles, continuous
+  geometry, or practical runtime.
+- That the P21 Markov degree equals seven, that a complete basis is known, or
+  that support-four lattice generation implies all-fiber Markov connectivity.
+- That source raster acquisition or transcription has been independently
+  reproduced.
+- That a GitHub release constitutes a DOI, arXiv deposit, journal submission,
+  or independent external reproduction.

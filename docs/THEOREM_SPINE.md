@@ -1,7 +1,7 @@
-# Output T — source-aware theorem spine
+# Source-aware theorem spine
 
-Status: **proof-reconstructed release candidate**  
-Public wording: theorem/certificate scope only; no priority or firstness
+Public wording is limited to the theorem and certificate scopes below, with
+no priority or firstness claim.
 
 Source roles and forbidden priority wording are frozen in
 `THEOREM_LEVEL_PRIOR_ART_AUDIT.md`.
@@ -118,8 +118,8 @@ rho(E) <= V(E)-1
 The radius is an existence bound. No polynomial, linear, sharp or practical
 worst-case bound is claimed.
 
-This is the sole uniform headline after the `T-03` audit. It is stated as a
-theorem for the frozen model, without a “first FPT” or other priority claim.
+This is the sole uniform headline. It is stated as a theorem for the frozen
+model, without a “first FPT” or other priority claim.
 
 ## Proposition T-TYPE - implicit finite-library problem
 
@@ -170,7 +170,7 @@ P49: support failure and eight separate trapped singleton components on a
      different tiling row.
 ```
 
-The release candidate exposes the C32, C46 and P49 certified finite statements
+The release exposes the C32, C46 and P49 certified finite statements
 at these exact scopes. It makes no priority or firstness claim.
 
 ## Case-study block T-P21 — three connectivity layers

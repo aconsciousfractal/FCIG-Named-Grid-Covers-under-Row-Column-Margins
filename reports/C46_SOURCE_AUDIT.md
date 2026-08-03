@@ -1,4 +1,4 @@
-# P42 C46 Source-to-Model Audit
+# C46 source-to-model audit
 
 **Date:** 2026-07-26  
 **Decision:** `PASS_SOURCE_TO_MODEL_LOCKED`  
@@ -54,22 +54,6 @@ blue:    13, 14, 15, 16
 
 All sixteen recovered masks agree cell-for-cell with the pre-existing
 realization model. Total observed piece area is `136`.
-
-## Replay
-
-Acquire the exact image outside the tracked tree, then from the P42 root run:
-
-```powershell
-python -X utf8 -B scripts/audit_c46_source.py `
-  --image <LOCAL_IMAGE_PATH> `
-  --json results/c46_source_audit.json
-```
-
-Expected:
-
-```text
-STATUS: PASS  (7/7 checks passed)
-```
 
 ## Boundary
 

@@ -119,7 +119,7 @@ def audit(project: Path, manifest: dict) -> dict:
         "dynamic_import_sites": sorted(set(dynamic)),
         "edges": len(edges),
         "missing_project_local_files": sorted(missing),
-        "schema": "p42.output-t.import-closure.v1",
+        "schema": "fcig.named-grid-covers.import-closure.v1",
         "status": "PASS" if not missing and not dynamic else "FAIL",
         "visited_project_local_files": len(visited),
     }

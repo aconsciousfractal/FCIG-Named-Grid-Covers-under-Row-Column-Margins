@@ -1,22 +1,17 @@
-# Output T — foundational C32/C46/P49 section
+# Foundational C32/C46/P49 section
 
-Status: **T-04 EVIDENCE CLOSED; EXPORTED TO THE RELEASE CANDIDATE**  
-Scope: source identity, discrete model, exhaustive finite certificates and
-strict exactness witnesses.  
-Public wording: certified finite results at the scopes below; no priority.
-
-This document is publication-readable source material for Sections 3–4 of the
-release-candidate manuscript. It is not a claim of priority and it does not turn C32 or
-P49 into public claims.
+Scope: source identity, discrete model, exhaustive finite certificates, and
+strict exactness witnesses. The results are limited to the stated finite
+libraries and make no priority claim.
 
 ## Source authorship boundary
 
 C32, C46 and P49 are discrete normalizations of 4x4 geomagic specimens created
 and published by Lee Sallows. Sallows owns the displayed piece geometry,
 targets and source arrangements; Peter Cameron's 2011 finite group-action
-formulation is prior conceptual context. P42 begins at the source-locked mask
-normalization and owns the exhaustive censuses, aggregate-margin fibers,
-replacement graphs and uniform deductions. The original raster bytes are not
+formulation is prior conceptual context. The repository begins at the
+source-locked mask normalization and supplies the exhaustive censuses,
+aggregate-margin fibers, replacement graphs, and uniform deductions. The original raster bytes are not
 redistributed, so the replay does not independently reproduce segmentation or
 transcription from the images.
 ## 1. From a source image to a finite theorem
@@ -37,8 +32,8 @@ been fixed.
    row-and-column margin fiber, labels its exact covers, builds the graph that
    changes exactly two named placements, and checks every component.
 
-The source supplies the displayed geometry and arrangements. P42 is
-responsible for the normalization, the exhaustive rows not asserted by the
+The source supplies the displayed geometry and arrangements. This repository
+is responsible for the normalization, the exhaustive rows not asserted by the
 source, the certificates and the fiber-graph conclusions. In particular, the
 86 area-sum rows for C32 and C46 are an imported additive carrier, not a new
 additive theorem.
@@ -241,14 +236,14 @@ finite witness.
 
 ## 6. Evidence and responsibility map
 
-| Statement | Source-owned input | P42-owned conclusion | Canonical evidence |
+| Statement | Source input | Repository result | Canonical evidence |
 | --- | --- | --- | --- |
-| C32 geometry | official raster, Dürer square, displayed panels | two-orientation normalization, masks and panel crosswalk | `../registry/c32_source_lock.json`, `../reports/P42_C32_SOURCE_AUDIT.md` |
-| C32 full census | none beyond the locked model and imported 86-row carrier | `20/66`, 136 tilings, pure fiber, seven non-affine positives | `../reports/P42_C32_EXACT_CENSUS.md` |
-| C46 geometry | official raster and 36 displayed panels | calibrated target/piece transcription | `../registry/c46_source_lock.json`, `../reports/P42_C46_SOURCE_AUDIT.md` |
+| C32 geometry | official raster, Dürer square, displayed panels | two-orientation normalization, masks and panel crosswalk | `../registry/c32_source_lock.json`, `../reports/C32_SOURCE_AUDIT.md` |
+| C32 full census | locked model and imported 86-row carrier | `20/66`, 136 tilings, pure fiber, seven non-affine positives | `../reports/C32_EXACT_CENSUS.md` |
+| C46 geometry | official raster and 36 displayed panels | calibrated target/piece transcription | `../registry/c46_source_lock.json`, `../reports/C46_SOURCE_AUDIT.md` |
 | C46 full census | none beyond the locked model and imported 86-row carrier | `44/42`, 344 tilings and complete certificates | `../packages/package_a_c46_reproduction/realization/REPORT.md` |
 | P49 geometry | official raster and four cyclic presentations | locked base specimen and ten-line validation | `../packages/package_c_comparative_hypergraphs/specimens/SPECIMENS.md` |
-| Three-library fibers | locked finite models | all row counts, graph components, radii and hierarchy witnesses | `../reports/P42_COAREA_FPT_CLOSURE.md`, `../results/coarea_fpt_analysis.json` |
+| Three-library fibers | locked finite models | all row counts, graph components, radii and hierarchy witnesses | `../results/coarea_fpt_analysis.json` |
 
 The machine result is independently replayed without importing the principal
 fiber engine: it regenerates `D4` poses by a different method, reconstructs
@@ -257,16 +252,13 @@ row counts, edge counts, components, radii and verdicts.
 
 ## 7. Reproduction contract
 
-From the P42 root, the load-bearing checks are:
+From the repository root, the load-bearing checks are:
 
 ```text
-python -X utf8 -B packages/package_b_c32_durer_realization/realization/certify.py
 python -X utf8 -B packages/package_b_c32_durer_realization/realization/verify.py
 python -X utf8 -B packages/package_b_c32_durer_realization/realization/mutation_test.py
-python -X utf8 -B packages/package_b_c32_durer_realization/realization/analyse_c32.py
 python -X utf8 -B packages/package_b_c32_durer_realization/realization/verify_analysis.py
 
-python -X utf8 -B packages/package_a_c46_reproduction/realization/certify.py
 python -X utf8 -B packages/package_a_c46_reproduction/realization/verify.py
 python -X utf8 -B packages/package_a_c46_reproduction/realization/mutation_test.py
 
@@ -278,29 +270,3 @@ python -X utf8 -B packages/package_e_obstruction_channels/xray_channel/mutation_
 
 Source-image audits additionally require local copies whose bytes match the
 locked hashes; the raw rasters are intentionally absent from the repository.
-
-## 8. Manuscript compression and guardrails
-
-The main text should retain:
-
-- the four-layer evidence contract;
-- the common definitions and label convention;
-- Proposition T-FOUND and its aggregate table;
-- one C46 repair witness and both P49 rows;
-- the strict-hierarchy corollary.
-
-The remaining row tables, hashes, panel calibration and mutation schemas
-belong in appendices or the reviewer package.
-
-The section must not say:
-
-- that the source claimed its displayed rows were exhaustive;
-- that the additional C32/C46 positives are source errors;
-- that P49 indices are piece areas;
-- that P49 has one trapped component containing eight nodes in
-  `G_E^(2)`;
-- that the finite hierarchy is a general characterization of shapes;
-- that the additive carrier or generic tomography model is new;
-- that any C32/P49 statement is already public.
-
-The current public finite claim remains C46 `P42-C020` only.

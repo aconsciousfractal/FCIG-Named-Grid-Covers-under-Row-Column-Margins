@@ -1,8 +1,8 @@
-# P42 C32 source-to-model audit
+# C32 source-to-model audit
 
 **Date:** 2026-07-26
 **Scope:** one official C32 raster, its exact grid model, twenty displayed
-assemblies and the owner-side Dürer crosswalk.
+assemblies and the Dürer complement crosswalk.
 **Verdict:** `PASS`, 13/13 checks.
 
 ## Locked source
@@ -60,24 +60,14 @@ the realization census.
 - source square:
   `((16,3,2,13),(5,10,11,8),(9,6,7,12),(4,15,14,1))`.
 
-The source-to-owner crosswalk is the same-cell complement `x ↦ 17-x`. All
+The source complement crosswalk is the same-cell complement `x ↦ 17-x`. All
 three read-only Magic 24 artifacts match their locked hashes, and the crosswalk
 preserves the complete 86-row carrier and its `52 affine + 34 non-affine`
 split.
-
-## Reproduce
-
-```powershell
-python -X utf8 -B scripts\audit_c32_source.py `
-  --image <LOCAL_IMAGE_PATH> `
-  --json results\c32_source_audit.json
-```
-
-Expected final line: `STATUS: PASS (13/13)`.
 
 ## Claim boundary
 
 This audit admits the exact C32 model and the twenty source-displayed
 witnesses. It does not decide the other 76 additive rows, claim that the ten
-displayed quaternes are exhaustive, assign an erratum to the source, establish
-novelty, or authorise public wording.
+displayed quaternes are exhaustive, assign an erratum to the source, or
+establish novelty.

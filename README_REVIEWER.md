@@ -8,9 +8,9 @@ package records author replay, not independent external reproduction.
 1. Read `paper/Named_Grid_Covers_under_Row-Column_Margins.pdf`.
 2. Read `docs/CLAIM_LEDGER.md` and `docs/PUBLIC_CLAIM_BOUNDARY.md`.
 3. Read the theorem roles in `docs/THEOREM_ROLE_MATRIX.md`.
-4. Read `docs/RED_TEAM_REPORT.md` and its unresolved-item section.
+4. Read `docs/VERIFICATION_ARCHITECTURE.md`.
 
-The sole uniform headline is the largest-piece active-carrier/FPT theorem. The
+The uniform headline is the largest-piece active-carrier/FPT theorem. The
 three finite libraries are certified witnesses, and P21 is a bounded case
 study, not a complete Markov-basis result.
 
@@ -27,12 +27,11 @@ python -X utf8 -B scripts/verify.py --profile core
 A successful core replay ends:
 
 ```text
-PASS P42 Output T public-repository candidate (core)
+PASS public release v1.0.0 (core)
 ```
 
-Inspect `results/verification.json`,
-`results/p42_tomographic_manuscript_verification.json`, and
-`certificates/MANIFEST.json`. The first is generated; the latter two are
+Inspect `results/verification.json`, `results/manuscript_verification.json`,
+and `certificates/MANIFEST.json`. The first is generated; the latter two are
 manifest-bound.
 
 ## Full replay
@@ -52,6 +51,5 @@ single-block P21 audits. It is materially slower.
 - The exact P21 Markov degree and complete basis remain open.
 - Literal enumeration of all named outputs is output-sensitive.
 - This package records author replay, not independent external reproduction.
-- Repository publication was exercised by the owner on 2026-07-27. Tagging, a
-  GitHub Release, DOI, arXiv, journal submission, and priority language remain
-  separate owner actions and are not inferred from a successful replay.
+- A repository release is not a DOI, arXiv deposit, journal submission, or
+  evidence of priority.

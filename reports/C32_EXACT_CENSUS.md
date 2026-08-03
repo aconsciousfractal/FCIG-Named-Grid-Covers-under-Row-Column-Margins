@@ -1,11 +1,9 @@
-# P42 C32 exact realization census
+# C32 exact realization census
 
 **Date:** 2026-07-26
 **Finite scope:** all 86 four-subsets of `{1,…,16}` summing to 34, on the
 source-locked C32 target and piece library.
 **Computational verdict:** complete.
-**Claim status:** `P42-C021` is a `CL3` promotion-review candidate; the
-maintainer gate remains closed.
 
 ## Exact outcome
 
@@ -68,11 +66,11 @@ It verifies:
 - equality of every explicit positive tiling set;
 - exhaustive zero for all 66 negatives;
 - all twenty source panels, giving sixteen canonical labelled tilings;
-- the owner complement crosswalk and every affine flag.
+- the complement crosswalk and every affine flag.
 
 The mutation suite has two genuine controls and rejects eight adversarial
 changes: source hash, target cell, piece cell, positive placement, tiling
-count, negative verdict, owner crosswalk and missing row.
+count, negative verdict, complement crosswalk and missing row.
 
 ## Structural decisions
 
@@ -124,26 +122,10 @@ C46 has four row+column sections and fails only at a diagonal.
 
 ## Reproduce
 
-From the P42 root:
+From the repository root:
 
 ```powershell
-python -X utf8 -B packages\package_b_c32_durer_realization\realization\certify.py
 python -X utf8 -B packages\package_b_c32_durer_realization\realization\verify.py
 python -X utf8 -B packages\package_b_c32_durer_realization\realization\mutation_test.py
-python -X utf8 -B packages\package_b_c32_durer_realization\realization\analyse_c32.py
 python -X utf8 -B packages\package_b_c32_durer_realization\realization\verify_analysis.py
 ```
-
-## Consequence for the research route
-
-C34 is no longer needed to decide the affine-selection hypothesis: that route
-is dead on C32. C34 still has value as a harder non-grid test of
-support/fiber/repair behaviour, but its expected cost is much higher because
-it requires exact rational polygon or atom semantics. The higher-value next
-mathematical task is now to formulate a bounded criterion that separates:
-
-- C46: support-exact, repair-exact, not fiber-pure;
-- C32: support-exact, repair-exact, fiber-pure;
-- P49: support and repair can fail.
-
-No manuscript work follows from this finite census alone.

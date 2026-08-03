@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay the integrated P42 orbit/Markov closure.
+"""Replay the integrated orbit/Markov verification.
 
 Smoke mode replays the minimum-orbit theorem, the degree-2/3 and degree-7
 Markov obstruction, and the 4ti2 export.  ``--full`` includes the degree-4
@@ -120,7 +120,7 @@ def main() -> None:
             )
             print("PASS optional single-block audit")
 
-    print("PASS P42 orbit/Markov closure replay")
+    print("PASS integrated orbit/Markov replay")
 
 
 if __name__ == "__main__":

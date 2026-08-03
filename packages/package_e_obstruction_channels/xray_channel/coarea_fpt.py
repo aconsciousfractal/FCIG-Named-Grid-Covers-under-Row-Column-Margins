@@ -2,7 +2,7 @@
 """Co-area residual-state algorithm for placement-coloured X-ray fibers.
 
 This is the principal implementation for the experiment preregistered in
-COAREA_FPT_PREREGISTRATION.md.  It computes the complete row+column fibers of
+COAREA_FPT_METHOD.md.  It computes the complete row+column fibers of
 C32, C46 and P49-base by freezing a deterministic largest piece and exploring
 only the bounded residual state space.
 
@@ -772,7 +772,7 @@ def main() -> int:
         "schema_version": "p42.coarea_fpt.v1",
         "preregistration": (
             "packages/package_e_obstruction_channels/xray_channel/"
-            "COAREA_FPT_PREREGISTRATION.md"
+            "COAREA_FPT_METHOD.md"
         ),
         "algorithm": {
             "parameter": "coarea q = |T| - area(frozen largest piece)",

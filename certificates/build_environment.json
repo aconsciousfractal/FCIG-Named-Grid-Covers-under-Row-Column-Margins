@@ -1,14 +1,13 @@
 {
-  "accepted_pdf": "paper/Named_Grid_Covers_under_Row-Column_Margins.pdf",
-  "accepted_pdf_pages": 18,
-  "build_date": "2026-07-27",
+  "canonical_pdf": "paper/Named_Grid_Covers_under_Row-Column_Margins.pdf",
+  "canonical_pdf_pages": 18,
+  "canonical_pdf_sha256": "cefbbcca614279f3f3bd0c504f9e9436aa7416c3c13fd765336622f5620c5728",
+  "build_date": "2026-08-03",
   "engine": {
     "distribution": "Tectonic",
     "version": "0.16.9",
     "xetex_based": true
   },
-  "historical_t08_pdf_pages": 18,
-  "note": "The historical T-08 PDF was built with pdfLaTeX. The standalone candidate PDF was rebuilt from the current source with Tectonic; page count is engine-dependent.",
-  "schema": "p42.output-t.public-build-environment.v1",
-  "tectonic_windows_msvc_archive_sha256": "131a24604785a9600989a3d91225f597df52ac06f00aeffe86fd529f99ee5cdd"
+  "note": "The canonical public PDF is built from the tracked modular LaTeX source and visually inspected page by page.",
+  "schema": "fcig.named-grid-covers.public-build-environment.v1"
 }

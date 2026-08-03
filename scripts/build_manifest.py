@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the standalone Output T reviewer and portable SHA-256 manifests."""
+"""Build the public reviewer and portable SHA-256 manifests."""
 from __future__ import annotations
 
 import hashlib
@@ -17,11 +17,9 @@ GENERATED = {
     "results/verification.json",
     "results/verification_run.json",
     "results/repository_validation.json",
-    "results/final_red_team_verification.json",
     "SHA256SUMS",
 }
 TEX_SUFFIXES = {".aux", ".log", ".out", ".toc", ".bbl", ".blg", ".fls", ".fdb_latexmk", ".synctex.gz"}
-ACCEPTED_BUILD_LOG = "paper/Named_Grid_Covers_under_Row-Column_Margins.log"
 
 
 def sha256(path: Path) -> str:
@@ -43,7 +41,7 @@ def excluded(path: Path) -> bool:
         return True
     if any(part == "render" or part.startswith("render_") for part in parts) or "tmp" in parts:
         return True
-    if (path.suffix in TEX_SUFFIXES or path.name.endswith(".synctex.gz")) and rel != ACCEPTED_BUILD_LOG:
+    if path.suffix in TEX_SUFFIXES or path.name.endswith(".synctex.gz"):
         return True
     return False
 
@@ -53,8 +51,6 @@ def category(rel: str) -> str:
         return "manuscript"
     if rel.startswith("registry/"):
         return "source_lock"
-    if rel.startswith("external_reviews/"):
-        return "sources"
     if rel.startswith("packages/"):
         return "replay_code" if rel.endswith(".py") else "certificate"
     if rel.startswith("scripts/"):
@@ -74,16 +70,16 @@ def category(rel: str) -> str:
 
 def role(rel: str) -> str:
     if rel == "paper/Named_Grid_Covers_under_Row-Column_Margins.pdf":
-        return "accepted title-named release-candidate PDF"
+        return "canonical title-named public PDF"
     if rel == "scripts/verify.py":
         return "single manifest/core/full verification entry point"
     if rel == "docs/CLAIM_LEDGER.md":
-        return "authoritative release-candidate claim ledger"
+        return "public claim ledger"
     if rel == "docs/PUBLIC_CLAIM_BOUNDARY.md":
-        return "public wording and owner-action boundary"
-    if rel == "docs/RED_TEAM_REPORT.md":
-        return "final repository red-team report"
-    return "standalone Output T package artifact"
+        return "public claim boundary"
+    if rel == "docs/VERIFICATION_ARCHITECTURE.md":
+        return "public verification architecture"
+    return "public verification package artifact"
 
 
 def files() -> list[Path]:
@@ -111,10 +107,8 @@ def main() -> int:
         "artifacts": artifact_rows,
         "boundary": {
             "external_reproduction": False,
-            "p21_exact_markov_basis": "open_owner_parked",
-            "priority_or_firstness_clearance": False,
-            "public_authority": False,
-            "remote_or_release_authority": False,
+            "p21_exact_markov_basis": "open_out_of_scope",
+            "priority_or_firstness_claimed": False,
             "source_raster_bytes_redistributed": False,
         },
         "parameter_name": "largest-piece residual area",
@@ -149,10 +143,10 @@ def main() -> int:
                 "manifest_only_tree",
             ],
         },
-        "project_id": "P42-T",
+        "project_id": "FCIG-NAMED-GRID-COVERS",
         "project_root_contract": ".",
-        "schema": "p42.output-t.public-candidate-manifest.v1",
-        "status": "LOCAL_PUBLIC_RELEASE_CANDIDATE",
+        "schema": "fcig.named-grid-covers.public-manifest.v1",
+        "status": "PUBLIC_RELEASE_V1_0_0",
         "title": "Named Grid Covers under Row--Column Margins: Three Exactness Levels and Largest-Piece Localization",
     }
     JSON_MANIFEST.parent.mkdir(parents=True, exist_ok=True)

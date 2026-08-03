@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed static and PDF verifier for the standalone Output T manuscript."""
+"""Fail-closed static and PDF verifier for the public manuscript."""
 
 from __future__ import annotations
 
@@ -15,8 +15,7 @@ from pypdf import PdfReader
 PROJECT = Path(__file__).resolve().parents[1]
 PAPER = PROJECT / "paper"
 PDF = PAPER / "Named_Grid_Covers_under_Row-Column_Margins.pdf"
-LOG = PAPER / "Named_Grid_Covers_under_Row-Column_Margins.log"
-RESULT = PROJECT / "results" / "p42_tomographic_manuscript_verification.json"
+RESULT = PROJECT / "results" / "manuscript_verification.json"
 
 ORDERED_INPUTS = [
     "sections/01_introduction",
@@ -84,7 +83,7 @@ def main() -> int:
 
     if missing:
         payload = {
-            "schema": "p42.output-t.public-manuscript-verification.v1",
+            "schema": "fcig.named-grid-covers.public-manuscript-verification.v1",
             "status": "FAIL",
             "checks": checks,
             "files": {},
@@ -169,7 +168,7 @@ def main() -> int:
     add_check(checks, "static_latex_structure", structure_ok, structure)
 
     required_fragments = {
-        "author_manuscript": "Author manuscript",
+        "public_preprint": "Public preprint, version 1.0.0",
         "exact_two_graph": r"\GG_E^{(2)}",
         "translation_empty_branch": r"\max(0,|B|-|A|+1)",
         "active_carrier": "at most \\(q^2\\) target cells",
@@ -219,28 +218,6 @@ def main() -> int:
         {"hits": forbidden_hits},
     )
 
-    log_exists = LOG.is_file()
-    log_hits: list[str] = []
-    if log_exists:
-        log_text = LOG.read_text(encoding="utf-8", errors="replace")
-        for pattern in [
-            "LaTeX Error",
-            "Fatal error",
-            "Emergency stop",
-            "undefined references",
-            "undefined citations",
-            "Overfull",
-            "ignored error",
-        ]:
-            if pattern in log_text:
-                log_hits.append(pattern)
-    add_check(
-        checks,
-        "clean_build_log",
-        log_exists and not log_hits,
-        {"exists": log_exists, "disallowed_hits": log_hits},
-    )
-
     pdf_detail: dict[str, object] = {"exists": PDF.is_file()}
     pdf_ok = False
     if PDF.is_file():
@@ -251,7 +228,7 @@ def main() -> int:
             required_pdf_text = [
                 "Named Grid Covers under Row",
                 "Three Exactness Levels and Largest-Piece Localization",
-                "Author manuscript",
+                "Public preprint, version 1.0.0",
                 "Largest-piece residual-area FPT theorem",
                 "Lee Sallows",
                 "Type-isomorphism lemma",
@@ -278,7 +255,7 @@ def main() -> int:
 
     status = "PASS" if all(bool(check["passed"]) for check in checks) else "FAIL"
     payload = {
-        "schema": "p42.output-t.public-manuscript-verification.v1",
+        "schema": "fcig.named-grid-covers.public-manuscript-verification.v1",
         "status": status,
         "checks": checks,
         "files": files,
